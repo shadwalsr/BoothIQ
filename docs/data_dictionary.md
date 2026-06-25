@@ -19,6 +19,7 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 | `data/raw/infrastructure/` | JSON Lines (.jsonl) | PMGSY road connectivity rates, school access and healthcare ratios | 243 | 243 |
 | `data/raw/flood_vulnerability/` | JSON Lines (.jsonl) | Flood risk classifications, associated river basins and inundation vulnerability area metrics | 243 | 243 |
 | `data/raw/latest/` | JSON Lines (.jsonl) | 15 new demographic, infrastructure, political and financial indicators | 3645 | 3645 |
+| `data/raw/latest1/` | JSON Lines (.jsonl) | 100 new demographic, infrastructure, political and financial indicators | 24300 | 24300 |
 
 ## Schema Definitions
 
@@ -209,9 +210,9 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 {
   "candidate_name": "Chirag Sahni",
   "party_affiliation": "RJD",
-  "total_assets_inr": 63124476,
-  "total_liabilities_inr": 0,
-  "highest_education_level": "Graduate",
+  "total_assets_inr": 103641017,
+  "total_liabilities_inr": 37541535,
+  "highest_education_level": "Post Graduate",
   "active_criminal_cases_count": 0,
   "has_active_criminal_cases": false,
   "affidavit_file_path": "C:\\BoothIQ\\data\\raw\\candidate_affidavits\\AC001_valmiki_nagar_chirag_sahni_affidavit.pdf",
@@ -557,5 +558,22 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
     "major_crop_rabi": "Mustard",
     "crop_intensity_pct": 142.7
   }
+}
+```
+
+### `data/raw/latest1/` Schema
+*   **Description**: 100 new demographic, infrastructure, political and financial indicators
+*   **Format**: JSON Lines (.jsonl)
+
+**Sample Record**:
+```json
+{
+  "ac_no": 1,
+  "ac_name": "Valmiki Nagar",
+  "district": "West Champaran",
+  "dataset_type": "adult_literacy_centers",
+  "value": 48,
+  "unit": "count",
+  "last_updated": "2025-2026"
 }
 ```
