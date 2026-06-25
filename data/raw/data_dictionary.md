@@ -6,7 +6,7 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 | :--- | :--- | :--- | :--- | :--- |
 | `data/raw/eci_2025/` | JSON Lines (.jsonl) | ECI Bihar 2025 Legislative Assembly results per constituency | 243 | 243 |
 | `data/raw/eci_2020/` | JSON Lines (.jsonl) | ECI Bihar 2020 Legislative Assembly results per constituency | 243 | 243 |
-| `data/raw/candidate_affidavits/` | JSON Lines (.jsonl) & PDF (.pdf) | Form 26 affidavit candidate metadata and physical PDF files | 2230 | 2084 |
+| `data/raw/candidate_affidavits/` | JSON Lines (.jsonl) & PDF (.pdf) | Form 26 affidavit candidate metadata and physical PDF files | 765 | 2084 |
 | `data/raw/census/` | JSON Lines (.jsonl) | Primary Census Abstract demographic splits mapped to assembly bounds | 243 | 243 |
 | `data/raw/schemes/` | JSON Lines (.jsonl) | MGNREGA, PMAY and Ujjwala welfare allocations | 243 | 243 |
 | `data/raw/news/` | JSON Lines (.jsonl) | Pre-election media mention snippets and urls | 243 | 845 |
@@ -206,7 +206,7 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
   "highest_education_level": null,
   "active_criminal_cases_count": null,
   "has_active_criminal_cases": null,
-  "affidavit_file_path": "c:\\scratch\\data\\raw\\candidate_affidavits\\AC001_valmiki_nagar_chirag_sahni_affidavit.pdf",
+  "affidavit_file_path": "C:\\BoothIQ\\data\\raw\\candidate_affidavits\\AC001_valmiki_nagar_chirag_sahni_affidavit.pdf",
   "scanned_image_only_exception": true
 }
 ```
