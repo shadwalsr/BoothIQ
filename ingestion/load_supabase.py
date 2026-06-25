@@ -129,5 +129,18 @@ def load_latest1(df: pd.DataFrame, supabase: Client):
         chunk = records[i:i+chunk_size]
         supabase.table('latest1_indicators').insert(chunk).execute()
 
+def load_latest2(df: pd.DataFrame, supabase: Client):
+    records = df.to_dict(orient="records")
+    records = [{k: (v if pd.notna(v) else None) for k, v in r.items()} for r in records]
+    
+    supabase.table('latest2_indicators').delete().neq('ac_no', 0).execute()
+    
+    # Insert in chunks of 500 to avoid request size limits
+    chunk_size = 500
+    for i in range(0, len(records), chunk_size):
+        chunk = records[i:i+chunk_size]
+        supabase.table('latest2_indicators').insert(chunk).execute()
+
+
 
 
