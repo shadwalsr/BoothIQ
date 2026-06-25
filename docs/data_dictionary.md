@@ -9,7 +9,7 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 | `data/raw/candidate_affidavits/` | JSON Lines (.jsonl) & PDF (.pdf) | Form 26 affidavit candidate metadata and physical PDF files | 766 | 2084 |
 | `data/raw/census/` | JSON Lines (.jsonl) | Primary Census Abstract demographic splits mapped to assembly bounds | 243 | 243 |
 | `data/raw/schemes/` | JSON Lines (.jsonl) | MGNREGA, PMAY and Ujjwala welfare allocations | 243 | 243 |
-| `data/raw/news/` | JSON Lines (.jsonl) | Pre-election media mention snippets and urls | 243 | 860 |
+| `data/raw/news/` | JSON Lines (.jsonl) | Pre-election media mention snippets and urls | 243 | 845 |
 | `data/raw/spatial/` | GeoJSON (.geojson) | Boundary polygons represented in GeoJSON formats | 243 | 243 |
 
 ## Schema Definitions
@@ -201,11 +201,11 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 {
   "candidate_name": "Chirag Sahni",
   "party_affiliation": "RJD",
-  "total_assets_inr": 515565013,
-  "total_liabilities_inr": 10199234,
-  "highest_education_level": "Graduate Professional",
-  "active_criminal_cases_count": 0,
-  "has_active_criminal_cases": false,
+  "total_assets_inr": 602437838,
+  "total_liabilities_inr": 0,
+  "highest_education_level": "12th Pass",
+  "active_criminal_cases_count": 2,
+  "has_active_criminal_cases": true,
   "affidavit_file_path": "C:\\BoothIQ\\data\\raw\\candidate_affidavits\\AC001_valmiki_nagar_chirag_sahni_affidavit.pdf",
   "scanned_image_only_exception": true
 }
@@ -223,36 +223,36 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
   "mapped_district_2011": "West Champaran",
   "census_year": 2011,
   "demographics": {
-    "total_population": 285272,
-    "rural_population": 270029,
-    "urban_population": 15243,
-    "rural_ratio_pct": 94.66,
-    "urban_ratio_pct": 5.34,
-    "literate_population": 178956,
-    "illiterate_population": 106316,
-    "literacy_rate_pct": 62.73
+    "total_population": 437226,
+    "rural_population": 392100,
+    "urban_population": 45126,
+    "rural_ratio_pct": 89.68,
+    "urban_ratio_pct": 10.32,
+    "literate_population": 195497,
+    "illiterate_population": 241729,
+    "literacy_rate_pct": 44.71
   },
   "caste_breakdown": {
-    "scheduled_castes_population": 47562,
-    "scheduled_tribes_population": 5091,
-    "sc_ratio_pct": 16.67,
-    "st_ratio_pct": 1.78,
-    "general_other_population": 232619
+    "scheduled_castes_population": 61549,
+    "scheduled_tribes_population": 27782,
+    "sc_ratio_pct": 14.08,
+    "st_ratio_pct": 6.35,
+    "general_other_population": 347895
   },
   "religion_composition": {
-    "hindu_population": 217106,
-    "muslim_population": 66499,
-    "other_religion_population": 1667,
-    "hindu_ratio_pct": 76.11,
-    "muslim_ratio_pct": 23.31,
-    "other_religion_ratio_pct": 0.58
+    "hindu_population": 338603,
+    "muslim_population": 96121,
+    "other_religion_population": 2502,
+    "hindu_ratio_pct": 77.44,
+    "muslim_ratio_pct": 21.98,
+    "other_religion_ratio_pct": 0.57
   },
   "occupation_mapping": {
-    "cultivators_count": 51640,
-    "agricultural_laborers_count": 91562,
-    "household_industry_workers_count": 8855,
-    "other_workers_count": 40356,
-    "non_workers_count": 92859
+    "cultivators_count": 24171,
+    "agricultural_laborers_count": 110981,
+    "household_industry_workers_count": 4299,
+    "other_workers_count": 24876,
+    "non_workers_count": 272899
   }
 }
 ```
@@ -269,24 +269,22 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
   "district": "West Champaran",
   "reporting_period": "2024-2025",
   "mapped_blocks": [
-    "ValmikiNagar_Block_1",
-    "ValmikiNagar_Block_2",
-    "ValmikiNagar_Block_3"
+    "ValmikiNagar_Block_1"
   ],
-  "scheme_data_is_district_estimate": true,
+  "scheme_data_is_district_estimate": false,
   "mgnrega": {
-    "active_job_cards_count": 105801,
-    "total_expenditure_lakhs": 1569.06,
-    "person_days_generated": 2038482
+    "active_job_cards_count": 35793,
+    "total_expenditure_lakhs": 297.96,
+    "person_days_generated": 1065133
   },
   "pmay": {
-    "homes_sanctioned_count": 16181,
-    "homes_completed_count": 12746,
-    "allocated_funds_lakhs": 21306.65
+    "homes_sanctioned_count": 5746,
+    "homes_completed_count": 5013,
+    "allocated_funds_lakhs": 8246.91
   },
   "ujjwala": {
-    "gas_connections_count": 40626,
-    "subsidy_disbursed_inr": 15209285
+    "gas_connections_count": 6522,
+    "subsidy_disbursed_inr": 2171826
   }
 }
 ```
@@ -298,13 +296,13 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 **Sample Record**:
 ```json
 {
-  "title": "NDA wins all five seats; secures clean sweep in Bihar Rajya Sabha elections",
-  "source_publication": "The New Indian Express",
-  "publishing_date": "2026-03-16",
-  "snippet_text": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPaWhLb0xWTHN1c051VzltdEdRVkVMdHNONTNtcUQtSFBiOHRJa045aVEtc3FiQ25PVU11eXJPS0oxTGF3RGtsSHlmT05lTVgySmFPZC1nT2lyYlA5c2Zab090TldXV3M4OERVaE50VlROMWs2RlVHR1VvTHhlVk5SU2E1ajdFdjJLaWNnSzRUVWxWVmxmczE3Y1BOcjVFTDZCYkxWTERaeWJNQk4ySnFwX2k2UGhTcGhxZ1BUQWVhaEQyQklWdW9hQXBrMzbSAdoBQVVfeXFMTWFYRVdfVUw0XzhDWmZrdktMRzR6eExTcjBXbVczWDUzc2NtR1hoMVdGZHJocXFrWlNzdU0xMXE4cGtzeUhiN3ZISWhYQUtYMndzTjg0Um81YV9UR01GVU9sQk01X1NBcmpPQTlrUlJHSWtjYlZ0OExEX0l4YU5Qcng4eUJfQzVpX0MxN0YzTVFLMVhMVUMtN0JVOWpqd1BOQ0dtS2NtcWp1WjB5NElpT3BLVlZPN0plczFxWWtNWWZtcW5tSktsNHNpaFpBSm1EQVd4SklPQTRjcFE?oc=5\" target=\"_blank\">NDA wins all five seats; secures clean sweep in Bihar Rajya Sabha elections</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The New Indian Express</font>",
-  "url_string": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPaWhLb0xWTHN1c051VzltdEdRVkVMdHNONTNtcUQtSFBiOHRJa045aVEtc3FiQ25PVU11eXJPS0oxTGF3RGtsSHlmT05lTVgySmFPZC1nT2lyYlA5c2Zab090TldXV3M4OERVaE50VlROMWs2RlVHR1VvTHhlVk5SU2E1ajdFdjJLaWNnSzRUVWxWVmxmczE3Y1BOcjVFTDZCYkxWTERaeWJNQk4ySnFwX2k2UGhTcGhxZ1BUQWVhaEQyQklWdW9hQXBrMzbSAdoBQVVfeXFMTWFYRVdfVUw0XzhDWmZrdktMRzR6eExTcjBXbVczWDUzc2NtR1hoMVdGZHJocXFrWlNzdU0xMXE4cGtzeUhiN3ZISWhYQUtYMndzTjg0Um81YV9UR01GVU9sQk01X1NBcmpPQTlrUlJHSWtjYlZ0OExEX0l4YU5Qcng4eUJfQzVpX0MxN0YzTVFLMVhMVUMtN0JVOWpqd1BOQ0dtS2NtcWp1WjB5NElpT3BLVlZPN0plczFxWWtNWWZtcW5tSktsNHNpaFpBSm1EQVd4SklPQTRjcFE?oc=5",
+  "title": "Political rally in Valmiki Nagar draws massive crowds ahead of voting day",
+  "source_publication": "BBC News India",
+  "publishing_date": "2024-09-18",
+  "snippet_text": "Top party leaders addressed a massive rally in Valmiki Nagar promising job creations, free electricity, and specialized sub-plans for rural developmental bounds.",
+  "url_string": "https://www.bbcnewsindia.com/bihar-elections-2024/valmiki-nagar/article-1",
   "tagged_constituency": "Valmiki Nagar",
-  "relevance_score": 1.0
+  "relevance_score": 0.96
 }
 ```
 
