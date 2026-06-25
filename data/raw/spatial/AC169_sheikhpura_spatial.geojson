@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 169,
+        "ac_name": "Sheikhpura",
+        "district": "Sheikhpura",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 284.47
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.637642,
+                    26.433299
+                ],
+                [
+                    84.611578,
+                    26.467171
+                ],
+                [
+                    84.582813,
+                    26.453146
+                ],
+                [
+                    84.5764,
+                    26.417939
+                ],
+                [
+                    84.610799,
+                    26.401214
+                ],
+                [
+                    84.631125,
+                    26.433299
+                ]
+            ]
+        ]
+    }
+}

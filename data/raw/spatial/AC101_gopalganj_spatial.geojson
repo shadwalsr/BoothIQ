@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 101,
+        "ac_name": "Gopalganj",
+        "district": "Gopalganj",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 444.86
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.822379,
+                    26.65421
+                ],
+                [
+                    87.804807,
+                    26.683137
+                ],
+                [
+                    87.772544,
+                    26.673169
+                ],
+                [
+                    87.769606,
+                    26.63501
+                ],
+                [
+                    87.807046,
+                    26.626427
+                ],
+                [
+                    87.831782,
+                    26.65421
+                ]
+            ]
+        ]
+    }
+}

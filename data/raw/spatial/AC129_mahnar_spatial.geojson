@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 129,
+        "ac_name": "Mahnar",
+        "district": "Vaishali",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 421.92
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.526529,
+                    26.796289
+                ],
+                [
+                    87.501699,
+                    26.820832
+                ],
+                [
+                    87.463799,
+                    26.816129
+                ],
+                [
+                    87.464199,
+                    26.778518
+                ],
+                [
+                    87.502793,
+                    26.762766
+                ],
+                [
+                    87.521187,
+                    26.796289
+                ]
+            ]
+        ]
+    }
+}

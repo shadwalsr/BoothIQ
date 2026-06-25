@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 74,
+        "ac_name": "Sonbarsha",
+        "district": "Saharsa",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 239.74
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.362896,
+                    24.643349
+                ],
+                [
+                    87.339001,
+                    24.667229
+                ],
+                [
+                    87.306394,
+                    24.662022
+                ],
+                [
+                    87.303527,
+                    24.625989
+                ],
+                [
+                    87.339205,
+                    24.613531
+                ],
+                [
+                    87.363783,
+                    24.643349
+                ]
+            ]
+        ]
+    }
+}

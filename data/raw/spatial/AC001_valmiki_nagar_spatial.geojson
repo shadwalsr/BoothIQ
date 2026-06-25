@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 1,
+        "ac_name": "Valmiki Nagar",
+        "district": "West Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 263.4
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.082122,
+                    24.794403
+                ],
+                [
+                    87.059642,
+                    24.822369
+                ],
+                [
+                    87.028171,
+                    24.810495
+                ],
+                [
+                    87.030266,
+                    24.774315
+                ],
+                [
+                    87.059603,
+                    24.768537
+                ],
+                [
+                    87.08349,
+                    24.794403
+                ]
+            ]
+        ]
+    }
+}

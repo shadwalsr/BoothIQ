@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 7,
+        "ac_name": "Chanpatia",
+        "district": "West Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 298.79
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.655624,
+                    25.405046
+                ],
+                [
+                    83.640027,
+                    25.432057
+                ],
+                [
+                    83.603287,
+                    25.423735
+                ],
+                [
+                    83.610634,
+                    25.38945
+                ],
+                [
+                    83.638777,
+                    25.372055
+                ],
+                [
+                    83.659067,
+                    25.405046
+                ]
+            ]
+        ]
+    }
+}

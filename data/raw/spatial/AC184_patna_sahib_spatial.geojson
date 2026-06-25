@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 184,
+        "ac_name": "Patna Sahib",
+        "district": "Patna",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 239.33
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.456677,
+                    27.049913
+                ],
+                [
+                    86.432546,
+                    27.076717
+                ],
+                [
+                    86.398589,
+                    27.069271
+                ],
+                [
+                    86.39773,
+                    27.029713
+                ],
+                [
+                    86.432419,
+                    27.023821
+                ],
+                [
+                    86.451852,
+                    27.049913
+                ]
+            ]
+        ]
+    }
+}

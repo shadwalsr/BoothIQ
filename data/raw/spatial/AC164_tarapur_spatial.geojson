@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 164,
+        "ac_name": "Tarapur",
+        "district": "Munger",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 277.26
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.852451,
+                    26.22906
+                ],
+                [
+                    85.829732,
+                    26.255002
+                ],
+                [
+                    85.798341,
+                    26.244224
+                ],
+                [
+                    85.790577,
+                    26.209181
+                ],
+                [
+                    85.829808,
+                    26.20016
+                ],
+                [
+                    85.849789,
+                    26.22906
+                ]
+            ]
+        ]
+    }
+}

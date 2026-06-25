@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 134,
+        "ac_name": "Ujiarpur",
+        "district": "Samastipur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 404.3
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.1303,
+                    26.272058
+                ],
+                [
+                    87.105737,
+                    26.302239
+                ],
+                [
+                    87.071602,
+                    26.291773
+                ],
+                [
+                    87.0688,
+                    26.251206
+                ],
+                [
+                    87.102714,
+                    26.240051
+                ],
+                [
+                    87.126021,
+                    26.272058
+                ]
+            ]
+        ]
+    }
+}

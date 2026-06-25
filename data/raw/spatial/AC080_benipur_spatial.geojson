@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 80,
+        "ac_name": "Benipur",
+        "district": "Darbhanga",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 404.27
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.288616,
+                    24.976306
+                ],
+                [
+                    84.262098,
+                    25.005486
+                ],
+                [
+                    84.231114,
+                    24.995306
+                ],
+                [
+                    84.225225,
+                    24.957086
+                ],
+                [
+                    84.263284,
+                    24.950912
+                ],
+                [
+                    84.285747,
+                    24.976306
+                ]
+            ]
+        ]
+    }
+}

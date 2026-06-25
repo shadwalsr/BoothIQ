@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 235,
+        "ac_name": "Rajauli",
+        "district": "Nawada",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 224.39
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.988993,
+                    27.067904
+                ],
+                [
+                    86.964157,
+                    27.097743
+                ],
+                [
+                    86.927529,
+                    27.082348
+                ],
+                [
+                    86.93522,
+                    27.052376
+                ],
+                [
+                    86.96575,
+                    27.038364
+                ],
+                [
+                    86.990262,
+                    27.067904
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 98,
+        "ac_name": "Sahebganj",
+        "district": "Muzaffarpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 389.78
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.481875,
+                    25.721801
+                ],
+                [
+                    84.463488,
+                    25.747797
+                ],
+                [
+                    84.43403,
+                    25.737308
+                ],
+                [
+                    84.429782,
+                    25.707354
+                ],
+                [
+                    84.463323,
+                    25.688199
+                ],
+                [
+                    84.488063,
+                    25.721801
+                ]
+            ]
+        ]
+    }
+}

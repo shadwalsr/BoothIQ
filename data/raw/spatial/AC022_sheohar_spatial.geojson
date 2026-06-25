@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 22,
+        "ac_name": "Sheohar",
+        "district": "Sheohar",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 271.82
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.055786,
+                    25.665964
+                ],
+                [
+                    84.032274,
+                    25.689555
+                ],
+                [
+                    83.996865,
+                    25.685869
+                ],
+                [
+                    83.995139,
+                    25.648485
+                ],
+                [
+                    84.031215,
+                    25.637626
+                ],
+                [
+                    84.052009,
+                    25.665964
+                ]
+            ]
+        ]
+    }
+}

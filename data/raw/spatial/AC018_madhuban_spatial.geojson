@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 18,
+        "ac_name": "Madhuban",
+        "district": "East Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 384.16
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    88.003888,
+                    25.548878
+                ],
+                [
+                    87.984877,
+                    25.580417
+                ],
+                [
+                    87.95558,
+                    25.567904
+                ],
+                [
+                    87.953666,
+                    25.533978
+                ],
+                [
+                    87.986429,
+                    25.516157
+                ],
+                [
+                    88.004471,
+                    25.548878
+                ]
+            ]
+        ]
+    }
+}

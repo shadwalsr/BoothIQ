@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 152,
+        "ac_name": "Bihpur",
+        "district": "Bhagalpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 278.76
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.203316,
+                    24.598996
+                ],
+                [
+                    84.178773,
+                    24.63035
+                ],
+                [
+                    84.14757,
+                    24.616029
+                ],
+                [
+                    84.144379,
+                    24.578111
+                ],
+                [
+                    84.177157,
+                    24.576105
+                ],
+                [
+                    84.193545,
+                    24.598996
+                ]
+            ]
+        ]
+    }
+}

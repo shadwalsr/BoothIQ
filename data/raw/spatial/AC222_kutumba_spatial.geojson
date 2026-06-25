@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 222,
+        "ac_name": "Kutumba",
+        "district": "Aurangabad",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 406.95
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.876852,
+                    26.61814
+                ],
+                [
+                    86.850884,
+                    26.647162
+                ],
+                [
+                    86.821219,
+                    26.638773
+                ],
+                [
+                    86.812993,
+                    26.600455
+                ],
+                [
+                    86.85193,
+                    26.587481
+                ],
+                [
+                    86.868946,
+                    26.61814
+                ]
+            ]
+        ]
+    }
+}

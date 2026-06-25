@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 109,
+        "ac_name": "Daraunda",
+        "district": "Siwan",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 169.38
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.66639,
+                    27.008178
+                ],
+                [
+                    83.646337,
+                    27.032843
+                ],
+                [
+                    83.614548,
+                    27.0273
+                ],
+                [
+                    83.614346,
+                    26.988852
+                ],
+                [
+                    83.643618,
+                    26.979071
+                ],
+                [
+                    83.664015,
+                    27.008178
+                ]
+            ]
+        ]
+    }
+}

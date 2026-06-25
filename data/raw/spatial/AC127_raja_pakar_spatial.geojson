@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 127,
+        "ac_name": "Raja Pakar",
+        "district": "Vaishali",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 254.9
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.053717,
+                    26.663049
+                ],
+                [
+                    84.035464,
+                    26.686436
+                ],
+                [
+                    84.005748,
+                    26.677858
+                ],
+                [
+                    84.0067,
+                    26.648234
+                ],
+                [
+                    84.035875,
+                    26.631632
+                ],
+                [
+                    84.057755,
+                    26.663049
+                ]
+            ]
+        ]
+    }
+}

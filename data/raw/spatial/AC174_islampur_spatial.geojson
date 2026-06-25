@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 174,
+        "ac_name": "Islampur",
+        "district": "Nalanda",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 270.9
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.638328,
+                    24.730969
+                ],
+                [
+                    87.622604,
+                    24.755614
+                ],
+                [
+                    87.589241,
+                    24.747376
+                ],
+                [
+                    87.587818,
+                    24.713624
+                ],
+                [
+                    87.61937,
+                    24.699989
+                ],
+                [
+                    87.641989,
+                    24.730969
+                ]
+            ]
+        ]
+    }
+}

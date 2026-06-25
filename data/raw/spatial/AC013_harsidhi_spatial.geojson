@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 13,
+        "ac_name": "Harsidhi",
+        "district": "East Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 210.49
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.521788,
+                    25.289331
+                ],
+                [
+                    84.500907,
+                    25.31464
+                ],
+                [
+                    84.462689,
+                    25.309929
+                ],
+                [
+                    84.466777,
+                    25.268684
+                ],
+                [
+                    84.502546,
+                    25.256719
+                ],
+                [
+                    84.517666,
+                    25.289331
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 40,
+        "ac_name": "Laukaha",
+        "district": "Madhubani",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 207.87
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.524058,
+                    26.072247
+                ],
+                [
+                    86.500565,
+                    26.10231
+                ],
+                [
+                    86.461846,
+                    26.08948
+                ],
+                [
+                    86.470995,
+                    26.053336
+                ],
+                [
+                    86.498776,
+                    26.042187
+                ],
+                [
+                    86.519773,
+                    26.072247
+                ]
+            ]
+        ]
+    }
+}

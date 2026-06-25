@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 4,
+        "ac_name": "Bagaha",
+        "district": "West Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 369.6
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.46322,
+                    26.471537
+                ],
+                [
+                    84.442768,
+                    26.50198
+                ],
+                [
+                    84.410643,
+                    26.487371
+                ],
+                [
+                    84.405212,
+                    26.452954
+                ],
+                [
+                    84.444749,
+                    26.438389
+                ],
+                [
+                    84.468775,
+                    26.471537
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 31,
+        "ac_name": "Harlakhi",
+        "district": "Madhubani",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 199.46
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.733087,
+                    25.986407
+                ],
+                [
+                    84.707026,
+                    26.012513
+                ],
+                [
+                    84.676958,
+                    26.006153
+                ],
+                [
+                    84.674697,
+                    25.970785
+                ],
+                [
+                    84.706084,
+                    25.956085
+                ],
+                [
+                    84.727082,
+                    25.986407
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 39,
+        "ac_name": "Phulparas",
+        "district": "Madhubani",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 311.1
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    88.023989,
+                    26.942459
+                ],
+                [
+                    88.006472,
+                    26.973794
+                ],
+                [
+                    87.974903,
+                    26.960748
+                ],
+                [
+                    87.976764,
+                    26.92262
+                ],
+                [
+                    88.006706,
+                    26.908985
+                ],
+                [
+                    88.030382,
+                    26.942459
+                ]
+            ]
+        ]
+    }
+}

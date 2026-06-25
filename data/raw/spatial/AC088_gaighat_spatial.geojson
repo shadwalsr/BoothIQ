@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 88,
+        "ac_name": "Gaighat",
+        "district": "Muzaffarpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 350.29
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.358369,
+                    27.190659
+                ],
+                [
+                    86.33599,
+                    27.213689
+                ],
+                [
+                    86.306966,
+                    27.208217
+                ],
+                [
+                    86.307588,
+                    27.173336
+                ],
+                [
+                    86.338676,
+                    27.16508
+                ],
+                [
+                    86.363735,
+                    27.190659
+                ]
+            ]
+        ]
+    }
+}

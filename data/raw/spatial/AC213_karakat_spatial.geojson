@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 213,
+        "ac_name": "Karakat",
+        "district": "Rohtas",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 446.2
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.544436,
+                    25.836884
+                ],
+                [
+                    86.523278,
+                    25.862713
+                ],
+                [
+                    86.484313,
+                    25.852533
+                ],
+                [
+                    86.488748,
+                    25.82229
+                ],
+                [
+                    86.52269,
+                    25.807451
+                ],
+                [
+                    86.5373,
+                    25.836884
+                ]
+            ]
+        ]
+    }
+}

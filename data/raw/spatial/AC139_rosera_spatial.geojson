@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 139,
+        "ac_name": "Rosera",
+        "district": "Samastipur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 279.55
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.103691,
+                    25.201163
+                ],
+                [
+                    87.089104,
+                    25.225422
+                ],
+                [
+                    87.058617,
+                    25.219014
+                ],
+                [
+                    87.055184,
+                    25.18398
+                ],
+                [
+                    87.089328,
+                    25.171173
+                ],
+                [
+                    87.111548,
+                    25.201163
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 150,
+        "ac_name": "Beldaur",
+        "district": "Khagaria",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 427.77
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.91431,
+                    25.718345
+                ],
+                [
+                    87.887209,
+                    25.74898
+                ],
+                [
+                    87.852655,
+                    25.733132
+                ],
+                [
+                    87.852313,
+                    25.698007
+                ],
+                [
+                    87.886913,
+                    25.689306
+                ],
+                [
+                    87.904225,
+                    25.718345
+                ]
+            ]
+        ]
+    }
+}

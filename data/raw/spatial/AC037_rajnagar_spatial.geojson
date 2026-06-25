@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 37,
+        "ac_name": "Rajnagar",
+        "district": "Madhubani",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 317.76
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.656308,
+                    26.532977
+                ],
+                [
+                    84.636917,
+                    26.56108
+                ],
+                [
+                    84.601441,
+                    26.547252
+                ],
+                [
+                    84.603841,
+                    26.518101
+                ],
+                [
+                    84.636707,
+                    26.499068
+                ],
+                [
+                    84.657043,
+                    26.532977
+                ]
+            ]
+        ]
+    }
+}

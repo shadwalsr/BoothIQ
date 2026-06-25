@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 10,
+        "ac_name": "Raxaul",
+        "district": "East Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 331.22
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.201247,
+                    24.709901
+                ],
+                [
+                    87.177102,
+                    24.738354
+                ],
+                [
+                    87.14653,
+                    24.725133
+                ],
+                [
+                    87.141745,
+                    24.693924
+                ],
+                [
+                    87.179008,
+                    24.679501
+                ],
+                [
+                    87.201409,
+                    24.709901
+                ]
+            ]
+        ]
+    }
+}

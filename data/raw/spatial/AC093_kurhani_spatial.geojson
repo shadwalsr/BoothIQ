@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 93,
+        "ac_name": "Kurhani",
+        "district": "Muzaffarpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 347.97
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.426169,
+                    26.426743
+                ],
+                [
+                    86.406618,
+                    26.45423
+                ],
+                [
+                    86.37827,
+                    26.447765
+                ],
+                [
+                    86.373227,
+                    26.411636
+                ],
+                [
+                    86.40787,
+                    26.401348
+                ],
+                [
+                    86.428924,
+                    26.426743
+                ]
+            ]
+        ]
+    }
+}

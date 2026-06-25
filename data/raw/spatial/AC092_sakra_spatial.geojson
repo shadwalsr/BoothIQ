@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 92,
+        "ac_name": "Sakra",
+        "district": "Muzaffarpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 359.45
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.580948,
+                    25.002677
+                ],
+                [
+                    87.559468,
+                    25.025723
+                ],
+                [
+                    87.521129,
+                    25.022034
+                ],
+                [
+                    87.525037,
+                    24.982026
+                ],
+                [
+                    87.557829,
+                    24.973919
+                ],
+                [
+                    87.581616,
+                    25.002677
+                ]
+            ]
+        ]
+    }
+}

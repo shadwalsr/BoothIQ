@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 135,
+        "ac_name": "Morwa",
+        "district": "Samastipur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 276.93
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    88.027218,
+                    26.518762
+                ],
+                [
+                    88.001762,
+                    26.547748
+                ],
+                [
+                    87.970464,
+                    26.536342
+                ],
+                [
+                    87.970042,
+                    26.499744
+                ],
+                [
+                    88.001582,
+                    26.488252
+                ],
+                [
+                    88.019717,
+                    26.518762
+                ]
+            ]
+        ]
+    }
+}

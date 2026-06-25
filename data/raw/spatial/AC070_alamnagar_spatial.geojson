@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 70,
+        "ac_name": "Alamnagar",
+        "district": "Madhepura",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 281.2
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.837184,
+                    25.008304
+                ],
+                [
+                    86.812803,
+                    25.040542
+                ],
+                [
+                    86.773017,
+                    25.029004
+                ],
+                [
+                    86.778888,
+                    24.993045
+                ],
+                [
+                    86.810222,
+                    24.974827
+                ],
+                [
+                    86.831095,
+                    25.008304
+                ]
+            ]
+        ]
+    }
+}

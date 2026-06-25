@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 223,
+        "ac_name": "Aurangabad",
+        "district": "Aurangabad",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 399.83
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.34745,
+                    26.774118
+                ],
+                [
+                    84.32268,
+                    26.80715
+                ],
+                [
+                    84.292857,
+                    26.791382
+                ],
+                [
+                    84.294343,
+                    26.756926
+                ],
+                [
+                    84.32399,
+                    26.742476
+                ],
+                [
+                    84.345579,
+                    26.774118
+                ]
+            ]
+        ]
+    }
+}

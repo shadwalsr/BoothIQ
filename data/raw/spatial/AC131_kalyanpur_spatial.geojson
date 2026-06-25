@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 131,
+        "ac_name": "Kalyanpur",
+        "district": "Samastipur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 182.62
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.981548,
+                    26.267534
+                ],
+                [
+                    84.961439,
+                    26.299985
+                ],
+                [
+                    84.923185,
+                    26.283393
+                ],
+                [
+                    84.928466,
+                    26.250816
+                ],
+                [
+                    84.959083,
+                    26.239657
+                ],
+                [
+                    84.982733,
+                    26.267534
+                ]
+            ]
+        ]
+    }
+}

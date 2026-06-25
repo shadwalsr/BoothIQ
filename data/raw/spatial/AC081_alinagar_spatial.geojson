@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 81,
+        "ac_name": "Alinagar",
+        "district": "Darbhanga",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 225.1
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.157124,
+                    26.444929
+                ],
+                [
+                    86.135067,
+                    26.475793
+                ],
+                [
+                    86.10648,
+                    26.459055
+                ],
+                [
+                    86.098962,
+                    26.425699
+                ],
+                [
+                    86.136233,
+                    26.416048
+                ],
+                [
+                    86.1575,
+                    26.444929
+                ]
+            ]
+        ]
+    }
+}

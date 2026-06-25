@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 85,
+        "ac_name": "Bahadurpur",
+        "district": "Darbhanga",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 202.15
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.993888,
+                    25.368859
+                ],
+                [
+                    83.970569,
+                    25.401359
+                ],
+                [
+                    83.93823,
+                    25.389884
+                ],
+                [
+                    83.937178,
+                    25.354135
+                ],
+                [
+                    83.970492,
+                    25.336137
+                ],
+                [
+                    83.989322,
+                    25.368859
+                ]
+            ]
+        ]
+    }
+}

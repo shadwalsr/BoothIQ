@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 2,
+        "ac_name": "Ramnagar",
+        "district": "West Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 225.42
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.657628,
+                    25.806249
+                ],
+                [
+                    86.63394,
+                    25.834532
+                ],
+                [
+                    86.600734,
+                    25.82675
+                ],
+                [
+                    86.599358,
+                    25.790735
+                ],
+                [
+                    86.633993,
+                    25.777893
+                ],
+                [
+                    86.658326,
+                    25.806249
+                ]
+            ]
+        ]
+    }
+}

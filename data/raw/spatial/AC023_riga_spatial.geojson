@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 23,
+        "ac_name": "Riga",
+        "district": "Sitamarhi",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 371.0
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.622456,
+                    27.118984
+                ],
+                [
+                    84.601194,
+                    27.147948
+                ],
+                [
+                    84.569513,
+                    27.139718
+                ],
+                [
+                    84.568739,
+                    27.099653
+                ],
+                [
+                    84.602028,
+                    27.08871
+                ],
+                [
+                    84.617354,
+                    27.118984
+                ]
+            ]
+        ]
+    }
+}

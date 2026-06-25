@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 147,
+        "ac_name": "Bakhri",
+        "district": "Begusarai",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 367.47
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.220435,
+                    26.607791
+                ],
+                [
+                    87.202422,
+                    26.636434
+                ],
+                [
+                    87.166054,
+                    26.626712
+                ],
+                [
+                    87.167982,
+                    26.592747
+                ],
+                [
+                    87.199563,
+                    26.580256
+                ],
+                [
+                    87.221251,
+                    26.607791
+                ]
+            ]
+        ]
+    }
+}

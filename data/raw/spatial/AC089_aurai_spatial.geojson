@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 89,
+        "ac_name": "Aurai",
+        "district": "Muzaffarpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 236.77
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.996039,
+                    26.213334
+                ],
+                [
+                    86.979823,
+                    26.238367
+                ],
+                [
+                    86.94314,
+                    26.228977
+                ],
+                [
+                    86.947342,
+                    26.19686
+                ],
+                [
+                    86.9818,
+                    26.184723
+                ],
+                [
+                    87.00223,
+                    26.213334
+                ]
+            ]
+        ]
+    }
+}

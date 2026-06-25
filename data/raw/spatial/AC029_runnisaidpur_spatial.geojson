@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 29,
+        "ac_name": "Runnisaidpur",
+        "district": "Sitamarhi",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 307.95
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.265475,
+                    24.956745
+                ],
+                [
+                    84.238467,
+                    24.98805
+                ],
+                [
+                    84.207777,
+                    24.972569
+                ],
+                [
+                    84.200979,
+                    24.938729
+                ],
+                [
+                    84.240542,
+                    24.932341
+                ],
+                [
+                    84.257102,
+                    24.956745
+                ]
+            ]
+        ]
+    }
+}

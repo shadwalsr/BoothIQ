@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 168,
+        "ac_name": "Lakhisarai",
+        "district": "Lakhisarai",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 294.41
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.232734,
+                    26.836925
+                ],
+                [
+                    85.216828,
+                    26.866155
+                ],
+                [
+                    85.18712,
+                    26.855147
+                ],
+                [
+                    85.187226,
+                    26.818406
+                ],
+                [
+                    85.21659,
+                    26.812205
+                ],
+                [
+                    85.240879,
+                    26.836925
+                ]
+            ]
+        ]
+    }
+}

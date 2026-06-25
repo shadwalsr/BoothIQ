@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 146,
+        "ac_name": "Begusarai",
+        "district": "Begusarai",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 157.28
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.36974,
+                    25.558312
+                ],
+                [
+                    86.353742,
+                    25.586899
+                ],
+                [
+                    86.31926,
+                    25.579334
+                ],
+                [
+                    86.323189,
+                    25.540217
+                ],
+                [
+                    86.351612,
+                    25.524646
+                ],
+                [
+                    86.367178,
+                    25.558312
+                ]
+            ]
+        ]
+    }
+}

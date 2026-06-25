@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 157,
+        "ac_name": "Sultanganj",
+        "district": "Bhagalpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 287.56
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.054002,
+                    24.876743
+                ],
+                [
+                    86.029053,
+                    24.90207
+                ],
+                [
+                    85.999091,
+                    24.894668
+                ],
+                [
+                    85.995099,
+                    24.85833
+                ],
+                [
+                    86.030389,
+                    24.846827
+                ],
+                [
+                    86.055407,
+                    24.876743
+                ]
+            ]
+        ]
+    }
+}

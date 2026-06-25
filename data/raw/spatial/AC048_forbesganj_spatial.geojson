@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 48,
+        "ac_name": "Forbesganj",
+        "district": "Araria",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 311.96
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.026364,
+                    25.216152
+                ],
+                [
+                    84.001118,
+                    25.241158
+                ],
+                [
+                    83.971181,
+                    25.235578
+                ],
+                [
+                    83.971393,
+                    25.198506
+                ],
+                [
+                    84.000254,
+                    25.190261
+                ],
+                [
+                    84.020179,
+                    25.216152
+                ]
+            ]
+        ]
+    }
+}

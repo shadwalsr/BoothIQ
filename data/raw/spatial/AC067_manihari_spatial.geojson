@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 67,
+        "ac_name": "Manihari",
+        "district": "Katihar",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 376.02
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.991113,
+                    24.511032
+                ],
+                [
+                    83.96664,
+                    24.545122
+                ],
+                [
+                    83.928436,
+                    24.525782
+                ],
+                [
+                    83.934752,
+                    24.493248
+                ],
+                [
+                    83.964937,
+                    24.477878
+                ],
+                [
+                    83.983574,
+                    24.511032
+                ]
+            ]
+        ]
+    }
+}

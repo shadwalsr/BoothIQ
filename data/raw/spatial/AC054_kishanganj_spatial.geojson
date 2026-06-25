@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 54,
+        "ac_name": "Kishanganj",
+        "district": "Kishanganj",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 156.23
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.27731,
+                    24.868742
+                ],
+                [
+                    85.25957,
+                    24.896824
+                ],
+                [
+                    85.22306,
+                    24.884823
+                ],
+                [
+                    85.221682,
+                    24.852122
+                ],
+                [
+                    85.258432,
+                    24.835587
+                ],
+                [
+                    85.28376,
+                    24.868742
+                ]
+            ]
+        ]
+    }
+}

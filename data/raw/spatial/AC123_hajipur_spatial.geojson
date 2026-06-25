@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 123,
+        "ac_name": "Hajipur",
+        "district": "Vaishali",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 425.85
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.358743,
+                    26.57146
+                ],
+                [
+                    84.331687,
+                    26.605596
+                ],
+                [
+                    84.297858,
+                    26.591114
+                ],
+                [
+                    84.294605,
+                    26.55126
+                ],
+                [
+                    84.331156,
+                    26.538326
+                ],
+                [
+                    84.358362,
+                    26.57146
+                ]
+            ]
+        ]
+    }
+}

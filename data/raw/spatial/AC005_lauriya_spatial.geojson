@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 5,
+        "ac_name": "Lauriya",
+        "district": "West Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 200.24
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.935631,
+                    26.482842
+                ],
+                [
+                    85.910827,
+                    26.514835
+                ],
+                [
+                    85.874931,
+                    26.503828
+                ],
+                [
+                    85.878943,
+                    26.465989
+                ],
+                [
+                    85.910732,
+                    26.452869
+                ],
+                [
+                    85.929467,
+                    26.482842
+                ]
+            ]
+        ]
+    }
+}

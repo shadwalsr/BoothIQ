@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 220,
+        "ac_name": "Obra",
+        "district": "Aurangabad",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 402.1
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.841661,
+                    26.86852
+                ],
+                [
+                    84.82651,
+                    26.900293
+                ],
+                [
+                    84.788419,
+                    26.885538
+                ],
+                [
+                    84.795928,
+                    26.851897
+                ],
+                [
+                    84.824929,
+                    26.837297
+                ],
+                [
+                    84.846098,
+                    26.86852
+                ]
+            ]
+        ]
+    }
+}

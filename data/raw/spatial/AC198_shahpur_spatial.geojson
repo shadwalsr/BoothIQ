@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 198,
+        "ac_name": "Shahpur",
+        "district": "Bhojpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 154.65
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.46762,
+                    25.307118
+                ],
+                [
+                    86.447959,
+                    25.338626
+                ],
+                [
+                    86.413706,
+                    25.323464
+                ],
+                [
+                    86.410249,
+                    25.289604
+                ],
+                [
+                    86.449687,
+                    25.283188
+                ],
+                [
+                    86.466485,
+                    25.307118
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 171,
+        "ac_name": "Asthawan",
+        "district": "Nalanda",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 351.83
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.7046,
+                    26.703293
+                ],
+                [
+                    86.687274,
+                    26.73189
+                ],
+                [
+                    86.650554,
+                    26.721637
+                ],
+                [
+                    86.650961,
+                    26.68856
+                ],
+                [
+                    86.68612,
+                    26.679579
+                ],
+                [
+                    86.707122,
+                    26.703293
+                ]
+            ]
+        ]
+    }
+}

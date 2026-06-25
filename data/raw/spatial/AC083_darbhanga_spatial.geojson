@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 83,
+        "ac_name": "Darbhanga",
+        "district": "Darbhanga",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 352.24
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.971861,
+                    27.03374
+                ],
+                [
+                    87.946251,
+                    27.061157
+                ],
+                [
+                    87.917631,
+                    27.049685
+                ],
+                [
+                    87.908751,
+                    27.015288
+                ],
+                [
+                    87.945152,
+                    27.000963
+                ],
+                [
+                    87.962939,
+                    27.03374
+                ]
+            ]
+        ]
+    }
+}

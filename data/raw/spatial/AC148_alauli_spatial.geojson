@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 148,
+        "ac_name": "Alauli",
+        "district": "Khagaria",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 379.54
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.652078,
+                    25.769738
+                ],
+                [
+                    84.629061,
+                    25.800926
+                ],
+                [
+                    84.600887,
+                    25.790083
+                ],
+                [
+                    84.593624,
+                    25.753414
+                ],
+                [
+                    84.629801,
+                    25.744146
+                ],
+                [
+                    84.655542,
+                    25.769738
+                ]
+            ]
+        ]
+    }
+}

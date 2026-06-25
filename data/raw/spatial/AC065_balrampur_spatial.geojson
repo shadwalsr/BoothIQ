@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 65,
+        "ac_name": "Balrampur",
+        "district": "Katihar",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 225.19
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.902496,
+                    26.394467
+                ],
+                [
+                    85.879989,
+                    26.417811
+                ],
+                [
+                    85.844378,
+                    26.409998
+                ],
+                [
+                    85.84322,
+                    26.37992
+                ],
+                [
+                    85.879497,
+                    26.371014
+                ],
+                [
+                    85.90188,
+                    26.394467
+                ]
+            ]
+        ]
+    }
+}

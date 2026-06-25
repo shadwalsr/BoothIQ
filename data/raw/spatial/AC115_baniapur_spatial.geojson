@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 115,
+        "ac_name": "Baniapur",
+        "district": "Saran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 355.36
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.49953,
+                    26.453292
+                ],
+                [
+                    87.47598,
+                    26.483261
+                ],
+                [
+                    87.438997,
+                    26.46967
+                ],
+                [
+                    87.440783,
+                    26.433816
+                ],
+                [
+                    87.476952,
+                    26.427558
+                ],
+                [
+                    87.503226,
+                    26.453292
+                ]
+            ]
+        ]
+    }
+}

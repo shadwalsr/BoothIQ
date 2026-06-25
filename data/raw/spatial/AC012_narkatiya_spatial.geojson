@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 12,
+        "ac_name": "Narkatiya",
+        "district": "East Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 431.77
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.783684,
+                    25.020149
+                ],
+                [
+                    84.76119,
+                    25.044772
+                ],
+                [
+                    84.725771,
+                    25.037522
+                ],
+                [
+                    84.724528,
+                    24.999777
+                ],
+                [
+                    84.762815,
+                    24.994396
+                ],
+                [
+                    84.778178,
+                    25.020149
+                ]
+            ]
+        ]
+    }
+}

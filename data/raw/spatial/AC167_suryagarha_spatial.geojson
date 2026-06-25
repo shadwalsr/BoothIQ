@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 167,
+        "ac_name": "Suryagarha",
+        "district": "Lakhisarai",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 388.89
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.282438,
+                    25.787441
+                ],
+                [
+                    85.262158,
+                    25.820052
+                ],
+                [
+                    85.231954,
+                    25.806332
+                ],
+                [
+                    85.230829,
+                    25.770988
+                ],
+                [
+                    85.261156,
+                    25.763781
+                ],
+                [
+                    85.283213,
+                    25.787441
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 76,
+        "ac_name": "Simri Bakhtiarpur",
+        "district": "Saharsa",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 317.3
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.193518,
+                    25.102387
+                ],
+                [
+                    84.17509,
+                    25.130671
+                ],
+                [
+                    84.138332,
+                    25.12212
+                ],
+                [
+                    84.144155,
+                    25.083481
+                ],
+                [
+                    84.174312,
+                    25.068254
+                ],
+                [
+                    84.194992,
+                    25.102387
+                ]
+            ]
+        ]
+    }
+}

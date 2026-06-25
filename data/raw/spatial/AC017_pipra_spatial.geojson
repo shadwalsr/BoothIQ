@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 17,
+        "ac_name": "Pipra",
+        "district": "East Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 280.2
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.482282,
+                    26.672356
+                ],
+                [
+                    85.456512,
+                    26.696718
+                ],
+                [
+                    85.425353,
+                    26.690298
+                ],
+                [
+                    85.425217,
+                    26.657791
+                ],
+                [
+                    85.454999,
+                    26.641054
+                ],
+                [
+                    85.472655,
+                    26.672356
+                ]
+            ]
+        ]
+    }
+}

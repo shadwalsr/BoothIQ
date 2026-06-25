@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 218,
+        "ac_name": "Makhdumpur",
+        "district": "Jehanabad",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 238.11
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.894733,
+                    26.556824
+                ],
+                [
+                    83.869315,
+                    26.579741
+                ],
+                [
+                    83.838625,
+                    26.571881
+                ],
+                [
+                    83.835424,
+                    26.540471
+                ],
+                [
+                    83.869137,
+                    26.533481
+                ],
+                [
+                    83.894144,
+                    26.556824
+                ]
+            ]
+        ]
+    }
+}

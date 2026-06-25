@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 68,
+        "ac_name": "Barari",
+        "district": "Katihar",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 442.5
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.320285,
+                    24.76351
+                ],
+                [
+                    84.296608,
+                    24.790492
+                ],
+                [
+                    84.267537,
+                    24.783831
+                ],
+                [
+                    84.261291,
+                    24.748992
+                ],
+                [
+                    84.299723,
+                    24.737275
+                ],
+                [
+                    84.319443,
+                    24.76351
+                ]
+            ]
+        ]
+    }
+}

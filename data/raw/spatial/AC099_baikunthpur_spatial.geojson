@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 99,
+        "ac_name": "Baikunthpur",
+        "district": "Gopalganj",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 237.34
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.719939,
+                    25.629303
+                ],
+                [
+                    86.694668,
+                    25.653212
+                ],
+                [
+                    86.660092,
+                    25.643887
+                ],
+                [
+                    86.66185,
+                    25.61222
+                ],
+                [
+                    86.69616,
+                    25.595262
+                ],
+                [
+                    86.72153,
+                    25.629303
+                ]
+            ]
+        ]
+    }
+}

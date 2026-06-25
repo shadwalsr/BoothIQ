@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 117,
+        "ac_name": "Marhaura",
+        "district": "Saran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 429.21
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.057138,
+                    26.3643
+                ],
+                [
+                    87.037617,
+                    26.39364
+                ],
+                [
+                    87.006407,
+                    26.385443
+                ],
+                [
+                    87.001368,
+                    26.344801
+                ],
+                [
+                    87.036234,
+                    26.338941
+                ],
+                [
+                    87.061056,
+                    26.3643
+                ]
+            ]
+        ]
+    }
+}

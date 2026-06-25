@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 87,
+        "ac_name": "Jale",
+        "district": "Darbhanga",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 432.1
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.861725,
+                    24.665088
+                ],
+                [
+                    83.839421,
+                    24.692202
+                ],
+                [
+                    83.801798,
+                    24.683479
+                ],
+                [
+                    83.803303,
+                    24.644373
+                ],
+                [
+                    83.840173,
+                    24.638683
+                ],
+                [
+                    83.853537,
+                    24.665088
+                ]
+            ]
+        ]
+    }
+}

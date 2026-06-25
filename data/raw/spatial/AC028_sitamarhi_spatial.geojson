@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 28,
+        "ac_name": "Sitamarhi",
+        "district": "Sitamarhi",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 395.79
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.975607,
+                    26.174779
+                ],
+                [
+                    84.954091,
+                    26.204434
+                ],
+                [
+                    84.921876,
+                    26.19441
+                ],
+                [
+                    84.918654,
+                    26.158967
+                ],
+                [
+                    84.953327,
+                    26.151257
+                ],
+                [
+                    84.976151,
+                    26.174779
+                ]
+            ]
+        ]
+    }
+}

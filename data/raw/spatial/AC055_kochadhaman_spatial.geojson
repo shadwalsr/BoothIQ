@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 55,
+        "ac_name": "Kochadhaman",
+        "district": "Kishanganj",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 350.26
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.890701,
+                    24.761248
+                ],
+                [
+                    85.871649,
+                    24.791815
+                ],
+                [
+                    85.842025,
+                    24.777298
+                ],
+                [
+                    85.840382,
+                    24.745274
+                ],
+                [
+                    85.86945,
+                    24.728496
+                ],
+                [
+                    85.88844,
+                    24.761248
+                ]
+            ]
+        ]
+    }
+}

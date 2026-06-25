@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 19,
+        "ac_name": "Motihari",
+        "district": "East Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 194.45
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.287109,
+                    24.946702
+                ],
+                [
+                    84.26227,
+                    24.980494
+                ],
+                [
+                    84.232688,
+                    24.965869
+                ],
+                [
+                    84.229567,
+                    24.927351
+                ],
+                [
+                    84.264391,
+                    24.914283
+                ],
+                [
+                    84.282927,
+                    24.946702
+                ]
+            ]
+        ]
+    }
+}

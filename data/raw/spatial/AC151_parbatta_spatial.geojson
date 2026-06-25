@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 151,
+        "ac_name": "Parbatta",
+        "district": "Khagaria",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 276.47
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.930824,
+                    25.223095
+                ],
+                [
+                    83.906883,
+                    25.250544
+                ],
+                [
+                    83.870895,
+                    25.24288
+                ],
+                [
+                    83.870648,
+                    25.204352
+                ],
+                [
+                    83.909614,
+                    25.199128
+                ],
+                [
+                    83.927916,
+                    25.223095
+                ]
+            ]
+        ]
+    }
+}

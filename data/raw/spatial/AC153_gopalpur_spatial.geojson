@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 153,
+        "ac_name": "Gopalpur",
+        "district": "Bhagalpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 258.98
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.635112,
+                    25.79224
+                ],
+                [
+                    85.612225,
+                    25.81594
+                ],
+                [
+                    85.578672,
+                    25.807438
+                ],
+                [
+                    85.577076,
+                    25.774508
+                ],
+                [
+                    85.615397,
+                    25.761047
+                ],
+                [
+                    85.636439,
+                    25.79224
+                ]
+            ]
+        ]
+    }
+}

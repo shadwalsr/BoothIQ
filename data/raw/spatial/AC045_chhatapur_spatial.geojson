@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 45,
+        "ac_name": "Chhatapur",
+        "district": "Supaul",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 213.81
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.947365,
+                    24.802827
+                ],
+                [
+                    85.930321,
+                    24.831003
+                ],
+                [
+                    85.89436,
+                    24.81847
+                ],
+                [
+                    85.899014,
+                    24.788672
+                ],
+                [
+                    85.929142,
+                    24.774864
+                ],
+                [
+                    85.95387,
+                    24.802827
+                ]
+            ]
+        ]
+    }
+}

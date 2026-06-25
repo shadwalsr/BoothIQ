@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 97,
+        "ac_name": "Paroo",
+        "district": "Muzaffarpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 154.04
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.702166,
+                    26.985593
+                ],
+                [
+                    84.684884,
+                    27.010822
+                ],
+                [
+                    84.653586,
+                    27.002965
+                ],
+                [
+                    84.6554,
+                    26.966605
+                ],
+                [
+                    84.687351,
+                    26.95583
+                ],
+                [
+                    84.705456,
+                    26.985593
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 94,
+        "ac_name": "Muzaffarpur",
+        "district": "Muzaffarpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 288.18
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.567355,
+                    25.642258
+                ],
+                [
+                    87.546433,
+                    25.670499
+                ],
+                [
+                    87.512439,
+                    25.657183
+                ],
+                [
+                    87.513764,
+                    25.627668
+                ],
+                [
+                    87.547946,
+                    25.612358
+                ],
+                [
+                    87.567322,
+                    25.642258
+                ]
+            ]
+        ]
+    }
+}

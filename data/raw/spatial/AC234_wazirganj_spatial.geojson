@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 234,
+        "ac_name": "Wazirganj",
+        "district": "Gaya",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 212.21
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.596148,
+                    26.37769
+                ],
+                [
+                    85.578011,
+                    26.402618
+                ],
+                [
+                    85.544247,
+                    26.392044
+                ],
+                [
+                    85.544191,
+                    26.358717
+                ],
+                [
+                    85.577129,
+                    26.344041
+                ],
+                [
+                    85.601555,
+                    26.37769
+                ]
+            ]
+        ]
+    }
+}

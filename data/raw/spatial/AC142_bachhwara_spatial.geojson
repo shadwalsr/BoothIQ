@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 142,
+        "ac_name": "Bachhwara",
+        "district": "Begusarai",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 304.84
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.837493,
+                    26.138786
+                ],
+                [
+                    83.815801,
+                    26.165637
+                ],
+                [
+                    83.779736,
+                    26.156864
+                ],
+                [
+                    83.786426,
+                    26.12221
+                ],
+                [
+                    83.818683,
+                    26.105566
+                ],
+                [
+                    83.834663,
+                    26.138786
+                ]
+            ]
+        ]
+    }
+}

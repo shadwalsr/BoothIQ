@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 217,
+        "ac_name": "Ghosi",
+        "district": "Jehanabad",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 449.21
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.979834,
+                    25.397057
+                ],
+                [
+                    84.953305,
+                    25.421358
+                ],
+                [
+                    84.91933,
+                    25.411879
+                ],
+                [
+                    84.919873,
+                    25.379715
+                ],
+                [
+                    84.955028,
+                    25.37236
+                ],
+                [
+                    84.971704,
+                    25.397057
+                ]
+            ]
+        ]
+    }
+}

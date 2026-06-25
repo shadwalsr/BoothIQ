@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 103,
+        "ac_name": "Bhore",
+        "district": "Gopalganj",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 272.65
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.316737,
+                    25.913807
+                ],
+                [
+                    85.28922,
+                    25.947426
+                ],
+                [
+                    85.256932,
+                    25.933036
+                ],
+                [
+                    85.258877,
+                    25.895469
+                ],
+                [
+                    85.290135,
+                    25.880598
+                ],
+                [
+                    85.310167,
+                    25.913807
+                ]
+            ]
+        ]
+    }
+}

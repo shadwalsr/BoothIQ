@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 73,
+        "ac_name": "Madhepura",
+        "district": "Madhepura",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 161.6
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.386578,
+                    26.447307
+                ],
+                [
+                    84.370242,
+                    26.47532
+                ],
+                [
+                    84.335795,
+                    26.464279
+                ],
+                [
+                    84.338502,
+                    26.428327
+                ],
+                [
+                    84.370023,
+                    26.413197
+                ],
+                [
+                    84.386282,
+                    26.447307
+                ]
+            ]
+        ]
+    }
+}

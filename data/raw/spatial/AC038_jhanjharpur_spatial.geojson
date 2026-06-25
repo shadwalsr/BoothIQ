@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 38,
+        "ac_name": "Jhanjharpur",
+        "district": "Madhubani",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 195.59
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.010379,
+                    27.196962
+                ],
+                [
+                    84.990308,
+                    27.224811
+                ],
+                [
+                    84.952367,
+                    27.215806
+                ],
+                [
+                    84.955209,
+                    27.182343
+                ],
+                [
+                    84.987667,
+                    27.165477
+                ],
+                [
+                    85.006064,
+                    27.196962
+                ]
+            ]
+        ]
+    }
+}

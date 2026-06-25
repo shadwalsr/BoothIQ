@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 206,
+        "ac_name": "Chainpur",
+        "district": "Kaimur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 428.9
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.796424,
+                    24.735097
+                ],
+                [
+                    83.773414,
+                    24.767618
+                ],
+                [
+                    83.736191,
+                    24.75403
+                ],
+                [
+                    83.735162,
+                    24.718167
+                ],
+                [
+                    83.773705,
+                    24.706669
+                ],
+                [
+                    83.788611,
+                    24.735097
+                ]
+            ]
+        ]
+    }
+}

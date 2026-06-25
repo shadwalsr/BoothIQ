@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 86,
+        "ac_name": "Keoti",
+        "district": "Darbhanga",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 346.67
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.865473,
+                    26.345155
+                ],
+                [
+                    86.840445,
+                    26.370817
+                ],
+                [
+                    86.804606,
+                    26.36077
+                ],
+                [
+                    86.811624,
+                    26.324826
+                ],
+                [
+                    86.84177,
+                    26.317695
+                ],
+                [
+                    86.859675,
+                    26.345155
+                ]
+            ]
+        ]
+    }
+}

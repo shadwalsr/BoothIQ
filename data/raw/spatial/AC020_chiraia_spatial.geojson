@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 20,
+        "ac_name": "Chiraia",
+        "district": "East Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 390.58
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.600589,
+                    24.662592
+                ],
+                [
+                    85.582182,
+                    24.689245
+                ],
+                [
+                    85.549907,
+                    24.677813
+                ],
+                [
+                    85.546165,
+                    24.645328
+                ],
+                [
+                    85.585185,
+                    24.6344
+                ],
+                [
+                    85.607186,
+                    24.662592
+                ]
+            ]
+        ]
+    }
+}

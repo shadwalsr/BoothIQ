@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 158,
+        "ac_name": "Nathnagar",
+        "district": "Bhagalpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 219.4
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.661158,
+                    26.360264
+                ],
+                [
+                    87.64435,
+                    26.385466
+                ],
+                [
+                    87.605666,
+                    26.381258
+                ],
+                [
+                    87.605404,
+                    26.342296
+                ],
+                [
+                    87.643875,
+                    26.334409
+                ],
+                [
+                    87.669249,
+                    26.360264
+                ]
+            ]
+        ]
+    }
+}

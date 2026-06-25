@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 108,
+        "ac_name": "Raghunathpur",
+        "district": "Siwan",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 179.36
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.188012,
+                    25.360347
+                ],
+                [
+                    86.172424,
+                    25.384735
+                ],
+                [
+                    86.135716,
+                    25.376744
+                ],
+                [
+                    86.135482,
+                    25.343141
+                ],
+                [
+                    86.173639,
+                    25.336161
+                ],
+                [
+                    86.19021,
+                    25.360347
+                ]
+            ]
+        ]
+    }
+}

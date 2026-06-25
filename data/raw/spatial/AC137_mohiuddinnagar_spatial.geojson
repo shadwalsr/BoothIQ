@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 137,
+        "ac_name": "Mohiuddinnagar",
+        "district": "Samastipur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 246.74
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.564053,
+                    24.660793
+                ],
+                [
+                    83.541465,
+                    24.688462
+                ],
+                [
+                    83.509561,
+                    24.675893
+                ],
+                [
+                    83.510272,
+                    24.639829
+                ],
+                [
+                    83.541455,
+                    24.634328
+                ],
+                [
+                    83.557802,
+                    24.660793
+                ]
+            ]
+        ]
+    }
+}

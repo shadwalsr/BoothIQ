@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 111,
+        "ac_name": "Goriakothi",
+        "district": "Siwan",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 337.53
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.748014,
+                    25.350552
+                ],
+                [
+                    86.727139,
+                    25.3804
+                ],
+                [
+                    86.690198,
+                    25.366869
+                ],
+                [
+                    86.693064,
+                    25.331358
+                ],
+                [
+                    86.724481,
+                    25.321777
+                ],
+                [
+                    86.746186,
+                    25.350552
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 112,
+        "ac_name": "Maharajganj",
+        "district": "Siwan",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 317.94
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.629147,
+                    25.863718
+                ],
+                [
+                    87.601586,
+                    25.891926
+                ],
+                [
+                    87.570332,
+                    25.882381
+                ],
+                [
+                    87.569306,
+                    25.846604
+                ],
+                [
+                    87.603054,
+                    25.837014
+                ],
+                [
+                    87.625047,
+                    25.863718
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 221,
+        "ac_name": "Nabinagar",
+        "district": "Aurangabad",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 440.87
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.964688,
+                    27.097684
+                ],
+                [
+                    84.941777,
+                    27.123559
+                ],
+                [
+                    84.905383,
+                    27.112946
+                ],
+                [
+                    84.912091,
+                    27.082796
+                ],
+                [
+                    84.944128,
+                    27.067089
+                ],
+                [
+                    84.969079,
+                    27.097684
+                ]
+            ]
+        ]
+    }
+}

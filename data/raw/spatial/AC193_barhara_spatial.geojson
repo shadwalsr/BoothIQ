@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 193,
+        "ac_name": "Barhara",
+        "district": "Bhojpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 264.39
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.757464,
+                    26.774025
+                ],
+                [
+                    84.735716,
+                    26.802124
+                ],
+                [
+                    84.706667,
+                    26.793089
+                ],
+                [
+                    84.703363,
+                    26.753792
+                ],
+                [
+                    84.737733,
+                    26.742122
+                ],
+                [
+                    84.760404,
+                    26.774025
+                ]
+            ]
+        ]
+    }
+}

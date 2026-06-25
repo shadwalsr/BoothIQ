@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 59,
+        "ac_name": "Banmankhi",
+        "district": "Purnia",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 446.4
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.26649,
+                    26.787316
+                ],
+                [
+                    84.241051,
+                    26.810705
+                ],
+                [
+                    84.209577,
+                    26.807729
+                ],
+                [
+                    84.20903,
+                    26.77136
+                ],
+                [
+                    84.238443,
+                    26.759441
+                ],
+                [
+                    84.258764,
+                    26.787316
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 36,
+        "ac_name": "Madhubani",
+        "district": "Madhubani",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 282.93
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.552233,
+                    24.858954
+                ],
+                [
+                    83.527266,
+                    24.884753
+                ],
+                [
+                    83.490555,
+                    24.876951
+                ],
+                [
+                    83.489938,
+                    24.837832
+                ],
+                [
+                    83.527691,
+                    24.830959
+                ],
+                [
+                    83.550302,
+                    24.858954
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 143,
+        "ac_name": "Teghra",
+        "district": "Begusarai",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 383.13
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.725627,
+                    26.164243
+                ],
+                [
+                    85.709293,
+                    26.188683
+                ],
+                [
+                    85.676613,
+                    26.18376
+                ],
+                [
+                    85.672576,
+                    26.148172
+                ],
+                [
+                    85.709849,
+                    26.135444
+                ],
+                [
+                    85.732095,
+                    26.164243
+                ]
+            ]
+        ]
+    }
+}

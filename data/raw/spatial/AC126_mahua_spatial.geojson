@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 126,
+        "ac_name": "Mahua",
+        "district": "Vaishali",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 181.3
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.03353,
+                    24.742418
+                ],
+                [
+                    84.011667,
+                    24.770643
+                ],
+                [
+                    83.974944,
+                    24.760734
+                ],
+                [
+                    83.976353,
+                    24.724344
+                ],
+                [
+                    84.009687,
+                    24.708747
+                ],
+                [
+                    84.030248,
+                    24.742418
+                ]
+            ]
+        ]
+    }
+}

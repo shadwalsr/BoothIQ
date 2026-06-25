@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 166,
+        "ac_name": "Jamalpur",
+        "district": "Munger",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 413.3
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.480802,
+                    25.989308
+                ],
+                [
+                    84.4672,
+                    26.016914
+                ],
+                [
+                    84.430502,
+                    26.009155
+                ],
+                [
+                    84.427478,
+                    25.969692
+                ],
+                [
+                    84.465608,
+                    25.963379
+                ],
+                [
+                    84.481992,
+                    25.989308
+                ]
+            ]
+        ]
+    }
+}

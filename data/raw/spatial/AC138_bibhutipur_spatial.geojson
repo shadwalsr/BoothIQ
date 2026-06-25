@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 138,
+        "ac_name": "Bibhutipur",
+        "district": "Samastipur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 239.35
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.087875,
+                    25.866537
+                ],
+                [
+                    87.068987,
+                    25.890047
+                ],
+                [
+                    87.038074,
+                    25.880978
+                ],
+                [
+                    87.034006,
+                    25.851122
+                ],
+                [
+                    87.066989,
+                    25.838557
+                ],
+                [
+                    87.092793,
+                    25.866537
+                ]
+            ]
+        ]
+    }
+}

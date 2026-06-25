@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 176,
+        "ac_name": "Nalanda",
+        "district": "Nalanda",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 386.89
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.843347,
+                    26.464033
+                ],
+                [
+                    85.818801,
+                    26.497191
+                ],
+                [
+                    85.785061,
+                    26.48068
+                ],
+                [
+                    85.785845,
+                    26.446215
+                ],
+                [
+                    85.818714,
+                    26.437553
+                ],
+                [
+                    85.839378,
+                    26.464033
+                ]
+            ]
+        ]
+    }
+}

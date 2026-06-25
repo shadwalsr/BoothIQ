@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 100,
+        "ac_name": "Barauli",
+        "district": "Gopalganj",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 331.1
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.156047,
+                    25.310251
+                ],
+                [
+                    84.128841,
+                    25.338161
+                ],
+                [
+                    84.092591,
+                    25.329346
+                ],
+                [
+                    84.099292,
+                    25.292194
+                ],
+                [
+                    84.130569,
+                    25.276904
+                ],
+                [
+                    84.147257,
+                    25.310251
+                ]
+            ]
+        ]
+    }
+}

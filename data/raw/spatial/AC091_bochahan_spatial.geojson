@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 91,
+        "ac_name": "Bochahan",
+        "district": "Muzaffarpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 254.75
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.581671,
+                    25.999442
+                ],
+                [
+                    83.555648,
+                    26.029014
+                ],
+                [
+                    83.524396,
+                    26.017404
+                ],
+                [
+                    83.52132,
+                    25.979274
+                ],
+                [
+                    83.555617,
+                    25.968662
+                ],
+                [
+                    83.579475,
+                    25.999442
+                ]
+            ]
+        ]
+    }
+}

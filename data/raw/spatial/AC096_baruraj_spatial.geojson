@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 96,
+        "ac_name": "Baruraj",
+        "district": "Muzaffarpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 177.94
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.27461,
+                    26.959379
+                ],
+                [
+                    87.254746,
+                    26.985203
+                ],
+                [
+                    87.221097,
+                    26.975651
+                ],
+                [
+                    87.225214,
+                    26.942953
+                ],
+                [
+                    87.254432,
+                    26.931365
+                ],
+                [
+                    87.280239,
+                    26.959379
+                ]
+            ]
+        ]
+    }
+}

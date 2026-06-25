@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 189,
+        "ac_name": "Masaurhi",
+        "district": "Patna",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 300.79
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.8132,
+                    25.474792
+                ],
+                [
+                    86.798325,
+                    25.503033
+                ],
+                [
+                    86.767185,
+                    25.48941
+                ],
+                [
+                    86.767203,
+                    25.455184
+                ],
+                [
+                    86.799804,
+                    25.451185
+                ],
+                [
+                    86.815734,
+                    25.474792
+                ]
+            ]
+        ]
+    }
+}

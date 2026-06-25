@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 180,
+        "ac_name": "Bakhtiarpur",
+        "district": "Patna",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 448.41
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.152765,
+                    26.999018
+                ],
+                [
+                    87.132742,
+                    27.032312
+                ],
+                [
+                    87.102801,
+                    27.013239
+                ],
+                [
+                    87.100722,
+                    26.984863
+                ],
+                [
+                    87.13269,
+                    26.96872
+                ],
+                [
+                    87.152601,
+                    26.999018
+                ]
+            ]
+        ]
+    }
+}

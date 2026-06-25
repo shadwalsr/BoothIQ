@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 155,
+        "ac_name": "Kahalgaon",
+        "district": "Bhagalpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 246.55
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.550986,
+                    26.80562
+                ],
+                [
+                    86.530874,
+                    26.832753
+                ],
+                [
+                    86.497627,
+                    26.8211
+                ],
+                [
+                    86.49435,
+                    26.786304
+                ],
+                [
+                    86.528942,
+                    26.772172
+                ],
+                [
+                    86.551408,
+                    26.80562
+                ]
+            ]
+        ]
+    }
+}

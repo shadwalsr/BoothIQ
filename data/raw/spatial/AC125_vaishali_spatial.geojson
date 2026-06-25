@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 125,
+        "ac_name": "Vaishali",
+        "district": "Vaishali",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 156.85
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.807553,
+                    25.300971
+                ],
+                [
+                    87.791088,
+                    25.32745
+                ],
+                [
+                    87.754635,
+                    25.322011
+                ],
+                [
+                    87.756692,
+                    25.285429
+                ],
+                [
+                    87.790912,
+                    25.273278
+                ],
+                [
+                    87.806889,
+                    25.300971
+                ]
+            ]
+        ]
+    }
+}

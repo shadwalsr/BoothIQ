@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 52,
+        "ac_name": "Bahadurganj",
+        "district": "Kishanganj",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 262.86
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.718383,
+                    25.388188
+                ],
+                [
+                    85.697408,
+                    25.41605
+                ],
+                [
+                    85.664568,
+                    25.403969
+                ],
+                [
+                    85.66631,
+                    25.373683
+                ],
+                [
+                    85.697596,
+                    25.357997
+                ],
+                [
+                    85.723578,
+                    25.388188
+                ]
+            ]
+        ]
+    }
+}

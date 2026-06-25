@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 238,
+        "ac_name": "Gobindpur",
+        "district": "Nawada",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 314.24
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.816606,
+                    26.607033
+                ],
+                [
+                    87.793778,
+                    26.634578
+                ],
+                [
+                    87.757179,
+                    26.623339
+                ],
+                [
+                    87.762599,
+                    26.589878
+                ],
+                [
+                    87.791267,
+                    26.578117
+                ],
+                [
+                    87.808867,
+                    26.607033
+                ]
+            ]
+        ]
+    }
+}

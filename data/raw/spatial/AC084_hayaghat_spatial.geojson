@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 84,
+        "ac_name": "Hayaghat",
+        "district": "Darbhanga",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 199.29
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.452696,
+                    26.635389
+                ],
+                [
+                    84.431086,
+                    26.668055
+                ],
+                [
+                    84.394881,
+                    26.655037
+                ],
+                [
+                    84.402146,
+                    26.618634
+                ],
+                [
+                    84.43103,
+                    26.610324
+                ],
+                [
+                    84.450807,
+                    26.635389
+                ]
+            ]
+        ]
+    }
+}

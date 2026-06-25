@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 207,
+        "ac_name": "Chenari",
+        "district": "Rohtas",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 334.52
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.922302,
+                    24.609919
+                ],
+                [
+                    84.90062,
+                    24.634394
+                ],
+                [
+                    84.871863,
+                    24.630095
+                ],
+                [
+                    84.863901,
+                    24.59214
+                ],
+                [
+                    84.90088,
+                    24.580711
+                ],
+                [
+                    84.921975,
+                    24.609919
+                ]
+            ]
+        ]
+    }
+}

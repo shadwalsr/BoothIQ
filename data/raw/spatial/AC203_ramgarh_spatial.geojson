@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 203,
+        "ac_name": "Ramgarh",
+        "district": "Kaimur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 277.77
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.079072,
+                    27.016047
+                ],
+                [
+                    86.053315,
+                    27.043265
+                ],
+                [
+                    86.022621,
+                    27.033203
+                ],
+                [
+                    86.020008,
+                    26.996438
+                ],
+                [
+                    86.055118,
+                    26.982019
+                ],
+                [
+                    86.0716,
+                    27.016047
+                ]
+            ]
+        ]
+    }
+}

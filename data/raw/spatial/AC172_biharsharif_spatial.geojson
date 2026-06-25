@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 172,
+        "ac_name": "Biharsharif",
+        "district": "Nalanda",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 247.86
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.572619,
+                    25.040119
+                ],
+                [
+                    83.547452,
+                    25.071507
+                ],
+                [
+                    83.51276,
+                    25.059216
+                ],
+                [
+                    83.518069,
+                    25.024965
+                ],
+                [
+                    83.546879,
+                    25.016802
+                ],
+                [
+                    83.571879,
+                    25.040119
+                ]
+            ]
+        ]
+    }
+}

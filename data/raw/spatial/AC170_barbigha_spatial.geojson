@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 170,
+        "ac_name": "Barbigha",
+        "district": "Sheikhpura",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 449.23
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.780903,
+                    26.205311
+                ],
+                [
+                    87.755998,
+                    26.238706
+                ],
+                [
+                    87.720032,
+                    26.224357
+                ],
+                [
+                    87.721713,
+                    26.185464
+                ],
+                [
+                    87.755274,
+                    26.175816
+                ],
+                [
+                    87.778178,
+                    26.205311
+                ]
+            ]
+        ]
+    }
+}

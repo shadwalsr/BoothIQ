@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 60,
+        "ac_name": "Rupauli",
+        "district": "Purnia",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 182.4
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.210964,
+                    25.463483
+                ],
+                [
+                    85.183094,
+                    25.492015
+                ],
+                [
+                    85.147729,
+                    25.484057
+                ],
+                [
+                    85.155726,
+                    25.442569
+                ],
+                [
+                    85.184241,
+                    25.435475
+                ],
+                [
+                    85.209657,
+                    25.463483
+                ]
+            ]
+        ]
+    }
+}

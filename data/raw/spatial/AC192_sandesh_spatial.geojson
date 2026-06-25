@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 192,
+        "ac_name": "Sandesh",
+        "district": "Bhojpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 331.76
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.683464,
+                    26.097223
+                ],
+                [
+                    83.66552,
+                    26.130519
+                ],
+                [
+                    83.632618,
+                    26.111703
+                ],
+                [
+                    83.636799,
+                    26.080003
+                ],
+                [
+                    83.665448,
+                    26.068637
+                ],
+                [
+                    83.686594,
+                    26.097223
+                ]
+            ]
+        ]
+    }
+}

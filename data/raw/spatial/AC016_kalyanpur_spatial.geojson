@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 16,
+        "ac_name": "Kalyanpur",
+        "district": "East Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 284.26
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.302779,
+                    26.785456
+                ],
+                [
+                    85.276248,
+                    26.813521
+                ],
+                [
+                    85.244242,
+                    26.806581
+                ],
+                [
+                    85.238359,
+                    26.770304
+                ],
+                [
+                    85.276423,
+                    26.751628
+                ],
+                [
+                    85.297716,
+                    26.785456
+                ]
+            ]
+        ]
+    }
+}

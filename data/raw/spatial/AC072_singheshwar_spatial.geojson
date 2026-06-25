@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 72,
+        "ac_name": "Singheshwar",
+        "district": "Madhepura",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 255.23
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.494897,
+                    26.064721
+                ],
+                [
+                    84.472922,
+                    26.092707
+                ],
+                [
+                    84.437318,
+                    26.08587
+                ],
+                [
+                    84.443593,
+                    26.04621
+                ],
+                [
+                    84.474858,
+                    26.033728
+                ],
+                [
+                    84.499889,
+                    26.064721
+                ]
+            ]
+        ]
+    }
+}

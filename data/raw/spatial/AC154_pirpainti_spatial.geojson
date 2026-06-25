@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 154,
+        "ac_name": "Pirpainti",
+        "district": "Bhagalpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 163.55
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.683557,
+                    25.521672
+                ],
+                [
+                    87.662415,
+                    25.549302
+                ],
+                [
+                    87.631028,
+                    25.538634
+                ],
+                [
+                    87.626435,
+                    25.502385
+                ],
+                [
+                    87.661907,
+                    25.488829
+                ],
+                [
+                    87.680721,
+                    25.521672
+                ]
+            ]
+        ]
+    }
+}

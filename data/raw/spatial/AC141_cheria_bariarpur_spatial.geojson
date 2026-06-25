@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 141,
+        "ac_name": "Cheria-Bariarpur",
+        "district": "Begusarai",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 217.96
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.029019,
+                    25.011218
+                ],
+                [
+                    87.006493,
+                    25.034959
+                ],
+                [
+                    86.971099,
+                    25.028935
+                ],
+                [
+                    86.973069,
+                    24.994975
+                ],
+                [
+                    87.006053,
+                    24.986162
+                ],
+                [
+                    87.025252,
+                    25.011218
+                ]
+            ]
+        ]
+    }
+}

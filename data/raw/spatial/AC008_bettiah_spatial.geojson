@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 8,
+        "ac_name": "Bettiah",
+        "district": "West Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 241.41
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.697946,
+                    25.954688
+                ],
+                [
+                    84.679998,
+                    25.987431
+                ],
+                [
+                    84.643052,
+                    25.971435
+                ],
+                [
+                    84.648209,
+                    25.939419
+                ],
+                [
+                    84.677878,
+                    25.927858
+                ],
+                [
+                    84.701336,
+                    25.954688
+                ]
+            ]
+        ]
+    }
+}

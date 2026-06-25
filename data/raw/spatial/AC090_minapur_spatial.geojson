@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 90,
+        "ac_name": "Minapur",
+        "district": "Muzaffarpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 154.68
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.861659,
+                    26.123172
+                ],
+                [
+                    83.844125,
+                    26.156692
+                ],
+                [
+                    83.80654,
+                    26.138235
+                ],
+                [
+                    83.810779,
+                    26.10309
+                ],
+                [
+                    83.841979,
+                    26.094846
+                ],
+                [
+                    83.866208,
+                    26.123172
+                ]
+            ]
+        ]
+    }
+}

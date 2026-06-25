@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 34,
+        "ac_name": "Babubarhi",
+        "district": "Madhubani",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 257.67
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.485482,
+                    24.518168
+                ],
+                [
+                    85.468353,
+                    24.543196
+                ],
+                [
+                    85.434451,
+                    24.536172
+                ],
+                [
+                    85.436589,
+                    24.503825
+                ],
+                [
+                    85.467201,
+                    24.488859
+                ],
+                [
+                    85.485542,
+                    24.518168
+                ]
+            ]
+        ]
+    }
+}

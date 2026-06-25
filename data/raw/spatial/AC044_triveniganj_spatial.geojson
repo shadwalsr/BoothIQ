@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 44,
+        "ac_name": "Triveniganj",
+        "district": "Supaul",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 289.77
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.517122,
+                    26.848987
+                ],
+                [
+                    87.49606,
+                    26.874253
+                ],
+                [
+                    87.462923,
+                    26.868032
+                ],
+                [
+                    87.461107,
+                    26.830155
+                ],
+                [
+                    87.496584,
+                    26.818367
+                ],
+                [
+                    87.514992,
+                    26.848987
+                ]
+            ]
+        ]
+    }
+}

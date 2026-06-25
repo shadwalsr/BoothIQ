@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 47,
+        "ac_name": "Raniganj",
+        "district": "Araria",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 314.52
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.841317,
+                    26.927975
+                ],
+                [
+                    87.817062,
+                    26.955932
+                ],
+                [
+                    87.785931,
+                    26.942283
+                ],
+                [
+                    87.784666,
+                    26.909334
+                ],
+                [
+                    87.815782,
+                    26.896928
+                ],
+                [
+                    87.838002,
+                    26.927975
+                ]
+            ]
+        ]
+    }
+}

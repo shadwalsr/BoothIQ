@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 130,
+        "ac_name": "Patepur",
+        "district": "Vaishali",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 260.2
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.877061,
+                    25.4554
+                ],
+                [
+                    86.855482,
+                    25.483505
+                ],
+                [
+                    86.825537,
+                    25.47302
+                ],
+                [
+                    86.822745,
+                    25.438169
+                ],
+                [
+                    86.854323,
+                    25.426769
+                ],
+                [
+                    86.877839,
+                    25.4554
+                ]
+            ]
+        ]
+    }
+}

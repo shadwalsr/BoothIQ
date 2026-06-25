@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 14,
+        "ac_name": "Govindganj",
+        "district": "East Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 234.62
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.562727,
+                    26.889715
+                ],
+                [
+                    85.539913,
+                    26.91877
+                ],
+                [
+                    85.504374,
+                    26.908552
+                ],
+                [
+                    85.509907,
+                    26.87328
+                ],
+                [
+                    85.540281,
+                    26.864117
+                ],
+                [
+                    85.560639,
+                    26.889715
+                ]
+            ]
+        ]
+    }
+}

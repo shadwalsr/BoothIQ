@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 24,
+        "ac_name": "Bathnaha",
+        "district": "Sitamarhi",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 274.06
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.388732,
+                    26.120285
+                ],
+                [
+                    85.361513,
+                    26.148001
+                ],
+                [
+                    85.326841,
+                    26.140248
+                ],
+                [
+                    85.325338,
+                    26.103778
+                ],
+                [
+                    85.363935,
+                    26.097321
+                ],
+                [
+                    85.378172,
+                    26.120285
+                ]
+            ]
+        ]
+    }
+}

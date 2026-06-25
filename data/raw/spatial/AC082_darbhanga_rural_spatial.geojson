@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 82,
+        "ac_name": "Darbhanga Rural",
+        "district": "Darbhanga",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 338.21
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.21733,
+                    26.74277
+                ],
+                [
+                    87.198453,
+                    26.770498
+                ],
+                [
+                    87.159669,
+                    26.760613
+                ],
+                [
+                    87.160046,
+                    26.724737
+                ],
+                [
+                    87.197935,
+                    26.709594
+                ],
+                [
+                    87.221593,
+                    26.74277
+                ]
+            ]
+        ]
+    }
+}

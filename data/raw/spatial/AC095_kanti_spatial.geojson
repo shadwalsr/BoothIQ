@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 95,
+        "ac_name": "Kanti",
+        "district": "Muzaffarpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 312.29
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.951126,
+                    25.516116
+                ],
+                [
+                    86.931476,
+                    25.541604
+                ],
+                [
+                    86.900104,
+                    25.535286
+                ],
+                [
+                    86.901743,
+                    25.498976
+                ],
+                [
+                    86.928893,
+                    25.482019
+                ],
+                [
+                    86.946326,
+                    25.516116
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 46,
+        "ac_name": "Narpatganj",
+        "district": "Araria",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 348.86
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.098452,
+                    25.041152
+                ],
+                [
+                    85.07398,
+                    25.064676
+                ],
+                [
+                    85.03964,
+                    25.057448
+                ],
+                [
+                    85.038807,
+                    25.02584
+                ],
+                [
+                    85.073181,
+                    25.017497
+                ],
+                [
+                    85.097205,
+                    25.041152
+                ]
+            ]
+        ]
+    }
+}

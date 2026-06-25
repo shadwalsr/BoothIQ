@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 177,
+        "ac_name": "Harnaut",
+        "district": "Nalanda",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 303.4
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.713518,
+                    26.169108
+                ],
+                [
+                    85.693119,
+                    26.19768
+                ],
+                [
+                    85.663332,
+                    26.18593
+                ],
+                [
+                    85.663575,
+                    26.153015
+                ],
+                [
+                    85.692917,
+                    26.139321
+                ],
+                [
+                    85.714598,
+                    26.169108
+                ]
+            ]
+        ]
+    }
+}

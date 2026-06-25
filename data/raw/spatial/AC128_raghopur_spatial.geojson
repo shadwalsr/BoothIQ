@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 128,
+        "ac_name": "Raghopur",
+        "district": "Vaishali",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 408.18
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.937056,
+                    25.956148
+                ],
+                [
+                    87.919918,
+                    25.98276
+                ],
+                [
+                    87.885838,
+                    25.974791
+                ],
+                [
+                    87.892373,
+                    25.936901
+                ],
+                [
+                    87.919573,
+                    25.928826
+                ],
+                [
+                    87.940312,
+                    25.956148
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 228,
+        "ac_name": "Barachatti",
+        "district": "Gaya",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 314.36
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.181576,
+                    25.657794
+                ],
+                [
+                    87.158399,
+                    25.69173
+                ],
+                [
+                    87.124223,
+                    25.673673
+                ],
+                [
+                    87.120513,
+                    25.639709
+                ],
+                [
+                    87.15656,
+                    25.629768
+                ],
+                [
+                    87.179378,
+                    25.657794
+                ]
+            ]
+        ]
+    }
+}

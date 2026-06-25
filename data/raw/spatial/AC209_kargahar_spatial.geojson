@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 209,
+        "ac_name": "Kargahar",
+        "district": "Rohtas",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 406.3
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.378047,
+                    24.94182
+                ],
+                [
+                    86.359755,
+                    24.970099
+                ],
+                [
+                    86.330918,
+                    24.960854
+                ],
+                [
+                    86.330367,
+                    24.92393
+                ],
+                [
+                    86.36049,
+                    24.907665
+                ],
+                [
+                    86.378088,
+                    24.94182
+                ]
+            ]
+        ]
+    }
+}

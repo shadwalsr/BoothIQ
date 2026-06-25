@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 144,
+        "ac_name": "Matihani",
+        "district": "Begusarai",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 298.44
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.776228,
+                    26.107847
+                ],
+                [
+                    87.758381,
+                    26.134598
+                ],
+                [
+                    87.726636,
+                    26.12256
+                ],
+                [
+                    87.725212,
+                    26.086948
+                ],
+                [
+                    87.756934,
+                    26.078897
+                ],
+                [
+                    87.78346,
+                    26.107847
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 6,
+        "ac_name": "Nautan",
+        "district": "West Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 418.56
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.439678,
+                    24.552222
+                ],
+                [
+                    86.419529,
+                    24.576786
+                ],
+                [
+                    86.381925,
+                    24.573225
+                ],
+                [
+                    86.379853,
+                    24.532197
+                ],
+                [
+                    86.419363,
+                    24.52319
+                ],
+                [
+                    86.434179,
+                    24.552222
+                ]
+            ]
+        ]
+    }
+}

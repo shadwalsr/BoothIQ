@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 30,
+        "ac_name": "Belsand",
+        "district": "Sitamarhi",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 298.05
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.57002,
+                    26.320351
+                ],
+                [
+                    85.550755,
+                    26.351891
+                ],
+                [
+                    85.512333,
+                    26.339625
+                ],
+                [
+                    85.516567,
+                    26.304231
+                ],
+                [
+                    85.548764,
+                    26.290607
+                ],
+                [
+                    85.567535,
+                    26.320351
+                ]
+            ]
+        ]
+    }
+}

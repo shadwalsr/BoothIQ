@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 132,
+        "ac_name": "Warisnagar",
+        "district": "Samastipur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 373.96
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.316747,
+                    26.11408
+                ],
+                [
+                    86.296787,
+                    26.138513
+                ],
+                [
+                    86.258828,
+                    26.129677
+                ],
+                [
+                    86.263733,
+                    26.096807
+                ],
+                [
+                    86.294489,
+                    26.084633
+                ],
+                [
+                    86.314942,
+                    26.11408
+                ]
+            ]
+        ]
+    }
+}

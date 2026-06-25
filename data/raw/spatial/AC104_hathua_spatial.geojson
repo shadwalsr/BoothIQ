@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 104,
+        "ac_name": "Hathua",
+        "district": "Gopalganj",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 284.68
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    83.653745,
+                    24.785758
+                ],
+                [
+                    83.629238,
+                    24.812053
+                ],
+                [
+                    83.59106,
+                    24.80092
+                ],
+                [
+                    83.592825,
+                    24.767196
+                ],
+                [
+                    83.627145,
+                    24.756107
+                ],
+                [
+                    83.645958,
+                    24.785758
+                ]
+            ]
+        ]
+    }
+}

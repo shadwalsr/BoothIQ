@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 110,
+        "ac_name": "Barharia",
+        "district": "Siwan",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 348.12
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.262399,
+                    26.574237
+                ],
+                [
+                    87.24209,
+                    26.602235
+                ],
+                [
+                    87.203301,
+                    26.592021
+                ],
+                [
+                    87.2083,
+                    26.557258
+                ],
+                [
+                    87.242748,
+                    26.54265
+                ],
+                [
+                    87.267929,
+                    26.574237
+                ]
+            ]
+        ]
+    }
+}

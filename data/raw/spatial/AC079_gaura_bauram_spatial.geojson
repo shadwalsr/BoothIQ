@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 79,
+        "ac_name": "Gaura Bauram",
+        "district": "Darbhanga",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 417.81
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.146738,
+                    27.076193
+                ],
+                [
+                    85.125033,
+                    27.102847
+                ],
+                [
+                    85.093815,
+                    27.091153
+                ],
+                [
+                    85.089593,
+                    27.055526
+                ],
+                [
+                    85.126603,
+                    27.044926
+                ],
+                [
+                    85.142112,
+                    27.076193
+                ]
+            ]
+        ]
+    }
+}

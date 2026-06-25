@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 61,
+        "ac_name": "Dhamdaha",
+        "district": "Purnia",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 234.45
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.138047,
+                    25.423211
+                ],
+                [
+                    87.117177,
+                    25.453575
+                ],
+                [
+                    87.084592,
+                    25.437535
+                ],
+                [
+                    87.081447,
+                    25.40466
+                ],
+                [
+                    87.11797,
+                    25.397503
+                ],
+                [
+                    87.144447,
+                    25.423211
+                ]
+            ]
+        ]
+    }
+}

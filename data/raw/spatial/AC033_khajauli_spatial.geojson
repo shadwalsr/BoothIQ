@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 33,
+        "ac_name": "Khajauli",
+        "district": "Madhubani",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 266.89
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    86.522948,
+                    26.926043
+                ],
+                [
+                    86.502746,
+                    26.948918
+                ],
+                [
+                    86.472272,
+                    26.943574
+                ],
+                [
+                    86.469842,
+                    26.911801
+                ],
+                [
+                    86.503987,
+                    26.899291
+                ],
+                [
+                    86.522312,
+                    26.926043
+                ]
+            ]
+        ]
+    }
+}

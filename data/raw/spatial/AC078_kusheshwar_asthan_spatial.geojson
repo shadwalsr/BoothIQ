@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 78,
+        "ac_name": "Kusheshwar Asthan",
+        "district": "Darbhanga",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 330.69
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.744879,
+                    26.359729
+                ],
+                [
+                    84.723912,
+                    26.382646
+                ],
+                [
+                    84.693406,
+                    26.376334
+                ],
+                [
+                    84.688009,
+                    26.339972
+                ],
+                [
+                    84.724425,
+                    26.335265
+                ],
+                [
+                    84.749259,
+                    26.359729
+                ]
+            ]
+        ]
+    }
+}

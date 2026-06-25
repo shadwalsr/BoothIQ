@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 197,
+        "ac_name": "Jagdishpur",
+        "district": "Bhojpur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 295.23
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.843892,
+                    26.859768
+                ],
+                [
+                    85.820033,
+                    26.893601
+                ],
+                [
+                    85.784544,
+                    26.877987
+                ],
+                [
+                    85.784961,
+                    26.842722
+                ],
+                [
+                    85.819599,
+                    26.828973
+                ],
+                [
+                    85.845387,
+                    26.859768
+                ]
+            ]
+        ]
+    }
+}

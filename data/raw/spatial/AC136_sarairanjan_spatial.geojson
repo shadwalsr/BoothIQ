@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 136,
+        "ac_name": "Sarairanjan",
+        "district": "Samastipur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 253.65
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.049356,
+                    26.952994
+                ],
+                [
+                    85.025487,
+                    26.977342
+                ],
+                [
+                    84.994736,
+                    26.973759
+                ],
+                [
+                    84.996069,
+                    26.935024
+                ],
+                [
+                    85.024059,
+                    26.923988
+                ],
+                [
+                    85.045468,
+                    26.952994
+                ]
+            ]
+        ]
+    }
+}

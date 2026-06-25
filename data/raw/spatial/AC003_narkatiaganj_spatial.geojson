@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 3,
+        "ac_name": "Narkatiaganj",
+        "district": "West Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 443.87
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.160339,
+                    25.831937
+                ],
+                [
+                    85.143387,
+                    25.854938
+                ],
+                [
+                    85.113008,
+                    25.848793
+                ],
+                [
+                    85.105119,
+                    25.81551
+                ],
+                [
+                    85.142803,
+                    25.804095
+                ],
+                [
+                    85.157538,
+                    25.831937
+                ]
+            ]
+        ]
+    }
+}

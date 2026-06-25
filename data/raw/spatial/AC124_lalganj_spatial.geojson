@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 124,
+        "ac_name": "Lalganj",
+        "district": "Vaishali",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 439.65
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.016262,
+                    24.662529
+                ],
+                [
+                    83.992783,
+                    24.688616
+                ],
+                [
+                    83.96163,
+                    24.681327
+                ],
+                [
+                    83.958069,
+                    24.643008
+                ],
+                [
+                    83.991554,
+                    24.635595
+                ],
+                [
+                    84.019131,
+                    24.662529
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 71,
+        "ac_name": "Bihariganj",
+        "district": "Madhepura",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 163.44
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.532847,
+                    26.373906
+                ],
+                [
+                    87.51158,
+                    26.396977
+                ],
+                [
+                    87.481423,
+                    26.393071
+                ],
+                [
+                    87.479923,
+                    26.356797
+                ],
+                [
+                    87.510888,
+                    26.350551
+                ],
+                [
+                    87.535811,
+                    26.373906
+                ]
+            ]
+        ]
+    }
+}

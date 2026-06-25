@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 239,
+        "ac_name": "Warsaliganj",
+        "district": "Nawada",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 419.62
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.11059,
+                    24.653165
+                ],
+                [
+                    87.084284,
+                    24.678683
+                ],
+                [
+                    87.049843,
+                    24.671985
+                ],
+                [
+                    87.051754,
+                    24.632912
+                ],
+                [
+                    87.085083,
+                    24.62608
+                ],
+                [
+                    87.103714,
+                    24.653165
+                ]
+            ]
+        ]
+    }
+}

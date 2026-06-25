@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 27,
+        "ac_name": "Bajpatti",
+        "district": "Sitamarhi",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 373.58
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.696573,
+                    25.297806
+                ],
+                [
+                    85.680073,
+                    25.325476
+                ],
+                [
+                    85.650712,
+                    25.316031
+                ],
+                [
+                    85.651836,
+                    25.28261
+                ],
+                [
+                    85.679507,
+                    25.272039
+                ],
+                [
+                    85.70388,
+                    25.297806
+                ]
+            ]
+        ]
+    }
+}

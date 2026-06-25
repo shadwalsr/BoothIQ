@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 224,
+        "ac_name": "Rafiganj",
+        "district": "Aurangabad",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 325.51
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.562469,
+                    26.152334
+                ],
+                [
+                    87.538378,
+                    26.175246
+                ],
+                [
+                    87.510174,
+                    26.16788
+                ],
+                [
+                    87.505933,
+                    26.133054
+                ],
+                [
+                    87.540972,
+                    26.118524
+                ],
+                [
+                    87.559098,
+                    26.152334
+                ]
+            ]
+        ]
+    }
+}

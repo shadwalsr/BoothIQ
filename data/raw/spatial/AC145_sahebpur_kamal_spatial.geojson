@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 145,
+        "ac_name": "Sahebpur Kamal",
+        "district": "Begusarai",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 160.42
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.909037,
+                    26.383085
+                ],
+                [
+                    84.893404,
+                    26.411056
+                ],
+                [
+                    84.854797,
+                    26.401132
+                ],
+                [
+                    84.858889,
+                    26.363007
+                ],
+                [
+                    84.89192,
+                    26.356072
+                ],
+                [
+                    84.911096,
+                    26.383085
+                ]
+            ]
+        ]
+    }
+}

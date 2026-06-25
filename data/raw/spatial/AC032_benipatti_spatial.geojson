@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 32,
+        "ac_name": "Benipatti",
+        "district": "Madhubani",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 294.47
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.325237,
+                    25.792222
+                ],
+                [
+                    87.298588,
+                    25.824374
+                ],
+                [
+                    87.266478,
+                    25.811702
+                ],
+                [
+                    87.263646,
+                    25.773861
+                ],
+                [
+                    87.299439,
+                    25.76616
+                ],
+                [
+                    87.316901,
+                    25.792222
+                ]
+            ]
+        ]
+    }
+}

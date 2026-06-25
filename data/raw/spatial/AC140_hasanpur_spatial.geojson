@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 140,
+        "ac_name": "Hasanpur",
+        "district": "Samastipur",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 163.71
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    87.405817,
+                    25.78776
+                ],
+                [
+                    87.389554,
+                    25.811928
+                ],
+                [
+                    87.354685,
+                    25.805045
+                ],
+                [
+                    87.350947,
+                    25.77054
+                ],
+                [
+                    87.388676,
+                    25.755078
+                ],
+                [
+                    87.411088,
+                    25.78776
+                ]
+            ]
+        ]
+    }
+}

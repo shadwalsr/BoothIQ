@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 75,
+        "ac_name": "Saharsa",
+        "district": "Saharsa",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 313.82
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.07884,
+                    24.818491
+                ],
+                [
+                    85.052633,
+                    24.848281
+                ],
+                [
+                    85.023755,
+                    24.833205
+                ],
+                [
+                    85.021692,
+                    24.800879
+                ],
+                [
+                    85.054466,
+                    24.791111
+                ],
+                [
+                    85.073947,
+                    24.818491
+                ]
+            ]
+        ]
+    }
+}

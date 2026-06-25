@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 102,
+        "ac_name": "Kuchaikote",
+        "district": "Gopalganj",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 332.65
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.887573,
+                    27.050381
+                ],
+                [
+                    84.870563,
+                    27.075621
+                ],
+                [
+                    84.842588,
+                    27.068012
+                ],
+                [
+                    84.835562,
+                    27.034425
+                ],
+                [
+                    84.871779,
+                    27.019303
+                ],
+                [
+                    84.894864,
+                    27.050381
+                ]
+            ]
+        ]
+    }
+}

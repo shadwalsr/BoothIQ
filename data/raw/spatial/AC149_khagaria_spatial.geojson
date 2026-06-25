@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 149,
+        "ac_name": "Khagaria",
+        "district": "Khagaria",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 223.79
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    84.827256,
+                    24.902022
+                ],
+                [
+                    84.80882,
+                    24.929445
+                ],
+                [
+                    84.777788,
+                    24.923038
+                ],
+                [
+                    84.772181,
+                    24.884676
+                ],
+                [
+                    84.808771,
+                    24.873905
+                ],
+                [
+                    84.831299,
+                    24.902022
+                ]
+            ]
+        ]
+    }
+}

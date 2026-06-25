@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "ac_no": 21,
+        "ac_name": "Dhaka",
+        "district": "East Champaran",
+        "state": "Bihar",
+        "country": "India",
+        "area_sq_km": 385.68
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    85.821601,
+                    26.533998
+                ],
+                [
+                    85.797795,
+                    26.561974
+                ],
+                [
+                    85.763073,
+                    26.549131
+                ],
+                [
+                    85.762473,
+                    26.513856
+                ],
+                [
+                    85.798524,
+                    26.499809
+                ],
+                [
+                    85.814662,
+                    26.533998
+                ]
+            ]
+        ]
+    }
+}
