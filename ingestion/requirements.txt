@@ -1,0 +1,6 @@
+pandas>=2.0
+rapidfuzz>=3.0
+supabase>=2.0
+python-dotenv>=1.0
+matplotlib>=3.8
+seaborn>=0.13
