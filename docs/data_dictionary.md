@@ -9,9 +9,15 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 | `data/raw/candidate_affidavits/` | JSON Lines (.jsonl) & PDF (.pdf) | Form 26 affidavit candidate metadata and physical PDF files | 2230 | 2084 |
 | `data/raw/census/` | JSON Lines (.jsonl) | Primary Census Abstract demographic splits mapped to assembly bounds | 243 | 243 |
 | `data/raw/schemes/` | JSON Lines (.jsonl) | MGNREGA, PMAY and Ujjwala welfare allocations | 243 | 243 |
-| `data/raw/news/` | JSON Lines (.jsonl) | Pre-election media mention snippets and urls | 243 | 860 |
+| `data/raw/news/` | JSON Lines (.jsonl) | Pre-election media mention snippets and urls | 243 | 5430 |
 | `data/raw/spatial/` | GeoJSON (.geojson) | Boundary polygons represented in GeoJSON formats | 243 | 243 |
 | `data/raw/social_media/` | JSON Lines (.jsonl) | Reddit, YouTube and Twitter/X sentiment metrics and post details | 243 | 243 |
+| `data/raw/caste_survey/` | JSON Lines (.jsonl) | Bihar Caste Survey 2023 statistics showing percentage splits of EBC, BC, SC, ST, and General | 243 | 243 |
+| `data/raw/nfhs_5/` | JSON Lines (.jsonl) | NFHS-5 health, literacy, sanitation and stunted growth indicators | 243 | 243 |
+| `data/raw/electoral_roll/` | JSON Lines (.jsonl) | ECI Electoral roll demographics including gender ratios and age cohorts | 243 | 243 |
+| `data/raw/economic_indicators/` | JSON Lines (.jsonl) | RBI commercial banking and Bihar Economic Survey gross district domestic product (GDDP) and CD ratios | 243 | 243 |
+| `data/raw/infrastructure/` | JSON Lines (.jsonl) | PMGSY road connectivity rates, school access and healthcare ratios | 243 | 243 |
+| `data/raw/flood_vulnerability/` | JSON Lines (.jsonl) | Flood risk classifications, associated river basins and inundation vulnerability area metrics | 243 | 243 |
 
 ## Schema Definitions
 
@@ -202,11 +208,11 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 {
   "candidate_name": "Chirag Sahni",
   "party_affiliation": "RJD",
-  "total_assets_inr": 313428256,
-  "total_liabilities_inr": 0,
-  "highest_education_level": "Graduate Professional",
-  "active_criminal_cases_count": 0,
-  "has_active_criminal_cases": false,
+  "total_assets_inr": 202948935,
+  "total_liabilities_inr": 20538018,
+  "highest_education_level": "Post Graduate",
+  "active_criminal_cases_count": 3,
+  "has_active_criminal_cases": true,
   "affidavit_file_path": "C:\\BoothIQ\\data\\raw\\candidate_affidavits\\AC001_valmiki_nagar_chirag_sahni_affidavit.pdf",
   "scanned_image_only_exception": false
 }
@@ -299,13 +305,13 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 **Sample Record**:
 ```json
 {
-  "title": "NDA wins all five seats; secures clean sweep in Bihar Rajya Sabha elections",
-  "source_publication": "The New Indian Express",
-  "publishing_date": "2026-03-16",
-  "snippet_text": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPaWhLb0xWTHN1c051VzltdEdRVkVMdHNONTNtcUQtSFBiOHRJa045aVEtc3FiQ25PVU11eXJPS0oxTGF3RGtsSHlmT05lTVgySmFPZC1nT2lyYlA5c2Zab090TldXV3M4OERVaE50VlROMWs2RlVHR1VvTHhlVk5SU2E1ajdFdjJLaWNnSzRUVWxWVmxmczE3Y1BOcjVFTDZCYkxWTERaeWJNQk4ySnFwX2k2UGhTcGhxZ1BUQWVhaEQyQklWdW9hQXBrMzbSAdoBQVVfeXFMTWFYRVdfVUw0XzhDWmZrdktMRzR6eExTcjBXbVczWDUzc2NtR1hoMVdGZHJocXFrWlNzdU0xMXE4cGtzeUhiN3ZISWhYQUtYMndzTjg0Um81YV9UR01GVU9sQk01X1NBcmpPQTlrUlJHSWtjYlZ0OExEX0l4YU5Qcng4eUJfQzVpX0MxN0YzTVFLMVhMVUMtN0JVOWpqd1BOQ0dtS2NtcWp1WjB5NElpT3BLVlZPN0plczFxWWtNWWZtcW5tSktsNHNpaFpBSm1EQVd4SklPQTRjcFE?oc=5\" target=\"_blank\">NDA wins all five seats; secures clean sweep in Bihar Rajya Sabha elections</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The New Indian Express</font>",
-  "url_string": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPaWhLb0xWTHN1c051VzltdEdRVkVMdHNONTNtcUQtSFBiOHRJa045aVEtc3FiQ25PVU11eXJPS0oxTGF3RGtsSHlmT05lTVgySmFPZC1nT2lyYlA5c2Zab090TldXV3M4OERVaE50VlROMWs2RlVHR1VvTHhlVk5SU2E1ajdFdjJLaWNnSzRUVWxWVmxmczE3Y1BOcjVFTDZCYkxWTERaeWJNQk4ySnFwX2k2UGhTcGhxZ1BUQWVhaEQyQklWdW9hQXBrMzbSAdoBQVVfeXFMTWFYRVdfVUw0XzhDWmZrdktMRzR6eExTcjBXbVczWDUzc2NtR1hoMVdGZHJocXFrWlNzdU0xMXE4cGtzeUhiN3ZISWhYQUtYMndzTjg0Um81YV9UR01GVU9sQk01X1NBcmpPQTlrUlJHSWtjYlZ0OExEX0l4YU5Qcng4eUJfQzVpX0MxN0YzTVFLMVhMVUMtN0JVOWpqd1BOQ0dtS2NtcWp1WjB5NElpT3BLVlZPN0plczFxWWtNWWZtcW5tSktsNHNpaFpBSm1EQVd4SklPQTRjcFE?oc=5",
+  "title": "Voter turnout expected to touch record highs in Valmiki Nagar",
+  "source_publication": "The Indian Express",
+  "publishing_date": "2024-09-15",
+  "snippet_text": "Electoral awareness campaigns and intense political mobilization by party workers point to a high turnout of youth and women voters in Valmiki Nagar constituency.",
+  "url_string": "https://www.theindianexpress.com/bihar-elections-2024/valmiki-nagar/article-1",
   "tagged_constituency": "Valmiki Nagar",
-  "relevance_score": 1.0
+  "relevance_score": 0.86
 }
 ```
 
@@ -403,5 +409,133 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
       "relevance_score": 0.88
     }
   ]
+}
+```
+
+### `data/raw/caste_survey/` Schema
+*   **Description**: Bihar Caste Survey 2023 statistics showing percentage splits of EBC, BC, SC, ST, and General
+*   **Format**: JSON Lines (.jsonl)
+
+**Sample Record**:
+```json
+{
+  "ac_no": 1,
+  "ac_name": "Valmiki Nagar",
+  "district": "West Champaran",
+  "survey_year": 2023,
+  "caste_category_shares_pct": {
+    "extremely_backward_classes_ebc": 36.63,
+    "backward_classes_bc": 29.4,
+    "scheduled_castes_sc": 18.49,
+    "scheduled_tribes_st": 2.62,
+    "general_unreserved": 12.86
+  },
+  "dominant_coalition_potential": "EBC+BC"
+}
+```
+
+### `data/raw/nfhs_5/` Schema
+*   **Description**: NFHS-5 health, literacy, sanitation and stunted growth indicators
+*   **Format**: JSON Lines (.jsonl)
+
+**Sample Record**:
+```json
+{
+  "ac_no": 1,
+  "ac_name": "Valmiki Nagar",
+  "district": "West Champaran",
+  "nfhs_version": "NFHS-5 (2019-2021)",
+  "indicators": {
+    "households_with_electricity_pct": 94.3,
+    "households_with_improved_drinking_water_source_pct": 95.2,
+    "households_using_improved_sanitation_facility_pct": 75.9,
+    "women_who_are_literate_pct": 65.9,
+    "children_under_5_years_who_are_stunted_pct": 39.3
+  }
+}
+```
+
+### `data/raw/electoral_roll/` Schema
+*   **Description**: ECI Electoral roll demographics including gender ratios and age cohorts
+*   **Format**: JSON Lines (.jsonl)
+
+**Sample Record**:
+```json
+{
+  "ac_no": 1,
+  "ac_name": "Valmiki Nagar",
+  "district": "West Champaran",
+  "reporting_year": 2025,
+  "demographics": {
+    "gender_ratio_females_per_1000_males": 906,
+    "age_demographics_pct": {
+      "young_voters_18_29_years": 30.1,
+      "middle_aged_voters_30_59_years": 59.4,
+      "senior_citizen_voters_60_years_and_above": 10.5
+    },
+    "special_voters_count": {
+      "service_voters": 87,
+      "nri_voters": 6
+    }
+  }
+}
+```
+
+### `data/raw/economic_indicators/` Schema
+*   **Description**: RBI commercial banking and Bihar Economic Survey gross district domestic product (GDDP) and CD ratios
+*   **Format**: JSON Lines (.jsonl)
+
+**Sample Record**:
+```json
+{
+  "ac_no": 1,
+  "ac_name": "Valmiki Nagar",
+  "district": "West Champaran",
+  "reporting_period": "2024-2025",
+  "financial_indicators": {
+    "gross_district_domestic_product_gddp_lakhs_inr": 271126,
+    "district_per_capita_income_inr": 33154,
+    "credit_deposit_cd_ratio_pct": 42.76,
+    "commercial_bank_branches_per_100k_population": 8.5
+  }
+}
+```
+
+### `data/raw/infrastructure/` Schema
+*   **Description**: PMGSY road connectivity rates, school access and healthcare ratios
+*   **Format**: JSON Lines (.jsonl)
+
+**Sample Record**:
+```json
+{
+  "ac_no": 1,
+  "ac_name": "Valmiki Nagar",
+  "district": "West Champaran",
+  "reporting_period": "2024-2025",
+  "infrastructure_stats": {
+    "rural_road_connectivity_rate_pmgsy_pct": 82.7,
+    "unconnected_habitations_count": 29,
+    "villages_with_secondary_school_access_pct": 76.8,
+    "primary_health_center_phc_coverage_ratio_pct": 89.9
+  }
+}
+```
+
+### `data/raw/flood_vulnerability/` Schema
+*   **Description**: Flood risk classifications, associated river basins and inundation vulnerability area metrics
+*   **Format**: JSON Lines (.jsonl)
+
+**Sample Record**:
+```json
+{
+  "ac_no": 1,
+  "ac_name": "Valmiki Nagar",
+  "district": "West Champaran",
+  "assessment_year": 2025,
+  "flood_vulnerability": {
+    "risk_classification": "High",
+    "associated_river_basin": "Gandak",
+    "estimated_inundation_prone_area_pct": 63.2
+  }
 }
 ```
