@@ -6,8 +6,9 @@ from fuzzy_match import run_fuzzy_match
 from join_census import load_census_data
 from join_schemes import load_schemes_data
 from join_nfhs import load_nfhs_data
+from join_latest import load_latest_data
 from tag_news import process_news_data
-from load_supabase import get_supabase_client, load_constituencies, load_election_results, load_turnout, load_census, load_schemes, load_news, load_nfhs
+from load_supabase import get_supabase_client, load_constituencies, load_election_results, load_turnout, load_census, load_schemes, load_news, load_nfhs, load_latest
 from completeness_check import run_completeness_check
 from normalize import normalize_constituency_name
 
@@ -38,6 +39,7 @@ def main():
     df_census = load_census_data(base_data_dir)
     df_schemes = load_schemes_data(base_data_dir)
     df_nfhs = load_nfhs_data(base_data_dir)
+    df_latest = load_latest_data(base_data_dir)
     df_news = process_news_data(base_data_dir)
     
     print("\n3. Building Master Constituencies Table")
@@ -59,6 +61,7 @@ def main():
     df_master['has_census_match'] = df_master['ac_no'].isin(df_census['ac_no']) if not df_census.empty else False
     df_master['has_scheme_match'] = df_master['ac_no'].isin(df_schemes['ac_no']) if not df_schemes.empty else False
     df_master['has_nfhs_match'] = df_master['ac_no'].isin(df_nfhs['ac_no']) if not df_nfhs.empty else False
+    df_master['has_latest_match'] = df_master['ac_no'].isin(df_latest['ac_no']) if not df_latest.empty else False
     
     if not df_news.empty:
         news_ac_counts = df_news.groupby('ac_no').size()
@@ -112,6 +115,10 @@ def main():
         if not df_nfhs.empty:
             print("  - nfhs_5")
             load_nfhs(df_nfhs, supabase)
+            
+        if not df_latest.empty:
+            print("  - latest_constituency_data")
+            load_latest(df_latest, supabase)
             
         if not df_news.empty:
             print("  - news_articles")

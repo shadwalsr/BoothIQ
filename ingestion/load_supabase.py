@@ -83,3 +83,38 @@ def load_news(df: pd.DataFrame, supabase: Client):
         chunk = records[i:i+chunk_size]
         supabase.table('news_articles').insert(chunk).execute()
 
+def load_latest(df: pd.DataFrame, supabase: Client):
+    records = df.to_dict(orient="records")
+    
+    def safe_notna(v):
+        if v is None:
+            return False
+        if isinstance(v, (list, dict)):
+            return True
+        try:
+            return pd.notna(v)
+        except Exception:
+            return True
+            
+    records = [{k: (v if safe_notna(v) else None) for k, v in r.items()} for r in records]
+    
+    for r in records:
+        r['ac_no'] = int(r['ac_no'])
+        for k in ['infra_total_primary_schools', 'infra_secondary_schools', 'infra_phc_sub_centers',
+                  'law_petty_thefts', 'law_communal_friction_cases', 'jeevika_active_shg_groups',
+                  'jeevika_bank_linkages_count', 'markets_registered_mandis_count', 'markets_weekly_haats_count',
+                  'panchayat_total', 'panchayat_mukhiyas_aligned_nda', 'panchayat_mukhiyas_aligned_grand_alliance',
+                  'panchayat_mukhiyas_independent', 'power_local_transformers_count',
+                  'sensitivity_historical_incident_hotspots_count']:
+            if r.get(k) is not None:
+                r[k] = int(r[k])
+                
+    supabase.table('latest_constituency_data').delete().neq('ac_no', 0).execute()
+    
+    # Insert in chunks of 50 to avoid request size limits
+    chunk_size = 50
+    for i in range(0, len(records), chunk_size):
+        chunk = records[i:i+chunk_size]
+        supabase.table('latest_constituency_data').insert(chunk).execute()
+
+
