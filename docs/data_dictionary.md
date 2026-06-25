@@ -6,10 +6,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 | :--- | :--- | :--- | :--- | :--- |
 | `data/raw/eci_2025/` | JSON Lines (.jsonl) | ECI Bihar 2025 Legislative Assembly results per constituency | 243 | 243 |
 | `data/raw/eci_2020/` | JSON Lines (.jsonl) | ECI Bihar 2020 Legislative Assembly results per constituency | 243 | 243 |
-| `data/raw/candidate_affidavits/` | JSON Lines (.jsonl) & PDF (.pdf) | Form 26 affidavit candidate metadata and physical PDF files | 765 | 2084 |
+| `data/raw/candidate_affidavits/` | JSON Lines (.jsonl) & PDF (.pdf) | Form 26 affidavit candidate metadata and physical PDF files | 766 | 2084 |
 | `data/raw/census/` | JSON Lines (.jsonl) | Primary Census Abstract demographic splits mapped to assembly bounds | 243 | 243 |
 | `data/raw/schemes/` | JSON Lines (.jsonl) | MGNREGA, PMAY and Ujjwala welfare allocations | 243 | 243 |
-| `data/raw/news/` | JSON Lines (.jsonl) | Pre-election media mention snippets and urls | 243 | 845 |
+| `data/raw/news/` | JSON Lines (.jsonl) | Pre-election media mention snippets and urls | 243 | 860 |
 | `data/raw/spatial/` | GeoJSON (.geojson) | Boundary polygons represented in GeoJSON formats | 243 | 243 |
 
 ## Schema Definitions
@@ -201,11 +201,11 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 {
   "candidate_name": "Chirag Sahni",
   "party_affiliation": "RJD",
-  "total_assets_inr": null,
-  "total_liabilities_inr": null,
-  "highest_education_level": null,
-  "active_criminal_cases_count": null,
-  "has_active_criminal_cases": null,
+  "total_assets_inr": 515565013,
+  "total_liabilities_inr": 10199234,
+  "highest_education_level": "Graduate Professional",
+  "active_criminal_cases_count": 0,
+  "has_active_criminal_cases": false,
   "affidavit_file_path": "C:\\BoothIQ\\data\\raw\\candidate_affidavits\\AC001_valmiki_nagar_chirag_sahni_affidavit.pdf",
   "scanned_image_only_exception": true
 }
@@ -268,19 +268,25 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
   "ac_name": "Valmiki Nagar",
   "district": "West Champaran",
   "reporting_period": "2024-2025",
+  "mapped_blocks": [
+    "ValmikiNagar_Block_1",
+    "ValmikiNagar_Block_2",
+    "ValmikiNagar_Block_3"
+  ],
+  "scheme_data_is_district_estimate": true,
   "mgnrega": {
-    "active_job_cards_count": 95710,
-    "total_expenditure_lakhs": 2349.7,
-    "person_days_generated": 2365563
+    "active_job_cards_count": 105801,
+    "total_expenditure_lakhs": 1569.06,
+    "person_days_generated": 2038482
   },
   "pmay": {
-    "homes_sanctioned_count": 20707,
-    "homes_completed_count": 18173,
-    "allocated_funds_lakhs": 25287.19
+    "homes_sanctioned_count": 16181,
+    "homes_completed_count": 12746,
+    "allocated_funds_lakhs": 21306.65
   },
   "ujjwala": {
-    "gas_connections_count": 22816,
-    "subsidy_disbursed_inr": 7666176
+    "gas_connections_count": 40626,
+    "subsidy_disbursed_inr": 15209285
   }
 }
 ```
@@ -292,13 +298,13 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 **Sample Record**:
 ```json
 {
-  "title": "Political rally in Valmiki Nagar draws massive crowds ahead of voting day",
-  "source_publication": "BBC News India",
-  "publishing_date": "2024-09-18",
-  "snippet_text": "Top party leaders addressed a massive rally in Valmiki Nagar promising job creations, free electricity, and specialized sub-plans for rural developmental bounds.",
-  "url_string": "https://www.bbcnewsindia.com/bihar-elections-2024/valmiki-nagar/article-1",
+  "title": "NDA wins all five seats; secures clean sweep in Bihar Rajya Sabha elections",
+  "source_publication": "The New Indian Express",
+  "publishing_date": "2026-03-16",
+  "snippet_text": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPaWhLb0xWTHN1c051VzltdEdRVkVMdHNONTNtcUQtSFBiOHRJa045aVEtc3FiQ25PVU11eXJPS0oxTGF3RGtsSHlmT05lTVgySmFPZC1nT2lyYlA5c2Zab090TldXV3M4OERVaE50VlROMWs2RlVHR1VvTHhlVk5SU2E1ajdFdjJLaWNnSzRUVWxWVmxmczE3Y1BOcjVFTDZCYkxWTERaeWJNQk4ySnFwX2k2UGhTcGhxZ1BUQWVhaEQyQklWdW9hQXBrMzbSAdoBQVVfeXFMTWFYRVdfVUw0XzhDWmZrdktMRzR6eExTcjBXbVczWDUzc2NtR1hoMVdGZHJocXFrWlNzdU0xMXE4cGtzeUhiN3ZISWhYQUtYMndzTjg0Um81YV9UR01GVU9sQk01X1NBcmpPQTlrUlJHSWtjYlZ0OExEX0l4YU5Qcng4eUJfQzVpX0MxN0YzTVFLMVhMVUMtN0JVOWpqd1BOQ0dtS2NtcWp1WjB5NElpT3BLVlZPN0plczFxWWtNWWZtcW5tSktsNHNpaFpBSm1EQVd4SklPQTRjcFE?oc=5\" target=\"_blank\">NDA wins all five seats; secures clean sweep in Bihar Rajya Sabha elections</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The New Indian Express</font>",
+  "url_string": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPaWhLb0xWTHN1c051VzltdEdRVkVMdHNONTNtcUQtSFBiOHRJa045aVEtc3FiQ25PVU11eXJPS0oxTGF3RGtsSHlmT05lTVgySmFPZC1nT2lyYlA5c2Zab090TldXV3M4OERVaE50VlROMWs2RlVHR1VvTHhlVk5SU2E1ajdFdjJLaWNnSzRUVWxWVmxmczE3Y1BOcjVFTDZCYkxWTERaeWJNQk4ySnFwX2k2UGhTcGhxZ1BUQWVhaEQyQklWdW9hQXBrMzbSAdoBQVVfeXFMTWFYRVdfVUw0XzhDWmZrdktMRzR6eExTcjBXbVczWDUzc2NtR1hoMVdGZHJocXFrWlNzdU0xMXE4cGtzeUhiN3ZISWhYQUtYMndzTjg0Um81YV9UR01GVU9sQk01X1NBcmpPQTlrUlJHSWtjYlZ0OExEX0l4YU5Qcng4eUJfQzVpX0MxN0YzTVFLMVhMVUMtN0JVOWpqd1BOQ0dtS2NtcWp1WjB5NElpT3BLVlZPN0plczFxWWtNWWZtcW5tSktsNHNpaFpBSm1EQVd4SklPQTRjcFE?oc=5",
   "tagged_constituency": "Valmiki Nagar",
-  "relevance_score": 0.96
+  "relevance_score": 1.0
 }
 ```
 
