@@ -9,8 +9,9 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 | `data/raw/candidate_affidavits/` | JSON Lines (.jsonl) & PDF (.pdf) | Form 26 affidavit candidate metadata and physical PDF files | 766 | 2084 |
 | `data/raw/census/` | JSON Lines (.jsonl) | Primary Census Abstract demographic splits mapped to assembly bounds | 243 | 243 |
 | `data/raw/schemes/` | JSON Lines (.jsonl) | MGNREGA, PMAY and Ujjwala welfare allocations | 243 | 243 |
-| `data/raw/news/` | JSON Lines (.jsonl) | Pre-election media mention snippets and urls | 243 | 845 |
+| `data/raw/news/` | JSON Lines (.jsonl) | Pre-election media mention snippets and urls | 243 | 860 |
 | `data/raw/spatial/` | GeoJSON (.geojson) | Boundary polygons represented in GeoJSON formats | 243 | 243 |
+| `data/raw/social_media/` | JSON Lines (.jsonl) | Reddit, YouTube and Twitter/X sentiment metrics and post details | 2 | 2 |
 
 ## Schema Definitions
 
@@ -201,10 +202,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 {
   "candidate_name": "Chirag Sahni",
   "party_affiliation": "RJD",
-  "total_assets_inr": 602437838,
+  "total_assets_inr": 200541345,
   "total_liabilities_inr": 0,
-  "highest_education_level": "12th Pass",
-  "active_criminal_cases_count": 2,
+  "highest_education_level": "Doctorate",
+  "active_criminal_cases_count": 1,
   "has_active_criminal_cases": true,
   "affidavit_file_path": "C:\\BoothIQ\\data\\raw\\candidate_affidavits\\AC001_valmiki_nagar_chirag_sahni_affidavit.pdf",
   "scanned_image_only_exception": true
@@ -269,22 +270,24 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
   "district": "West Champaran",
   "reporting_period": "2024-2025",
   "mapped_blocks": [
-    "ValmikiNagar_Block_1"
+    "ValmikiNagar_Block_1",
+    "ValmikiNagar_Block_2",
+    "ValmikiNagar_Block_3"
   ],
-  "scheme_data_is_district_estimate": false,
+  "scheme_data_is_district_estimate": true,
   "mgnrega": {
-    "active_job_cards_count": 35793,
-    "total_expenditure_lakhs": 297.96,
-    "person_days_generated": 1065133
+    "active_job_cards_count": 86077,
+    "total_expenditure_lakhs": 1394.53,
+    "person_days_generated": 2272580
   },
   "pmay": {
-    "homes_sanctioned_count": 5746,
-    "homes_completed_count": 5013,
-    "allocated_funds_lakhs": 8246.91
+    "homes_sanctioned_count": 23517,
+    "homes_completed_count": 17322,
+    "allocated_funds_lakhs": 32330.18
   },
   "ujjwala": {
-    "gas_connections_count": 6522,
-    "subsidy_disbursed_inr": 2171826
+    "gas_connections_count": 43095,
+    "subsidy_disbursed_inr": 14299324
   }
 }
 ```
@@ -296,13 +299,13 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 **Sample Record**:
 ```json
 {
-  "title": "Political rally in Valmiki Nagar draws massive crowds ahead of voting day",
-  "source_publication": "BBC News India",
-  "publishing_date": "2024-09-18",
-  "snippet_text": "Top party leaders addressed a massive rally in Valmiki Nagar promising job creations, free electricity, and specialized sub-plans for rural developmental bounds.",
-  "url_string": "https://www.bbcnewsindia.com/bihar-elections-2024/valmiki-nagar/article-1",
+  "title": "NDA wins all five seats; secures clean sweep in Bihar Rajya Sabha elections",
+  "source_publication": "The New Indian Express",
+  "publishing_date": "2026-03-16",
+  "snippet_text": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPaWhLb0xWTHN1c051VzltdEdRVkVMdHNONTNtcUQtSFBiOHRJa045aVEtc3FiQ25PVU11eXJPS0oxTGF3RGtsSHlmT05lTVgySmFPZC1nT2lyYlA5c2Zab090TldXV3M4OERVaE50VlROMWs2RlVHR1VvTHhlVk5SU2E1ajdFdjJLaWNnSzRUVWxWVmxmczE3Y1BOcjVFTDZCYkxWTERaeWJNQk4ySnFwX2k2UGhTcGhxZ1BUQWVhaEQyQklWdW9hQXBrMzbSAdoBQVVfeXFMTWFYRVdfVUw0XzhDWmZrdktMRzR6eExTcjBXbVczWDUzc2NtR1hoMVdGZHJocXFrWlNzdU0xMXE4cGtzeUhiN3ZISWhYQUtYMndzTjg0Um81YV9UR01GVU9sQk01X1NBcmpPQTlrUlJHSWtjYlZ0OExEX0l4YU5Qcng4eUJfQzVpX0MxN0YzTVFLMVhMVUMtN0JVOWpqd1BOQ0dtS2NtcWp1WjB5NElpT3BLVlZPN0plczFxWWtNWWZtcW5tSktsNHNpaFpBSm1EQVd4SklPQTRjcFE?oc=5\" target=\"_blank\">NDA wins all five seats; secures clean sweep in Bihar Rajya Sabha elections</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The New Indian Express</font>",
+  "url_string": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPaWhLb0xWTHN1c051VzltdEdRVkVMdHNONTNtcUQtSFBiOHRJa045aVEtc3FiQ25PVU11eXJPS0oxTGF3RGtsSHlmT05lTVgySmFPZC1nT2lyYlA5c2Zab090TldXV3M4OERVaE50VlROMWs2RlVHR1VvTHhlVk5SU2E1ajdFdjJLaWNnSzRUVWxWVmxmczE3Y1BOcjVFTDZCYkxWTERaeWJNQk4ySnFwX2k2UGhTcGhxZ1BUQWVhaEQyQklWdW9hQXBrMzbSAdoBQVVfeXFMTWFYRVdfVUw0XzhDWmZrdktMRzR6eExTcjBXbVczWDUzc2NtR1hoMVdGZHJocXFrWlNzdU0xMXE4cGtzeUhiN3ZISWhYQUtYMndzTjg0Um81YV9UR01GVU9sQk01X1NBcmpPQTlrUlJHSWtjYlZ0OExEX0l4YU5Qcng4eUJfQzVpX0MxN0YzTVFLMVhMVUMtN0JVOWpqd1BOQ0dtS2NtcWp1WjB5NElpT3BLVlZPN0plczFxWWtNWWZtcW5tSktsNHNpaFpBSm1EQVd4SklPQTRjcFE?oc=5",
   "tagged_constituency": "Valmiki Nagar",
-  "relevance_score": 0.96
+  "relevance_score": 1.0
 }
 ```
 
@@ -326,5 +329,79 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
     "type": "Polygon",
     "coordinates": "[[... truncated coordinates ...]]"
   }
+}
+```
+
+### `data/raw/social_media/` Schema
+*   **Description**: Reddit, YouTube and Twitter/X sentiment metrics and post details
+*   **Format**: JSON Lines (.jsonl)
+
+**Sample Record**:
+```json
+{
+  "ac_no": 1,
+  "ac_name": "Valmiki Nagar",
+  "sentiment_analysis": {
+    "positive_ratio_pct": 31,
+    "neutral_ratio_pct": 34,
+    "negative_ratio_pct": 35
+  },
+  "trending_hashtags": [
+    "#ValmikiNagar",
+    "#BiharElections2025",
+    "#BiharElections",
+    "#ConstituencyDossier",
+    "#CasteCensus"
+  ],
+  "posts": [
+    {
+      "platform": "YouTube",
+      "username": "",
+      "url": "https://www.youtube.com/watch?v=kGRSTbJBjKI&pp=ygUcQmloYXIgZWxlY3Rpb24gVmFsbWlraSBOYWdhcg%3D%3D",
+      "content": "Valmiki Nagar Election \u0905\u0928\u0941\u092e\u093e\u0928 | Nitish Vs Tejashwi Vs Prashant | | Bihar Election 2025 Exit Poll",
+      "views_raw": "4.9k views",
+      "relevance_score": 0.9
+    },
+    {
+      "platform": "YouTube",
+      "username": "",
+      "url": "https://www.youtube.com/shorts/0GNHjmbT0WA",
+      "content": "Valmiki Nagar Vidhan sabha election result 2020 #valmikinagar #bihar #biharelection2025",
+      "views_raw": "5.6k views",
+      "relevance_score": 0.9
+    },
+    {
+      "platform": "YouTube",
+      "username": "",
+      "url": "https://www.youtube.com/watch?v=GiPHXnlq42Y&pp=ygUcQmloYXIgZWxlY3Rpb24gVmFsbWlraSBOYWdhcg%3D%3D",
+      "content": "Valmiki nagar Seat: \u0935\u093e\u0932\u094d\u092e\u0940\u0915\u093f\u0928\u0917\u0930 \u0938\u0947 JDU \u0906\u0917\u0947 | Dhirendra Pratap Singh | Bihar Election Counting",
+      "views_raw": "24k views",
+      "relevance_score": 0.9
+    },
+    {
+      "platform": "Twitter/X",
+      "username": "bihar_voter_1",
+      "url": "https://x.com/bihar_voter_1/status/6673976291813781111",
+      "content": "Huge turnouts expected for political rallies in Valmiki Nagar assembly constituency. Development issues are taking center stage! #ValmikiNagar #BiharElections2025",
+      "likes": 274,
+      "retweets": 38
+    },
+    {
+      "platform": "Reddit",
+      "username": "patna_redditor_1",
+      "url": "https://www.reddit.com/r/bihar/comments/post_1_3707",
+      "content": "How is the candidate ground outreach in Valmiki Nagar? Hearing that the MGNREGA work distribution and local water issues will decide the swing voters here.",
+      "likes": 137,
+      "comments_count": 14
+    },
+    {
+      "platform": "YouTube",
+      "username": "BiharTakLocalNews",
+      "url": "https://www.youtube.com/watch?v=mockvid1",
+      "content": "Public Opinion in Valmiki Nagar: Ground survey of what rural voters want from the next MLA.",
+      "views_raw": "88K views",
+      "relevance_score": 0.88
+    }
+  ]
 }
 ```
