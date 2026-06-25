@@ -10,7 +10,8 @@ from load_supabase import get_supabase_client
 from compute_features import (
     compute_electoral_features,
     compute_demographic_features,
-    compute_scheme_features
+    compute_scheme_features,
+    compute_nfhs_features
 )
 from eda_plots import generate_plots
 
@@ -45,11 +46,17 @@ def run_pipeline():
     df_schemes = pd.DataFrame(res_schemes.data)
     print(f"Loaded {len(df_schemes)} scheme records.")
     
+    # Fetch NFHS-5
+    res_nfhs = supabase.table('nfhs_5').select('*').execute()
+    df_nfhs = pd.DataFrame(res_nfhs.data)
+    print(f"Loaded {len(df_nfhs)} NFHS-5 records.")
+    
     # Validation checks
     assert len(df_2025) == 243, f"Expected 243 rows in 2025 election results, found {len(df_2025)}"
     assert len(df_2020) == 243, f"Expected 243 rows in 2020 election results, found {len(df_2020)}"
     assert len(df_census) == 243, f"Expected 243 rows in census demographics, found {len(df_census)}"
     assert len(df_schemes) == 243, f"Expected 243 rows in schemes, found {len(df_schemes)}"
+    assert len(df_nfhs) == 243, f"Expected 243 rows in NFHS-5, found {len(df_nfhs)}"
     
     print("\nComputing features...")
     
@@ -68,10 +75,16 @@ def run_pipeline():
     df_scheme = compute_scheme_features(df_schemes, df_census)
     print(f"Scheme features shape: {df_scheme.shape}")
     
+    # NFHS-5 features
+    print("4. Computing NFHS-5 features...")
+    df_nfhs_feats = compute_nfhs_features(df_nfhs)
+    print(f"NFHS-5 features shape: {df_nfhs_feats.shape}")
+    
     # Merge all features on ac_no
     print("\nMerging all features...")
     df_features = pd.merge(df_elec, df_demo, on='ac_no')
     df_features = pd.merge(df_features, df_scheme, on='ac_no')
+    df_features = pd.merge(df_features, df_nfhs_feats, on='ac_no')
     print(f"Final merged features shape: {df_features.shape}")
     
     # Validation of final dataframe
@@ -83,7 +96,10 @@ def run_pipeline():
         'competitiveness_score', 'effective_candidates', 'anti_incumbency_flag',
         'anti_incumbency_magnitude', 'literacy_rate_normalized', 'urbanization_pct',
         'sc_st_pct', 'agriculture_dependency_pct', 'religion_diversity_index',
-        'scheme_penetration_score'
+        'scheme_penetration_score', 'nfhs_households_with_electricity_pct',
+        'nfhs_households_with_improved_drinking_water_source_pct',
+        'nfhs_households_using_improved_sanitation_facility_pct',
+        'nfhs_women_who_are_literate_pct', 'nfhs_children_under_5_years_who_are_stunted_pct'
     ]
     for col in critical_cols:
         nan_count = df_features[col].isna().sum()

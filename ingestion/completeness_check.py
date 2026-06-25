@@ -14,6 +14,7 @@ def run_completeness_check(df_master: pd.DataFrame, data_dir: str):
     has_census = df_master['has_census_match'].sum()
     has_scheme = df_master['has_scheme_match'].sum()
     has_news = df_master['has_news_articles'].sum()
+    has_nfhs = df_master['has_nfhs_match'].sum() if 'has_nfhs_match' in df_master.columns else 0
     
     # We assume both years are present if they were merged, but let's check
     # Since we use 2025 as base, all have 2025. 
@@ -24,6 +25,7 @@ def run_completeness_check(df_master: pd.DataFrame, data_dir: str):
         'total_constituencies': total,
         'census_match_pct': (has_census / total) * 100,
         'scheme_match_pct': (has_scheme / total) * 100,
+        'nfhs_match_pct': (has_nfhs / total) * 100,
         'news_match_pct': (has_news / total) * 100,
         'both_years_pct': (has_2020 / total) * 100
     }

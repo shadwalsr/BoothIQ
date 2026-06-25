@@ -242,3 +242,25 @@ def compute_scheme_features(df_schemes: pd.DataFrame, df_census: pd.DataFrame) -
         'scheme_data_is_district_estimate'
     ]
     return merged[cols]
+
+def compute_nfhs_features(df_nfhs: pd.DataFrame) -> pd.DataFrame:
+    """
+    Computes NFHS-5 features by renaming indicators to match the schema.
+    """
+    df = df_nfhs.copy()
+    df.rename(columns={
+        'households_with_electricity_pct': 'nfhs_households_with_electricity_pct',
+        'households_with_improved_drinking_water_source_pct': 'nfhs_households_with_improved_drinking_water_source_pct',
+        'households_using_improved_sanitation_facility_pct': 'nfhs_households_using_improved_sanitation_facility_pct',
+        'women_who_are_literate_pct': 'nfhs_women_who_are_literate_pct',
+        'children_under_5_years_who_are_stunted_pct': 'nfhs_children_under_5_years_who_are_stunted_pct'
+    }, inplace=True)
+    
+    cols = [
+        'ac_no', 'nfhs_households_with_electricity_pct', 
+        'nfhs_households_with_improved_drinking_water_source_pct',
+        'nfhs_households_using_improved_sanitation_facility_pct',
+        'nfhs_women_who_are_literate_pct',
+        'nfhs_children_under_5_years_who_are_stunted_pct'
+    ]
+    return df[cols]

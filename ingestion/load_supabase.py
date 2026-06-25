@@ -60,6 +60,12 @@ def load_schemes(df: pd.DataFrame, supabase: Client):
     supabase.table('schemes').delete().neq('ac_no', 0).execute()
     supabase.table('schemes').insert(records).execute()
 
+def load_nfhs(df: pd.DataFrame, supabase: Client):
+    records = df.to_dict(orient="records")
+    records = [{k: (v if pd.notna(v) else None) for k, v in r.items()} for r in records]
+    supabase.table('nfhs_5').delete().neq('ac_no', 0).execute()
+    supabase.table('nfhs_5').insert(records).execute()
+
 def load_news(df: pd.DataFrame, supabase: Client):
     records = df.to_dict(orient="records")
     records = [{k: (v if pd.notna(v) else None) for k, v in r.items()} for r in records]
