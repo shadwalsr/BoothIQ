@@ -18,6 +18,7 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 | `data/raw/economic_indicators/` | JSON Lines (.jsonl) | RBI commercial banking and Bihar Economic Survey gross district domestic product (GDDP) and CD ratios | 243 | 243 |
 | `data/raw/infrastructure/` | JSON Lines (.jsonl) | PMGSY road connectivity rates, school access and healthcare ratios | 243 | 243 |
 | `data/raw/flood_vulnerability/` | JSON Lines (.jsonl) | Flood risk classifications, associated river basins and inundation vulnerability area metrics | 243 | 243 |
+| `data/raw/latest/` | JSON Lines (.jsonl) | 15 new demographic, infrastructure, political and financial indicators | 3645 | 3645 |
 
 ## Schema Definitions
 
@@ -208,11 +209,11 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 {
   "candidate_name": "Chirag Sahni",
   "party_affiliation": "RJD",
-  "total_assets_inr": 202948935,
-  "total_liabilities_inr": 20538018,
-  "highest_education_level": "Post Graduate",
-  "active_criminal_cases_count": 3,
-  "has_active_criminal_cases": true,
+  "total_assets_inr": 63124476,
+  "total_liabilities_inr": 0,
+  "highest_education_level": "Graduate",
+  "active_criminal_cases_count": 0,
+  "has_active_criminal_cases": false,
   "affidavit_file_path": "C:\\BoothIQ\\data\\raw\\candidate_affidavits\\AC001_valmiki_nagar_chirag_sahni_affidavit.pdf",
   "scanned_image_only_exception": false
 }
@@ -536,6 +537,25 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
     "risk_classification": "High",
     "associated_river_basin": "Gandak",
     "estimated_inundation_prone_area_pct": 63.2
+  }
+}
+```
+
+### `data/raw/latest/` Schema
+*   **Description**: 15 new demographic, infrastructure, political and financial indicators
+*   **Format**: JSON Lines (.jsonl)
+
+**Sample Record**:
+```json
+{
+  "ac_no": 1,
+  "ac_name": "Valmiki Nagar",
+  "district": "West Champaran",
+  "crops": {
+    "soil_type": "Alluvial",
+    "major_crop_kharif": "Paddy",
+    "major_crop_rabi": "Mustard",
+    "crop_intensity_pct": 142.7
   }
 }
 ```
