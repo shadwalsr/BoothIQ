@@ -6,12 +6,12 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 | :--- | :--- | :--- | :--- | :--- |
 | `data/raw/eci_2025/` | JSON Lines (.jsonl) | ECI Bihar 2025 Legislative Assembly results per constituency | 243 | 243 |
 | `data/raw/eci_2020/` | JSON Lines (.jsonl) | ECI Bihar 2020 Legislative Assembly results per constituency | 243 | 243 |
-| `data/raw/candidate_affidavits/` | JSON Lines (.jsonl) & PDF (.pdf) | Form 26 affidavit candidate metadata and physical PDF files | 766 | 2084 |
+| `data/raw/candidate_affidavits/` | JSON Lines (.jsonl) & PDF (.pdf) | Form 26 affidavit candidate metadata and physical PDF files | 2230 | 2084 |
 | `data/raw/census/` | JSON Lines (.jsonl) | Primary Census Abstract demographic splits mapped to assembly bounds | 243 | 243 |
 | `data/raw/schemes/` | JSON Lines (.jsonl) | MGNREGA, PMAY and Ujjwala welfare allocations | 243 | 243 |
 | `data/raw/news/` | JSON Lines (.jsonl) | Pre-election media mention snippets and urls | 243 | 860 |
 | `data/raw/spatial/` | GeoJSON (.geojson) | Boundary polygons represented in GeoJSON formats | 243 | 243 |
-| `data/raw/social_media/` | JSON Lines (.jsonl) | Reddit, YouTube and Twitter/X sentiment metrics and post details | 2 | 2 |
+| `data/raw/social_media/` | JSON Lines (.jsonl) | Reddit, YouTube and Twitter/X sentiment metrics and post details | 243 | 243 |
 
 ## Schema Definitions
 
@@ -202,13 +202,13 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 {
   "candidate_name": "Chirag Sahni",
   "party_affiliation": "RJD",
-  "total_assets_inr": 200541345,
+  "total_assets_inr": 313428256,
   "total_liabilities_inr": 0,
-  "highest_education_level": "Doctorate",
-  "active_criminal_cases_count": 1,
-  "has_active_criminal_cases": true,
+  "highest_education_level": "Graduate Professional",
+  "active_criminal_cases_count": 0,
+  "has_active_criminal_cases": false,
   "affidavit_file_path": "C:\\BoothIQ\\data\\raw\\candidate_affidavits\\AC001_valmiki_nagar_chirag_sahni_affidavit.pdf",
-  "scanned_image_only_exception": true
+  "scanned_image_only_exception": false
 }
 ```
 
