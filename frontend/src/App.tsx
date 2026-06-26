@@ -14,6 +14,9 @@ import { ConstituencyMultiSelect } from './components/ConstituencyMultiSelect';
 import { ComparisonTable } from './components/ComparisonTable';
 import { exportComparisonToCsv } from './utils/csvExport';
 
+// Statewide Map Import
+import { StatewideMap } from './components/StatewideMap';
+
 const API_BASE = 'http://localhost:8000';
 
 interface ConstituencyItem {
@@ -49,7 +52,7 @@ interface DossierData {
 
 function App() {
   const [constituencies, setConstituencies] = useState<ConstituencyItem[]>([]);
-  const [activeTab, setActiveTab] = useState<'dossier' | 'compare'>('dossier');
+  const [activeTab, setActiveTab] = useState<'dossier' | 'compare' | 'map'>('dossier');
 
   // Dossier View States
   const [activeId, setActiveId] = useState<number | null>(1); // Default to Valmiki Nagar (AC #1)
@@ -212,6 +215,13 @@ function App() {
           >
             📊 Compare Matrix
           </button>
+          <button
+            type="button"
+            className={`nav-tab-btn ${activeTab === 'map' ? 'active' : ''}`}
+            onClick={() => setActiveTab('map')}
+          >
+            🗺️ Statewide Map
+          </button>
         </nav>
 
         <div className="status-indicator">
@@ -350,6 +360,18 @@ function App() {
             </main>
           )}
         </>
+      )}
+
+      {/* VIEW 3: STATEWIDE MAP VIEW */}
+      {activeTab === 'map' && (
+        <main className="span-full animate-fade-in">
+          <StatewideMap
+            onSelectConstituency={(id) => {
+              setActiveId(id);
+              setActiveTab('dossier');
+            }}
+          />
+        </main>
       )}
 
       <footer className="dashboard-footer">

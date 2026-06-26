@@ -500,3 +500,62 @@ def get_export(id: int):
         media_type="application/pdf",
         headers={"Content-Disposition": f"attachment; filename=constituency_{id}_dossier.pdf"}
     )
+
+_cached_spatial_geojson = None
+
+@app.get("/api/spatial")
+def get_spatial():
+    global _cached_spatial_geojson
+    if _cached_spatial_geojson is not None:
+        return _cached_spatial_geojson
+        
+    import json
+    
+    supabase = get_supabase_client()
+    try:
+        res_feats = supabase.table('constituency_features').select('ac_no, cluster_id').execute()
+        res_personas = supabase.table('cluster_personas').select('cluster_id, persona_name').execute()
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Database fetch error: {e}")
+        
+    persona_map = {int(p['cluster_id']): p['persona_name'] for p in res_personas.data if p.get('cluster_id') is not None}
+    cluster_map = {}
+    for f in res_feats.data:
+        ac_no = f.get('ac_no')
+        cid = f.get('cluster_id')
+        if ac_no is not None:
+            cluster_map[int(ac_no)] = {
+                'cluster_id': int(cid) if cid is not None else None,
+                'persona_name': persona_map.get(int(cid)) if cid is not None else 'Unassigned'
+            }
+            
+    spatial_dir = r"c:\BoothIQ\data\raw\spatial"
+    features = []
+    
+    if os.path.exists(spatial_dir):
+        for filename in sorted(os.listdir(spatial_dir)):
+            if filename.endswith(".geojson") and filename.startswith("AC"):
+                filepath = os.path.join(spatial_dir, filename)
+                try:
+                    with open(filepath, "r", encoding="utf-8") as f:
+                        feature = json.load(f)
+                        # Inject cluster data
+                        props = feature.get("properties", {})
+                        ac_no = props.get("ac_no")
+                        if ac_no is not None:
+                            ac_no = int(ac_no)
+                            if ac_no in cluster_map:
+                                props["cluster_id"] = cluster_map[ac_no]["cluster_id"]
+                                props["persona_name"] = cluster_map[ac_no]["persona_name"]
+                            else:
+                                props["cluster_id"] = None
+                                props["persona_name"] = "Unassigned"
+                        features.append(feature)
+                except Exception as e:
+                    print(f"Error loading spatial file {filename}: {e}")
+                    
+    _cached_spatial_geojson = {
+        "type": "FeatureCollection",
+        "features": features
+    }
+    return _cached_spatial_geojson

@@ -83,6 +83,24 @@ def test_export_briefing():
     assert response.content.startswith(b'%PDF'), "Expected response content to start with PDF magic bytes %PDF"
     print("  GET /api/constituency/{id}/export passed!")
 
+def test_get_spatial():
+    print("Testing GET /api/spatial ...")
+    response = client.get("/api/spatial")
+    assert response.status_code == 200, f"Expected 200, got {response.status_code}"
+    data = response.json()
+    assert data['type'] == 'FeatureCollection', f"Expected FeatureCollection, got {data.get('type')}"
+    assert 'features' in data
+    assert len(data['features']) == 243, f"Expected 243 features, got {len(data['features'])}"
+    # Check first feature keys
+    first = data['features'][0]
+    assert first['type'] == 'Feature'
+    assert 'geometry' in first
+    assert 'properties' in first
+    assert 'ac_no' in first['properties']
+    assert 'cluster_id' in first['properties']
+    assert 'persona_name' in first['properties']
+    print("  GET /api/spatial passed!")
+
 def main():
     print("Running Backend API Automated Test Suite...")
     try:
@@ -91,6 +109,7 @@ def main():
         test_get_cluster()
         test_compare_constituencies()
         test_export_briefing()
+        test_get_spatial()
         print("\nALL API TESTS PASSED SUCCESSFULLY!")
     except AssertionError as e:
         print("\nTEST SUITE FAILED!")
