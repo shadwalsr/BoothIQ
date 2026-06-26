@@ -136,9 +136,8 @@ def run_phase5():
     
     print("Uploading personas to cluster_personas table...")
     try:
-        # Clear existing personas to allow re-runs
-        supabase.table('cluster_personas').delete().neq('cluster_id', -1).execute()
-        supabase.table('cluster_personas').insert(personas).execute()
+        # Use upsert to avoid foreign key violations from referencing tables
+        supabase.table('cluster_personas').upsert(personas, on_conflict='cluster_id').execute()
         print("Successfully populated cluster_personas table!")
     except Exception as e:
         print(f"Error populating cluster_personas: {e}")
