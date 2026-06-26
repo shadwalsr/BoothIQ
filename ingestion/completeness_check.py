@@ -18,6 +18,7 @@ def run_completeness_check(df_master: pd.DataFrame, data_dir: str):
     has_latest = df_master['has_latest_match'].sum() if 'has_latest_match' in df_master.columns else 0
     has_latest1 = df_master['has_latest1_match'].sum() if 'has_latest1_match' in df_master.columns else 0
     has_latest2 = df_master['has_latest2_match'].sum() if 'has_latest2_match' in df_master.columns else 0
+    has_latest3 = df_master['has_latest3_match'].sum() if 'has_latest3_match' in df_master.columns else 0
     
     # We assume both years are present if they were merged, but let's check
     # Since we use 2025 as base, all have 2025. 
@@ -32,6 +33,7 @@ def run_completeness_check(df_master: pd.DataFrame, data_dir: str):
         'latest_match_pct': (has_latest / total) * 100,
         'latest1_match_pct': (has_latest1 / total) * 100,
         'latest2_match_pct': (has_latest2 / total) * 100,
+        'latest3_match_pct': (has_latest3 / total) * 100,
         'news_match_pct': (has_news / total) * 100,
         'both_years_pct': (has_2020 / total) * 100
     }

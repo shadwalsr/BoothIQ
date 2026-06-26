@@ -141,6 +141,21 @@ def load_latest2(df: pd.DataFrame, supabase: Client):
         chunk = records[i:i+chunk_size]
         supabase.table('latest2_indicators').insert(chunk).execute()
 
+def load_latest3(df: pd.DataFrame, supabase: Client):
+    records = df.to_dict(orient="records")
+    records = [{k: (v if pd.notna(v) else None) for k, v in r.items()} for r in records]
+    
+    # Use upsert to handle duplicate key violations gracefully
+    chunk_size = 500
+    total_chunks = (len(records) + chunk_size - 1) // chunk_size
+    for i in range(0, len(records), chunk_size):
+        chunk = records[i:i+chunk_size]
+        batch_num = i // chunk_size + 1
+        print(f"  Upserting batch {batch_num}/{total_chunks} ({len(chunk)} rows)...")
+        supabase.table('latest3_indicators').upsert(chunk, on_conflict='ac_no,dataset_type').execute()
+    print(f"  load_latest3 complete: {len(records)} rows upserted.")
+
+
 
 
 
