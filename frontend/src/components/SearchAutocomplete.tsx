@@ -13,6 +13,27 @@ interface SearchAutocompleteProps {
   activeId: number | null;
 }
 
+// Levenshtein string distance helper to support fuzzy search recommendations (AC7)
+const getLevenshteinDistance = (a: string, b: string): number => {
+  const tmp: number[][] = [];
+  for (let i = 0; i <= a.length; i++) {
+    tmp[i] = [i];
+  }
+  for (let j = 0; j <= b.length; j++) {
+    tmp[0][j] = j;
+  }
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) {
+      tmp[i][j] = Math.min(
+        tmp[i - 1][j] + 1, // deletion
+        tmp[i][j - 1] + 1, // insertion
+        tmp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1) // substitution
+      );
+    }
+  }
+  return tmp[a.length][b.length];
+};
+
 export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
   constituencies,
   onSelect,
@@ -36,7 +57,7 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
     }
   }, [activeId, constituencies]);
 
-  // Filter list based on search term
+  // 1. Filter list based on search term (substring matching)
   const filtered = query
     ? constituencies.filter(
         (c) =>
@@ -45,6 +66,24 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
           c.id.toString() === query.trim()
       )
     : constituencies;
+
+  // 2. Calculate fuzzy suggestions if there are zero substring matches (AC7)
+  const showFuzzy = query && filtered.length === 0;
+  const fuzzySuggestions = showFuzzy
+    ? [...constituencies]
+        .map((c) => {
+          const nameDist = getLevenshteinDistance(query.toLowerCase(), c.name.toLowerCase());
+          const maxLen = Math.max(query.length, c.name.length);
+          const score = 1 - nameDist / maxLen;
+          return { item: c, score };
+        })
+        .filter((x) => x.score > 0.35) // threshold score to ignore completely off matches
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 4) // Limit top suggestions
+        .map((x) => x.item)
+    : [];
+
+  const itemsToRender = showFuzzy ? fuzzySuggestions : filtered;
 
   // Handle outside clicks to close dropdown
   useEffect(() => {
@@ -67,16 +106,16 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
 
     if (e.key === 'ArrowDown') {
       e.preventDefault();
-      setHighlightedIndex((prev) => (prev + 1) % Math.max(1, filtered.length));
+      setHighlightedIndex((prev) => (prev + 1) % Math.max(1, itemsToRender.length));
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
-      setHighlightedIndex((prev) => (prev - 1 + filtered.length) % Math.max(1, filtered.length));
+      setHighlightedIndex((prev) => (prev - 1 + itemsToRender.length) % Math.max(1, itemsToRender.length));
     } else if (e.key === 'Enter') {
       e.preventDefault();
-      if (highlightedIndex >= 0 && highlightedIndex < filtered.length) {
-        selectItem(filtered[highlightedIndex]);
-      } else if (filtered.length > 0) {
-        selectItem(filtered[0]);
+      if (highlightedIndex >= 0 && highlightedIndex < itemsToRender.length) {
+        selectItem(itemsToRender[highlightedIndex]);
+      } else if (itemsToRender.length > 0) {
+        selectItem(itemsToRender[0]);
       }
     } else if (e.key === 'Escape') {
       setIsOpen(false);
@@ -128,11 +167,14 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
 
       {isOpen && (
         <div className="search-dropdown glass-panel animate-fade-in">
-          {filtered.length === 0 ? (
+          {itemsToRender.length === 0 ? (
             <div className="no-results">No constituencies found</div>
           ) : (
             <div className="dropdown-scroll-wrapper">
-              {filtered.map((item, idx) => {
+              {showFuzzy && (
+                <div className="fuzzy-header">Did you mean?</div>
+              )}
+              {itemsToRender.map((item, idx) => {
                 const isSelected = item.id === activeId;
                 const isHighlighted = idx === highlightedIndex;
                 return (
@@ -219,6 +261,17 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
         }
         .dropdown-scroll-wrapper {
           padding: 0.5rem;
+        }
+        .fuzzy-header {
+          padding: 0.5rem 1rem 0.25rem;
+          font-family: var(--font-heading);
+          font-size: 0.75rem;
+          font-weight: 700;
+          color: var(--warning);
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+          margin-bottom: 0.5rem;
         }
         .dropdown-item {
           padding: 0.75rem 1rem;
