@@ -21,6 +21,7 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 | `data/raw/latest/` | JSON Lines (.jsonl) | 15 new demographic, infrastructure, political and financial indicators | 3645 | 3645 |
 | `data/raw/latest1/` | JSON Lines (.jsonl) | 100 new demographic, infrastructure, political and financial indicators | 24300 | 24300 |
 | `data/raw/latest2/` | JSON Lines (.jsonl) | 50 new demographic, infrastructure, political and financial indicators | 12150 | 12150 |
+| `data/raw/latest3/` | JSON Lines (.jsonl) | 260 new demographic, infrastructure, political and financial indicators | 63180 | 63180 |
 
 ## Schema Definitions
 
@@ -211,11 +212,11 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 {
   "candidate_name": "Chirag Sahni",
   "party_affiliation": "RJD",
-  "total_assets_inr": 538180739,
+  "total_assets_inr": 174531199,
   "total_liabilities_inr": 0,
-  "highest_education_level": "12th Pass",
-  "active_criminal_cases_count": 1,
-  "has_active_criminal_cases": true,
+  "highest_education_level": "Doctorate",
+  "active_criminal_cases_count": 0,
+  "has_active_criminal_cases": false,
   "affidavit_file_path": "C:\\BoothIQ\\data\\raw\\candidate_affidavits\\AC001_valmiki_nagar_chirag_sahni_affidavit.pdf",
   "scanned_image_only_exception": false
 }
@@ -573,7 +574,7 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
   "ac_name": "Valmiki Nagar",
   "district": "West Champaran",
   "dataset_type": "adult_literacy_centers",
-  "value": 200,
+  "value": 78,
   "unit": "count",
   "last_updated": "2025-2026"
 }
@@ -590,8 +591,25 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
   "ac_name": "Valmiki Nagar",
   "district": "West Champaran",
   "dataset_type": "ambulance_response_time",
-  "value": 19,
+  "value": 42,
   "unit": "minutes",
+  "last_updated": "2025-2026"
+}
+```
+
+### `data/raw/latest3/` Schema
+*   **Description**: 260 new demographic, infrastructure, political and financial indicators
+*   **Format**: JSON Lines (.jsonl)
+
+**Sample Record**:
+```json
+{
+  "ac_no": 1,
+  "ac_name": "Valmiki Nagar",
+  "district": "West Champaran",
+  "dataset_type": "agro_processing_average_daily_turnover_inr",
+  "value": 10709932,
+  "unit": "INR",
   "last_updated": "2025-2026"
 }
 ```
