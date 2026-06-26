@@ -28,6 +28,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/eci_2025/` Schema
 *   **Description**: ECI Bihar 2025 Legislative Assembly results per constituency
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: Election Commission of India (ECI)
+*   **Date**: 2025
+*   **Granularity**: Constituency (AC)
+*   **Limitations**: Provisional results until certified. Post-election data.
 
 **Sample Record**:
 ```json
@@ -105,6 +109,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/eci_2020/` Schema
 *   **Description**: ECI Bihar 2020 Legislative Assembly results per constituency
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: Election Commission of India (ECI)
+*   **Date**: 2020
+*   **Granularity**: Constituency (AC)
+*   **Limitations**: Historical data, boundaries fixed but demographic compositions shift.
 
 **Sample Record**:
 ```json
@@ -206,6 +214,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/candidate_affidavits/` Schema
 *   **Description**: Form 26 affidavit candidate metadata and physical PDF files
 *   **Format**: JSON Lines (.jsonl) & PDF (.pdf)
+*   **Source**: ECI Form 26 Affidavits
+*   **Date**: 2025
+*   **Granularity**: Candidate Level
+*   **Limitations**: Self-reported data; potential underreporting of assets or criminal cases.
 
 **Sample Record**:
 ```json
@@ -225,6 +237,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/census/` Schema
 *   **Description**: Primary Census Abstract demographic splits mapped to assembly bounds
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: Census of India
+*   **Date**: 2011
+*   **Granularity**: Constituency (Mapped from District/Tehsil)
+*   **Limitations**: Severely outdated (2011). Estimates mapped to AC boundaries may contain geospatial aggregation errors.
 
 **Sample Record**:
 ```json
@@ -271,6 +287,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/schemes/` Schema
 *   **Description**: MGNREGA, PMAY and Ujjwala welfare allocations
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: Ministry of Rural Development / MoPNG
+*   **Date**: 2023-2024
+*   **Granularity**: Constituency (Mapped from District)
+*   **Limitations**: Beneficiary counts mapped from district level. Leakage or duplication in registries possible.
 
 **Sample Record**:
 ```json
@@ -305,6 +325,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/news/` Schema
 *   **Description**: Pre-election media mention snippets and urls
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: News API / Media Scraping
+*   **Date**: 2025
+*   **Granularity**: Constituency Level Mentions
+*   **Limitations**: Urban bias in coverage; rural constituencies underrepresented in digital media.
 
 **Sample Record**:
 ```json
@@ -322,6 +346,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/spatial/` Schema
 *   **Description**: Boundary polygons represented in GeoJSON formats
 *   **Format**: GeoJSON (.geojson)
+*   **Source**: DataMeet / ECI GIS
+*   **Date**: 2020
+*   **Granularity**: Constituency Polygons
+*   **Limitations**: Minor boundary inaccuracies compared to official but unpublished topographies.
 
 **Sample Record**:
 ```json
@@ -345,6 +373,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/social_media/` Schema
 *   **Description**: Reddit, YouTube and Twitter/X sentiment metrics and post details
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: Reddit, YouTube, Twitter/X APIs
+*   **Date**: 2025
+*   **Granularity**: Constituency/Candidate Level
+*   **Limitations**: Bot activity and non-voter sentiment can skew metrics. Highly urban-biased.
 
 **Sample Record**:
 ```json
@@ -419,6 +451,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/caste_survey/` Schema
 *   **Description**: Bihar Caste Survey 2023 statistics showing percentage splits of EBC, BC, SC, ST, and General
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: Bihar Caste-based Survey
+*   **Date**: 2023
+*   **Granularity**: District / Constituency Approximations
+*   **Limitations**: Extrapolated to AC boundaries. Survey methodology faced political scrutiny.
 
 **Sample Record**:
 ```json
@@ -441,6 +477,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/nfhs_5/` Schema
 *   **Description**: NFHS-5 health, literacy, sanitation and stunted growth indicators
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: National Family Health Survey-5
+*   **Date**: 2019-2021
+*   **Granularity**: District Level
+*   **Limitations**: District-level averages applied uniformly to underlying constituencies. Masks intra-district variance.
 
 **Sample Record**:
 ```json
@@ -462,6 +502,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/electoral_roll/` Schema
 *   **Description**: ECI Electoral roll demographics including gender ratios and age cohorts
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: Chief Electoral Officer, Bihar
+*   **Date**: 2025
+*   **Granularity**: Constituency / Booth Level
+*   **Limitations**: Subject to periodic revision. Dead voters or duplicates might inflate numbers.
 
 **Sample Record**:
 ```json
@@ -488,6 +532,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/economic_indicators/` Schema
 *   **Description**: RBI commercial banking and Bihar Economic Survey gross district domestic product (GDDP) and CD ratios
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: RBI / Bihar Economic Survey
+*   **Date**: 2023-2024
+*   **Granularity**: District Level
+*   **Limitations**: Macro indicators (GDDP, CD Ratio) mapped to ACs. Fails to capture hyper-local economic hubs.
 
 **Sample Record**:
 ```json
@@ -508,6 +556,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/infrastructure/` Schema
 *   **Description**: PMGSY road connectivity rates, school access and healthcare ratios
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: PMGSY / Ministry of Health
+*   **Date**: 2023-2024
+*   **Granularity**: Block / Constituency
+*   **Limitations**: Official targets often overstate actual physical completion. Maintenance quality not captured.
 
 **Sample Record**:
 ```json
@@ -528,6 +580,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/flood_vulnerability/` Schema
 *   **Description**: Flood risk classifications, associated river basins and inundation vulnerability area metrics
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: Bihar Disaster Management Dept
+*   **Date**: 2023
+*   **Granularity**: Constituency / River Basin
+*   **Limitations**: Annual variability not fully modeled; relies on historical inundation zones.
 
 **Sample Record**:
 ```json
@@ -547,6 +603,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/latest/` Schema
 *   **Description**: 15 new demographic, infrastructure, political and financial indicators
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: Aggregated APIs
+*   **Date**: 2025
+*   **Granularity**: Constituency
+*   **Limitations**: Rapidly changing data. Occasional API lag or downtime.
 
 **Sample Record**:
 ```json
@@ -566,6 +626,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/latest1/` Schema
 *   **Description**: 100 new demographic, infrastructure, political and financial indicators
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: Aggregated APIs
+*   **Date**: 2025
+*   **Granularity**: Constituency
+*   **Limitations**: Extended indicators. High sparsity in certain rural ACs.
 
 **Sample Record**:
 ```json
@@ -583,6 +647,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/latest2/` Schema
 *   **Description**: 50 new demographic, infrastructure, political and financial indicators
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: Aggregated APIs
+*   **Date**: 2025
+*   **Granularity**: Constituency
+*   **Limitations**: Supplementary data. Subject to imputation for missing values.
 
 **Sample Record**:
 ```json
@@ -600,6 +668,10 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
 ### `data/raw/latest3/` Schema
 *   **Description**: 260 new demographic, infrastructure, political and financial indicators
 *   **Format**: JSON Lines (.jsonl)
+*   **Source**: Aggregated APIs
+*   **Date**: 2025
+*   **Granularity**: Constituency
+*   **Limitations**: Deep demographic splits. Margin of error increases with granularity.
 
 **Sample Record**:
 ```json
