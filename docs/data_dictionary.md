@@ -607,9 +607,86 @@ This document catalogs the data components acquired during Phase 1: Raw Data Acq
   "ac_no": 1,
   "ac_name": "Valmiki Nagar",
   "district": "West Champaran",
-  "dataset_type": "agro_processing_average_daily_turnover_inr",
-  "value": 10709932,
-  "unit": "INR",
-  "last_updated": "2025-2026"
 }
 ```
+
+---
+
+## Processed Feature Tables
+
+### `public.constituency_features` Schema (Modified)
+*   **Description**: Computed electoral, demographic, welfare, and news discourse features for all 243 Bihar constituencies.
+*   **Format**: Supabase Database Table
+
+#### Schema Definition:
+| Column Name | Type | Description |
+| :--- | :--- | :--- |
+| `ac_no` | integer (PK) | Assembly Constituency Number (1-243) |
+| `turnout_delta` | double precision | Turnout % difference: 2025 turnout minus 2020 turnout |
+| `winner_vote_share_2025` | double precision | Vote share percentage of the 2025 winning candidate |
+| `winner_vote_share_2020` | double precision | Vote share percentage of the 2020 winning candidate |
+| `vote_share_swing` | double precision | Swing of the 2025 winning party between 2025 and 2020 |
+| `margin_pct_2025` | double precision | Victory margin as percentage of polled votes in 2025 |
+| `margin_pct_2020` | double precision | Victory margin as percentage of polled votes in 2020 |
+| `margin_pct_delta` | double precision | Margin shift: margin % 2025 minus margin % 2020 |
+| `competitiveness_score` | double precision | Closeness of the race: 100.0 minus margin % 2025 |
+| `effective_candidates` | double precision | Laakso-Taagepera effective candidates index |
+| `anti_incumbency_flag` | integer | 1 if winning party flipped from 2020 to 2025, 0 otherwise |
+| `anti_incumbency_magnitude` | double precision | Victory margin if seat flipped, negative margin delta otherwise |
+| `literacy_rate_normalized` | double precision | Normalized z-score of literacy rate |
+| `urbanization_pct` | double precision | Percentage of urban population |
+| `sc_st_pct` | double precision | Combined SC & ST population percentage |
+| `agriculture_dependency_pct` | double precision | Combined cultivators and agricultural laborers ratio of total workforce |
+| `religion_hindu_pct` | double precision | Hindu population ratio |
+| `religion_muslim_pct` | double precision | Muslim population ratio |
+| `religion_other_pct` | double precision | Other religion population ratio |
+| `religion_diversity_index` | double precision | Herfindahl complement of religious percentages |
+| `mgnrega_penetration_pct` | double precision | Active job cards per capita percentage |
+| `pmay_completion_rate` | double precision | Ratio of completed homes to sanctioned PMAY homes |
+| `pmay_penetration_pct` | double precision | Sanctioned PMAY homes per capita percentage |
+| `ujjwala_penetration_pct` | double precision | Ujjwala gas connections per capita percentage |
+| `scheme_penetration_score` | double precision | Average of MGNREGA, PMAY, and Ujjwala penetration ratios |
+| `scheme_data_is_district_estimate`| boolean | True if the scheme data is fallback district level average |
+| `nfhs_households_with_electricity_pct` | double precision | NFHS-5 electricity coverage ratio |
+| `nfhs_households_with_improved_drinking_water_source_pct` | double precision | NFHS-5 clean water access ratio |
+| `nfhs_households_using_improved_sanitation_facility_pct` | double precision | NFHS-5 sanitation coverage ratio |
+| `nfhs_women_who_are_literate_pct` | double precision | NFHS-5 female literacy ratio |
+| `nfhs_children_under_5_years_who_are_stunted_pct` | double precision | NFHS-5 child stunting ratio |
+| `discourse_data_sparse` | boolean | True if constituency has <3 news articles, making distribution misleading |
+| `discourse_pct_inflation` | double precision | Percent of news articles focused on inflation topics |
+| `discourse_pct_communal` | double precision | Percent of news articles focused on communal/harmony topics |
+| `discourse_pct_development` | double precision | Percent of news articles focused on infrastructure/development topics |
+| `discourse_pct_welfare` | double precision | Percent of news articles focused on welfare/schemes topics |
+| `discourse_pct_caste` | double precision | Percent of news articles focused on caste/survey topics |
+| `discourse_pct_unemployment` | double precision | Percent of news articles focused on jobs/unemployment topics |
+| `discourse_pct_other` | double precision | Percent of news articles focused on election campaigns, voter turnout, or noise |
+
+---
+
+## Phase 4: NLP Discourse Layer topic Mapping
+
+To categorize media focus across constituencies, we performed unsupervised topic clustering using BERTopic on sentence embeddings (`all-MiniLM-L6-v2`) of pre-election news articles. The resulting topic clusters were mapped to a fixed taxonomy.
+
+### Taxonomy Categories & Mapping Rationale:
+
+1.  **`inflation`**: Essential commodity price increases, fuel costs, market rates.
+    *   *Rationale*: Directly measures voter concerns over cost of living and inflation.
+    *   *Keywords*: `inflation`, `prices`, `fuel`, `cost`, `rising`, `price`.
+2.  **`communal`**: Secularism, communal harmony, religious friction, security incidents.
+    *   *Rationale*: Captures social tensions or security issues as a discourse factor.
+    *   *Keywords*: `communal`, `tension`, `harmony`, `religious`, `friction`, `clash`, `security`.
+3.  **`development`**: Infrastructure, roads, connectivity, schools, healthcare access, flood embankments, economic growth.
+    *   *Rationale*: Represents developmental demand or achievements (public goods).
+    *   *Keywords*: `development`, `infrastructure`, `road`, `connectivity`, `electricity`, `school`, `hospital`, `water`, `sanitation`, `flood`, `embankments`, `growth`, `economic`.
+4.  **`welfare`**: Welfare scheme implementation, job cards, PMAY housing, gas subsidies.
+    *   *Rationale*: Represents distributive politics, welfare exposure, and direct benefit transfers.
+    *   *Keywords*: `welfare`, `scheme`, `pension`, `housing`, `pmay`, `mgnrega`, `ujjwala`, `shg`, `jeevika`, `free`, `rations`.
+5.  **`caste`**: Caste survey, reservation discussions, community groupings.
+    *   *Rationale*: Highlights caste polarization or identity politics.
+    *   *Keywords*: `caste`, `census`, `survey`, `backward`, `reservation`, `community`.
+6.  **`unemployment`**: Job creation, youth unemployment, vocational placements, recruitment issues.
+    *   *Rationale*: Tracks economic distress focused specifically on the youth demographic.
+    *   *Keywords*: `jobs`, `unemployment`, `youth`, `placement`, `employment`, `hiring`, `vacancies`.
+7.  **`other`**: Campaign rallies, candidate nominations, voter turnout awareness, and model outliers/noise (Topic -1).
+    *   *Rationale*: Filters out general electoral processes and noise that do not represent issue-based policy debates.
+

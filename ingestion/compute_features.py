@@ -264,3 +264,57 @@ def compute_nfhs_features(df_nfhs: pd.DataFrame) -> pd.DataFrame:
         'nfhs_children_under_5_years_who_are_stunted_pct'
     ]
     return df[cols]
+
+def compute_news_discourse_features(df_news: pd.DataFrame, base_dir: str) -> pd.DataFrame:
+    """
+    Computes news discourse features for all 243 constituencies:
+    - discourse_data_sparse: True if <3 news articles, False otherwise.
+    - discourse_pct_[category]: % of articles focused on each taxonomy category.
+    """
+    import os
+    import json
+    
+    # Paths to mapping and assignments
+    mapping_path = os.path.join(base_dir, "ingestion", "discourse_mapping.json")
+    assignments_path = os.path.join(base_dir, "data", "processed", "article_topic_assignments.csv")
+    
+    if not os.path.exists(mapping_path):
+        raise FileNotFoundError(f"Mapping file not found at: {mapping_path}. Run generate_mapping.py first.")
+    if not os.path.exists(assignments_path):
+        raise FileNotFoundError(f"Assignments file not found at: {assignments_path}. Run topic_discovery.py first.")
+        
+    with open(mapping_path, "r", encoding="utf-8") as f:
+        mapping = json.load(f)
+        
+    assignments_df = pd.read_csv(assignments_path)
+    
+    # Map topic_id to taxonomy category
+    assignments_df['category'] = assignments_df['topic_id'].astype(str).map(mapping).fillna('other')
+    
+    categories = ['inflation', 'communal', 'development', 'welfare', 'caste', 'unemployment', 'other']
+    features_list = []
+    
+    # Process each constituency from 1 to 243
+    for ac_no in range(1, 244):
+        # Filter assignments for this constituency
+        sub_df = assignments_df[assignments_df['ac_no'] == ac_no]
+        total_articles = len(sub_df)
+        
+        feature_row = {
+            'ac_no': ac_no,
+            'discourse_data_sparse': False
+        }
+        
+        if total_articles < 3:
+            feature_row['discourse_data_sparse'] = True
+            for cat in categories:
+                feature_row[f'discourse_pct_{cat}'] = None
+        else:
+            feature_row['discourse_data_sparse'] = False
+            for cat in categories:
+                cat_count = sum(sub_df['category'] == cat)
+                feature_row[f'discourse_pct_{cat}'] = (cat_count / total_articles) * 100.0
+                
+        features_list.append(feature_row)
+        
+    return pd.DataFrame(features_list)
