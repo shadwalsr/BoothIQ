@@ -1,0 +1,974 @@
+{
+  "agiaon": {
+    "candidate": "Manoj Manzil",
+    "party": "CPI(ML) (L)"
+  },
+  "alamnagar": {
+    "candidate": "Narendra Narayan Yadav",
+    "party": "JD(U)"
+  },
+  "alauli": {
+    "candidate": "Ramvriksh Sada",
+    "party": "RJD"
+  },
+  "alinagar": {
+    "candidate": "Mishri Lal Yadav",
+    "party": "VSIP"
+  },
+  "amarpur": {
+    "candidate": "Jayant Raj",
+    "party": "JD(U)"
+  },
+  "amnour": {
+    "candidate": "Krishan Kumar Mantoo",
+    "party": "BJP"
+  },
+  "amour": {
+    "candidate": "Akhtarul Iman",
+    "party": "PARTY-UNKNOWN-1920"
+  },
+  "araria": {
+    "candidate": "Abidur Rahman",
+    "party": "INC"
+  },
+  "arrah": {
+    "candidate": "Amrendra Pratap singh",
+    "party": "BJP"
+  },
+  "arwal": {
+    "candidate": "Maha Nand Singh",
+    "party": "CPI(ML) (L)"
+  },
+  "asthawan": {
+    "candidate": "Jitendra Kumar",
+    "party": "JD(U)"
+  },
+  "atri": {
+    "candidate": "Ajay Yadav",
+    "party": "RJD"
+  },
+  "aurai": {
+    "candidate": "Ram Surat Kumar",
+    "party": "BJP"
+  },
+  "aurangabad": {
+    "candidate": "Anand Shankar Singh",
+    "party": "INC"
+  },
+  "babubarhi": {
+    "candidate": "Mina Kumari",
+    "party": "JD(U)"
+  },
+  "bachhwara": {
+    "candidate": "Surendra Mehata",
+    "party": "BJP"
+  },
+  "bagaha": {
+    "candidate": "Ram Singh",
+    "party": "BJP"
+  },
+  "bahadurganj": {
+    "candidate": "Mohammad Anzar Nayeemi",
+    "party": "PARTY-UNKNOWN-1920"
+  },
+  "bahadurpur": {
+    "candidate": "Madan Sahni",
+    "party": "JD(U)"
+  },
+  "baikunthpur": {
+    "candidate": "Prem Shankar Prasad",
+    "party": "RJD"
+  },
+  "baisi": {
+    "candidate": "Syed Ruknuddin Ahmad",
+    "party": "PARTY-UNKNOWN-1920"
+  },
+  "bajpatti": {
+    "candidate": "Mukesh Kumar Yadav",
+    "party": "RJD"
+  },
+  "bakhri": {
+    "candidate": "Suryakant Paswan",
+    "party": "CPI"
+  },
+  "bakhtiarpur": {
+    "candidate": "Aniruddh Kumar",
+    "party": "RJD"
+  },
+  "balrampur": {
+    "candidate": "Mahboob Alam",
+    "party": "CPI(ML) (L)"
+  },
+  "baniapur": {
+    "candidate": "Kedar Nath Singh",
+    "party": "RJD"
+  },
+  "banka": {
+    "candidate": "Ram Narayan Mandal",
+    "party": "BJP"
+  },
+  "bankipur": {
+    "candidate": "Nitin Nabin",
+    "party": "BJP"
+  },
+  "banmankhi": {
+    "candidate": "Krishna Kumar Rishi",
+    "party": "BJP"
+  },
+  "barachatti": {
+    "candidate": "Jyoti Devi",
+    "party": "HAMS"
+  },
+  "barari": {
+    "candidate": "Bijay Singh",
+    "party": "JD(U)"
+  },
+  "barauli": {
+    "candidate": "Rampravesh Rai",
+    "party": "BJP"
+  },
+  "barbigha": {
+    "candidate": "Sudarshan Kumar",
+    "party": "JD(U)"
+  },
+  "barh": {
+    "candidate": "Gyanendra Kumar Singh",
+    "party": "BJP"
+  },
+  "barhampur": {
+    "candidate": "Shambhu Nath Yadav",
+    "party": "RJD"
+  },
+  "barhara": {
+    "candidate": "Raghvendra Pratap Singh",
+    "party": "BJP"
+  },
+  "barharia": {
+    "candidate": "Bachcha Pandey",
+    "party": "RJD"
+  },
+  "baruraj": {
+    "candidate": "Arun Kumar Singh",
+    "party": "BJP"
+  },
+  "bathnaha": {
+    "candidate": "Anil Kumar",
+    "party": "BJP"
+  },
+  "begusarai": {
+    "candidate": "Kundan Kumar",
+    "party": "BJP"
+  },
+  "belaganj": {
+    "candidate": "Surendra Prasad Yadav",
+    "party": "RJD"
+  },
+  "beldaur": {
+    "candidate": "Panna Lal Singh Patel",
+    "party": "JD(U)"
+  },
+  "belhar": {
+    "candidate": "Manoj Yadav",
+    "party": "JD(U)"
+  },
+  "belsand": {
+    "candidate": "Sanjay Kumar Gupta",
+    "party": "RJD"
+  },
+  "benipatti": {
+    "candidate": "Vinod Narayan Jha",
+    "party": "BJP"
+  },
+  "benipur": {
+    "candidate": "Binay Kumar Choudhary",
+    "party": "JD(U)"
+  },
+  "bettiah": {
+    "candidate": "Renu Devi",
+    "party": "BJP"
+  },
+  "bhabhua": {
+    "candidate": "Bharat Bind",
+    "party": "RJD"
+  },
+  "bhagalpur": {
+    "candidate": "Ajit Sharma",
+    "party": "INC"
+  },
+  "bhorey": {
+    "candidate": "Sunil Kumar",
+    "party": "JD(U)"
+  },
+  "bibhutpur": {
+    "candidate": "Ajay Kumar",
+    "party": "CPI(M)"
+  },
+  "bihariganj": {
+    "candidate": "Niranjan Kumar Mehta",
+    "party": "JD(U)"
+  },
+  "biharsharif": {
+    "candidate": "Dr. Sunil Kumar Father's Name :-Bhagwat Prasad",
+    "party": "BJP"
+  },
+  "bihpur": {
+    "candidate": "Kumar Shailendra",
+    "party": "BJP"
+  },
+  "bikram": {
+    "candidate": "Siddharth Saurav",
+    "party": "INC"
+  },
+  "bisfi": {
+    "candidate": "Haribhushan Thakur \"Bachol\"",
+    "party": "BJP"
+  },
+  "bochaha": {
+    "candidate": "Musafir Paswan",
+    "party": "VSIP"
+  },
+  "bodh gaya": {
+    "candidate": "Kumar Sarvjeet",
+    "party": "RJD"
+  },
+  "buxar": {
+    "candidate": "Sanjay Kr. Tiwari @ Munna Tiwari",
+    "party": "INC"
+  },
+  "chainpur": {
+    "candidate": "Mohd. Zama Khan",
+    "party": "BSP"
+  },
+  "chakai": {
+    "candidate": "Sumit Kumar Singh",
+    "party": "IND"
+  },
+  "chanpatia chunpatia": {
+    "candidate": "Umakant Singh",
+    "party": "BJP"
+  },
+  "chapra": {
+    "candidate": "Dr. C. N. Gupta",
+    "party": "BJP"
+  },
+  "chenari": {
+    "candidate": "Murari Prasad Gautam",
+    "party": "INC"
+  },
+  "cheria bariarpur": {
+    "candidate": "Raj Vanshi Mahto",
+    "party": "RJD"
+  },
+  "chhatapur": {
+    "candidate": "Neeraj Kumar Singh",
+    "party": "BJP"
+  },
+  "chiraia": {
+    "candidate": "Lal Babu Prasad Gupta",
+    "party": "BJP"
+  },
+  "danapur": {
+    "candidate": "Rit lal Ray",
+    "party": "RJD"
+  },
+  "darauli": {
+    "candidate": "Satyadeo Ram",
+    "party": "CPI(ML) (L)"
+  },
+  "daraundha": {
+    "candidate": "Karnjeet Singh Alias Vyas Singh",
+    "party": "BJP"
+  },
+  "darbhanga": {
+    "candidate": "Sanjay Saraogi",
+    "party": "BJP"
+  },
+  "darbhanga rural": {
+    "candidate": "Lalit Kumar Yadav",
+    "party": "RJD"
+  },
+  "dehri": {
+    "candidate": "Phate Bahadur Singh",
+    "party": "RJD"
+  },
+  "dhaka": {
+    "candidate": "Pawan Kumar Jaiswal",
+    "party": "BJP"
+  },
+  "dhamdaha": {
+    "candidate": "Leshi Singh",
+    "party": "JD(U)"
+  },
+  "dhuraiya": {
+    "candidate": "Bhudeo Choudhary",
+    "party": "RJD"
+  },
+  "digha": {
+    "candidate": "Sanjiv Chaurasia",
+    "party": "BJP"
+  },
+  "dinara": {
+    "candidate": "Vijay Kumar Mandal",
+    "party": "RJD"
+  },
+  "dumraon": {
+    "candidate": "Ajit Kumar Singh",
+    "party": "CPI(ML) (L)"
+  },
+  "ekma": {
+    "candidate": "Srikant Yadav",
+    "party": "RJD"
+  },
+  "fatwah": {
+    "candidate": "Dr. Ramanand Yadav",
+    "party": "RJD"
+  },
+  "forbesganj": {
+    "candidate": "Vidya Sagar Keshari",
+    "party": "BJP"
+  },
+  "gaighat": {
+    "candidate": "Niranjan Roy",
+    "party": "RJD"
+  },
+  "garkha": {
+    "candidate": "Surendra Ram",
+    "party": "RJD"
+  },
+  "gaya town": {
+    "candidate": "Prem Kumar",
+    "party": "BJP"
+  },
+  "ghoshi ghosi": {
+    "candidate": "Ram Bali Singh Yadav",
+    "party": "CPI(ML) (L)"
+  },
+  "gobindpur": {
+    "candidate": "Md Kamran",
+    "party": "RJD"
+  },
+  "goh": {
+    "candidate": "Bhim Kumar Singh",
+    "party": "RJD"
+  },
+  "gopalganj": {
+    "candidate": "Subash Singh",
+    "party": "BJP"
+  },
+  "gopalpur": {
+    "candidate": "Narendra Kumar Niraj",
+    "party": "JD(U)"
+  },
+  "gora bauram": {
+    "candidate": "Swarna Singh",
+    "party": "VSIP"
+  },
+  "goriyakothi": {
+    "candidate": "Devesh Kant Singh",
+    "party": "BJP"
+  },
+  "govindganj": {
+    "candidate": "Sunil Mani Tiwari",
+    "party": "BJP"
+  },
+  "gurua": {
+    "candidate": "Vinay Kumar",
+    "party": "RJD"
+  },
+  "hajipur": {
+    "candidate": "Awadhesh Singh",
+    "party": "BJP"
+  },
+  "harlakhi": {
+    "candidate": "Sudhanshu Shekhar",
+    "party": "JD(U)"
+  },
+  "harnaut": {
+    "candidate": "Hari Narayan Singh",
+    "party": "JD(U)"
+  },
+  "harsidhi": {
+    "candidate": "Krishnanandan Paswan",
+    "party": "BJP"
+  },
+  "hasanpur": {
+    "candidate": "Tej Pratap Yadav",
+    "party": "RJD"
+  },
+  "hathua": {
+    "candidate": "Rajesh Kumar Singh",
+    "party": "RJD"
+  },
+  "hayaghat": {
+    "candidate": "Ram Chandra Prasad",
+    "party": "BJP"
+  },
+  "hilsa": {
+    "candidate": "Krishnamurari Sharan urf Prem Mukhiya",
+    "party": "JD(U)"
+  },
+  "hisua": {
+    "candidate": "Nitu Kumari",
+    "party": "INC"
+  },
+  "imamganj": {
+    "candidate": "Jitan Ram Manjhi",
+    "party": "HAMS"
+  },
+  "islampur": {
+    "candidate": "Rakesh Kumar Roushan",
+    "party": "RJD"
+  },
+  "jagdishpur": {
+    "candidate": "Ram Vishun Singh",
+    "party": "RJD"
+  },
+  "jahanabad": {
+    "candidate": "Kumar Krishna Mohan urf Suday Yadav",
+    "party": "RJD"
+  },
+  "jale": {
+    "candidate": "Jibesh Kumar",
+    "party": "BJP"
+  },
+  "jamalpur": {
+    "candidate": "Ajay Kumar Singh",
+    "party": "INC"
+  },
+  "jamui": {
+    "candidate": "Shreyasi Singh",
+    "party": "BJP"
+  },
+  "jhajha": {
+    "candidate": "Damodar Rawat",
+    "party": "JD(U)"
+  },
+  "jhanjharpur": {
+    "candidate": "Nitish Mishra",
+    "party": "BJP"
+  },
+  "jokihat": {
+    "candidate": "Shahnawaz",
+    "party": "PARTY-UNKNOWN-1920"
+  },
+  "kadwa": {
+    "candidate": "Shakeel Ahmad Khan",
+    "party": "INC"
+  },
+  "kahalgaon": {
+    "candidate": "Pawan Kumar Yadav",
+    "party": "BJP"
+  },
+  "kalyanpur": {
+    "candidate": "Manoj Kumar Yadav",
+    "party": "RJD"
+  },
+  "kalyanpur 2": {
+    "candidate": "Maheshwar Hazari",
+    "party": "JD(U)"
+  },
+  "kanti": {
+    "candidate": "Mohammad Israil Mansuri",
+    "party": "RJD"
+  },
+  "karakat": {
+    "candidate": "Arun Singh",
+    "party": "CPI(ML) (L)"
+  },
+  "kargahar": {
+    "candidate": "Santosh Kumar Mishra",
+    "party": "INC"
+  },
+  "kasba": {
+    "candidate": "Md. Afaque Alam",
+    "party": "INC"
+  },
+  "katihar": {
+    "candidate": "Tarkishore Prasad",
+    "party": "BJP"
+  },
+  "katoria": {
+    "candidate": "Dr. Nikki Hembrom",
+    "party": "BJP"
+  },
+  "keoti": {
+    "candidate": "Murari Mohan Jha",
+    "party": "BJP"
+  },
+  "kesariya": {
+    "candidate": "Shalini Mishra",
+    "party": "JD(U)"
+  },
+  "khagaria": {
+    "candidate": "Chhatrapati Yadav",
+    "party": "INC"
+  },
+  "khajauli": {
+    "candidate": "Arun Shankar Prasad",
+    "party": "BJP"
+  },
+  "kishanganj": {
+    "candidate": "Ijaharul Husain",
+    "party": "INC"
+  },
+  "kochadhaman": {
+    "candidate": "Muhammed Izhar Asfi",
+    "party": "PARTY-UNKNOWN-1920"
+  },
+  "korha": {
+    "candidate": "Kavita Devi",
+    "party": "BJP"
+  },
+  "kuchaikote": {
+    "candidate": "Amrendra Kumar Pandey",
+    "party": "JD(U)"
+  },
+  "kumhrarh": {
+    "candidate": "Arun Kumar Sinha",
+    "party": "BJP"
+  },
+  "kurhani": {
+    "candidate": "Anil Kumar Sahni",
+    "party": "RJD"
+  },
+  "kurtha": {
+    "candidate": "Bagi Kumar Verma",
+    "party": "RJD"
+  },
+  "kusheshwar asthan": {
+    "candidate": "Shashibhushan Hajari",
+    "party": "JD(U)"
+  },
+  "kutumba": {
+    "candidate": "Rajesh Kumar",
+    "party": "INC"
+  },
+  "lakhisarai": {
+    "candidate": "Vijay Kumar Sinha",
+    "party": "BJP"
+  },
+  "lalganj": {
+    "candidate": "Sanjay Kumar Singh",
+    "party": "BJP"
+  },
+  "laukaha": {
+    "candidate": "Bharat Bhushan Mandal",
+    "party": "RJD"
+  },
+  "lauriya": {
+    "candidate": "Vinay Bihari",
+    "party": "BJP"
+  },
+  "madhepura": {
+    "candidate": "Chandra Shekhar",
+    "party": "RJD"
+  },
+  "madhuban": {
+    "candidate": "Rana Randhir",
+    "party": "BJP"
+  },
+  "madhubani": {
+    "candidate": "Samir Kumar Mahaseth",
+    "party": "RJD"
+  },
+  "maharajganj": {
+    "candidate": "Vijay Shanker Dubey",
+    "party": "INC"
+  },
+  "mahishi": {
+    "candidate": "Gunjeshwar Sah",
+    "party": "JD(U)"
+  },
+  "mahnar": {
+    "candidate": "Bina Singh",
+    "party": "RJD"
+  },
+  "mahua": {
+    "candidate": "Mukesh Kumar Raushan",
+    "party": "RJD"
+  },
+  "makhdumpur": {
+    "candidate": "Satish Kumar",
+    "party": "RJD"
+  },
+  "maner": {
+    "candidate": "Bhai Virendra",
+    "party": "RJD"
+  },
+  "manihari": {
+    "candidate": "Manohar Prasad Singh",
+    "party": "INC"
+  },
+  "manjhi": {
+    "candidate": "Dr. Satyendra Yadav",
+    "party": "CPI(M)"
+  },
+  "marhaura": {
+    "candidate": "Jitendra Kumar Ray",
+    "party": "RJD"
+  },
+  "masaurhi": {
+    "candidate": "Rekha Devi",
+    "party": "RJD"
+  },
+  "matihani": {
+    "candidate": "Raj Kumar Singh",
+    "party": "LJP"
+  },
+  "minapur": {
+    "candidate": "Rajeev Kumar",
+    "party": "RJD"
+  },
+  "mohania": {
+    "candidate": "Sangita Kumari",
+    "party": "RJD"
+  },
+  "mohiuddin nagar": {
+    "candidate": "Rajesh Kumar Singh",
+    "party": "BJP"
+  },
+  "mokama": {
+    "candidate": "Anant Kumar Singh",
+    "party": "RJD"
+  },
+  "morwa": {
+    "candidate": "Ranvijay Sahu",
+    "party": "RJD"
+  },
+  "motihari": {
+    "candidate": "Pramod Kumar",
+    "party": "BJP"
+  },
+  "munger": {
+    "candidate": "Pranav Kumar",
+    "party": "BJP"
+  },
+  "muzaffarpur": {
+    "candidate": "Bijendra Chaudhary",
+    "party": "INC"
+  },
+  "nabinagar": {
+    "candidate": "Vijay Kumar Singh Alias Dabloo Singh",
+    "party": "RJD"
+  },
+  "nalanda": {
+    "candidate": "Shrawon Kumar",
+    "party": "JD(U)"
+  },
+  "narkatia": {
+    "candidate": "Shamim Ahmad",
+    "party": "RJD"
+  },
+  "narkatiaganj": {
+    "candidate": "Rashmi Varma",
+    "party": "BJP"
+  },
+  "narpatganj": {
+    "candidate": "Jai Prakash Yadav",
+    "party": "BJP"
+  },
+  "nathnagar": {
+    "candidate": "Ali Ashraf Siddiqui",
+    "party": "RJD"
+  },
+  "nautan": {
+    "candidate": "Narayan Prasad",
+    "party": "BJP"
+  },
+  "nawada": {
+    "candidate": "Vibha Devi",
+    "party": "RJD"
+  },
+  "nirmali": {
+    "candidate": "Aniruddha Prasad Yadav",
+    "party": "JD(U)"
+  },
+  "nokha": {
+    "candidate": "Anita Devi",
+    "party": "RJD"
+  },
+  "obra": {
+    "candidate": "Rishi Kumar",
+    "party": "RJD"
+  },
+  "paliganj": {
+    "candidate": "Sandeep Saurav",
+    "party": "CPI(ML) (L)"
+  },
+  "parbatta": {
+    "candidate": "Doctor Sanjeev Kumar",
+    "party": "JD(U)"
+  },
+  "parihar": {
+    "candidate": "Gaytri Devi",
+    "party": "BJP"
+  },
+  "paroo": {
+    "candidate": "Ashok Kumar Singh",
+    "party": "BJP"
+  },
+  "parsa": {
+    "candidate": "Chhote Lal Ray",
+    "party": "RJD"
+  },
+  "patepur": {
+    "candidate": "Lakhendra Kumar Raushan",
+    "party": "BJP"
+  },
+  "patna sahib": {
+    "candidate": "Nand Kishore  Yadav",
+    "party": "BJP"
+  },
+  "phulparas": {
+    "candidate": "Sheela Kumari",
+    "party": "JD(U)"
+  },
+  "phulwari": {
+    "candidate": "Gopal Ravidas",
+    "party": "CPI(ML) (L)"
+  },
+  "pipra": {
+    "candidate": "Shyambabu Prasad Yadav",
+    "party": "BJP"
+  },
+  "pipra 2": {
+    "candidate": "Rambilash Kamat",
+    "party": "JD(U)"
+  },
+  "pirpainti": {
+    "candidate": "Lalan Kumar",
+    "party": "BJP"
+  },
+  "pranpur": {
+    "candidate": "Nisha Singh",
+    "party": "BJP"
+  },
+  "purnea": {
+    "candidate": "Vijay Kumar Khemka",
+    "party": "BJP"
+  },
+  "rafiganj": {
+    "candidate": "Mohammad Nehaluddin",
+    "party": "RJD"
+  },
+  "raghopur": {
+    "candidate": "Tejashwi Prasad Yadav",
+    "party": "RJD"
+  },
+  "raghunathpur": {
+    "candidate": "Harishankar Yadav",
+    "party": "RJD"
+  },
+  "raja pakar": {
+    "candidate": "Pratima Kumari",
+    "party": "INC"
+  },
+  "rajauli": {
+    "candidate": "Prakash Veer",
+    "party": "RJD"
+  },
+  "rajgir": {
+    "candidate": "Kaushal Kishore",
+    "party": "JD(U)"
+  },
+  "rajnagar": {
+    "candidate": "Dr. Ramprit Paswan",
+    "party": "BJP"
+  },
+  "rajpur": {
+    "candidate": "Vishwanath Ram",
+    "party": "INC"
+  },
+  "ramgarh": {
+    "candidate": "Sudhakar Singh",
+    "party": "RJD"
+  },
+  "ramnagar": {
+    "candidate": "Bhagirathi Devi",
+    "party": "BJP"
+  },
+  "raniganj": {
+    "candidate": "Achmit Rishidev",
+    "party": "JD(U)"
+  },
+  "raxaul": {
+    "candidate": "Pramod Kumar Sinha",
+    "party": "BJP"
+  },
+  "riga": {
+    "candidate": "Moti Lal Prasad",
+    "party": "BJP"
+  },
+  "rosera": {
+    "candidate": "Birendra Kumar",
+    "party": "BJP"
+  },
+  "runisaidpur": {
+    "candidate": "Pankaj Kumar Mishra",
+    "party": "JD(U)"
+  },
+  "rupauli": {
+    "candidate": "Bima Bharti",
+    "party": "JD(U)"
+  },
+  "saharsa": {
+    "candidate": "Alok Ranjan",
+    "party": "BJP"
+  },
+  "sahebganj": {
+    "candidate": "Raju Kumar Singh",
+    "party": "VSIP"
+  },
+  "sahebpur kamal": {
+    "candidate": "Satanand Sambuddha @Lalan",
+    "party": "RJD"
+  },
+  "sakra": {
+    "candidate": "Ashok Kumar Chodhary",
+    "party": "JD(U)"
+  },
+  "samastipur": {
+    "candidate": "Akhtarul Islam Shahin",
+    "party": "RJD"
+  },
+  "sandesh": {
+    "candidate": "Kiran Devi",
+    "party": "RJD"
+  },
+  "sarairanjan": {
+    "candidate": "Vijay Kumar Choudhary",
+    "party": "JD(U)"
+  },
+  "sasaram": {
+    "candidate": "Rajesh Kumar Gupta",
+    "party": "RJD"
+  },
+  "shahpur": {
+    "candidate": "Rahul Tiwary",
+    "party": "RJD"
+  },
+  "sheikhpura": {
+    "candidate": "Vijay Kumar",
+    "party": "RJD"
+  },
+  "sheohar": {
+    "candidate": "Chetan Anand",
+    "party": "RJD"
+  },
+  "sherghati": {
+    "candidate": "Manju Agrawal",
+    "party": "RJD"
+  },
+  "sikandra": {
+    "candidate": "Prafull Kumar Manjhi",
+    "party": "HAMS"
+  },
+  "sikta": {
+    "candidate": "Birendra Prasad Gupta",
+    "party": "CPI(ML) (L)"
+  },
+  "sikti": {
+    "candidate": "Vijay Kumar Mandal",
+    "party": "BJP"
+  },
+  "simiri bakhtiarpur simri bakhtiarpur": {
+    "candidate": "Yusuf Salahuddin",
+    "party": "RJD"
+  },
+  "singheshwar": {
+    "candidate": "Chandrahas Chaupal",
+    "party": "RJD"
+  },
+  "sitamarhi sitamurhi": {
+    "candidate": "Mithilesh Kumar",
+    "party": "BJP"
+  },
+  "siwan": {
+    "candidate": "Awadh Bihari Chaudhary",
+    "party": "RJD"
+  },
+  "sonbarsa": {
+    "candidate": "Ratnesh Sada",
+    "party": "JD(U)"
+  },
+  "sonepur": {
+    "candidate": "Dr. Ramanuj Prasad",
+    "party": "RJD"
+  },
+  "sugauli": {
+    "candidate": "Er. Shashi Bhushan Singh",
+    "party": "RJD"
+  },
+  "sultanganj": {
+    "candidate": "Lalit Narayan Mandal",
+    "party": "JD(U)"
+  },
+  "supaul": {
+    "candidate": "Bijendra Prasad Yadav",
+    "party": "JD(U)"
+  },
+  "surajgarha": {
+    "candidate": "Prahlad Yadav",
+    "party": "RJD"
+  },
+  "sursand": {
+    "candidate": "Dilip Ray",
+    "party": "JD(U)"
+  },
+  "taraiya": {
+    "candidate": "Janak Singh",
+    "party": "BJP"
+  },
+  "tarapur": {
+    "candidate": "Mewa Lal Choudhary",
+    "party": "JD(U)"
+  },
+  "tarari": {
+    "candidate": "Sudama Prasad S/o Ganga Dayal Sah",
+    "party": "CPI(ML) (L)"
+  },
+  "teghra": {
+    "candidate": "Ram Ratan Singh",
+    "party": "CPI"
+  },
+  "thakurganj": {
+    "candidate": "Saud Alam",
+    "party": "RJD"
+  },
+  "tikari": {
+    "candidate": "Anil Kumar",
+    "party": "HAMS"
+  },
+  "tribeniganj": {
+    "candidate": "Veena Bharti",
+    "party": "JD(U)"
+  },
+  "ujiarpur": {
+    "candidate": "Alok Kumar Mehta",
+    "party": "RJD"
+  },
+  "vaishali": {
+    "candidate": "Siddharth Patel",
+    "party": "JD(U)"
+  },
+  "valmiki nagar": {
+    "candidate": "Dhirendra Pratap Singh alias Rinku singh",
+    "party": "JD(U)"
+  },
+  "warisnagar": {
+    "candidate": "Ashok Kumar",
+    "party": "JD(U)"
+  },
+  "warsaliganj": {
+    "candidate": "Aruna Devi",
+    "party": "BJP"
+  },
+  "wazirganj": {
+    "candidate": "Birendra Singh",
+    "party": "BJP"
+  },
+  "ziradei": {
+    "candidate": "Amarjeet Kushwaha",
+    "party": "CPI(ML) (L)"
+  }
+}
