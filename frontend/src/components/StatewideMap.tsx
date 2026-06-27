@@ -42,6 +42,8 @@ export const StatewideMap: React.FC<StatewideMapProps> = ({
     if (!containerRef.current) return;
     if (mapRef.current) return; // Map already initialized
 
+    let isCancelled = false;
+
     // 1. Initialize Leaflet Map (Centered on Bihar)
     const map = L.map(containerRef.current, {
       center: [25.75, 85.9],
@@ -65,6 +67,8 @@ export const StatewideMap: React.FC<StatewideMapProps> = ({
         const res = await fetch(`${API_BASE}/api/spatial`);
         if (!res.ok) throw new Error('Failed to load spatial constituency map data');
         const data = await res.json();
+
+        if (isCancelled) return;
 
         // 4. Create GeoJSON Layer
         const geoJsonLayer = L.geoJSON(data, {
@@ -120,10 +124,13 @@ export const StatewideMap: React.FC<StatewideMapProps> = ({
         map.fitBounds(geoJsonLayer.getBounds(), { padding: [10, 10] });
 
       } catch (err: any) {
+        if (isCancelled) return;
         console.error(err);
         setError(err.message || 'Error loading map boundaries');
       } finally {
-        setLoading(false);
+        if (!isCancelled) {
+          setLoading(false);
+        }
       }
     };
 
@@ -131,6 +138,7 @@ export const StatewideMap: React.FC<StatewideMapProps> = ({
 
     // 5. Cleanup on unmount
     return () => {
+      isCancelled = true;
       if (mapRef.current) {
         mapRef.current.remove();
         mapRef.current = null;
