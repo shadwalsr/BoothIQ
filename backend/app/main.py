@@ -529,7 +529,8 @@ def get_spatial():
                 'persona_name': persona_map.get(int(cid)) if cid is not None else 'Unassigned'
             }
             
-    spatial_dir = r"c:\BoothIQ\data\raw\spatial"
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    spatial_dir = os.path.join(base_dir, "data", "raw", "spatial")
     features = []
     
     if os.path.exists(spatial_dir):

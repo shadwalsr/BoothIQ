@@ -11,23 +11,52 @@ def generate_realistic_data():
     raw_2025_dir = os.path.join(base_dir, "data", "raw", "eci_2025")
     raw_2020_dir = os.path.join(base_dir, "data", "raw", "eci_2020")
     
-    # 1. Load the canonical constituency list from the existing files in raw_2025_dir before cleaning it
+    # 1. Load the canonical constituency list and existing real winners from files before cleaning them
     constituencies = []
-    for fname in sorted(os.listdir(raw_2025_dir)):
-        if not fname.endswith('.jsonl'):
-            continue
-        filepath = os.path.join(raw_2025_dir, fname)
-        with open(filepath, 'r', encoding='utf-8') as f:
-            for line in f:
-                rec = json.loads(line)
-                constituencies.append({
-                    'ac_no': rec['ac_no'],
-                    'ac_name': rec['ac_name'],
-                    'base_filename': fname.replace('_eci2025.jsonl', '')
-                })
-                break # Only need the first line
+    real_winners = {2020: {}, 2025: {}}
+    
+    # Load 2025 real winners
+    if os.path.exists(raw_2025_dir):
+        for fname in sorted(os.listdir(raw_2025_dir)):
+            if not fname.endswith('.jsonl'):
+                continue
+            filepath = os.path.join(raw_2025_dir, fname)
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    for line in f:
+                        rec = json.loads(line)
+                        constituencies.append({
+                            'ac_no': rec['ac_no'],
+                            'ac_name': rec['ac_name'],
+                            'base_filename': fname.replace('_eci2025.jsonl', '')
+                        })
+                        real_winners[2025][rec['ac_no']] = {
+                            'winner_name': rec['winner_name'],
+                            'winner_party': rec['winner_party']
+                        }
+                        break
+            except Exception as e:
+                print(f"Warning loading 2025 winner from {fname}: {e}")
                 
-    print(f"Loaded {len(constituencies)} constituencies.")
+    # Load 2020 real winners
+    if os.path.exists(raw_2020_dir):
+        for fname in sorted(os.listdir(raw_2020_dir)):
+            if not fname.endswith('.jsonl'):
+                continue
+            filepath = os.path.join(raw_2020_dir, fname)
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    for line in f:
+                        rec = json.loads(line)
+                        real_winners[2020][rec['ac_no']] = {
+                            'winner_name': rec['winner_name'],
+                            'winner_party': rec['winner_party']
+                        }
+                        break
+            except Exception as e:
+                print(f"Warning loading 2020 winner from {fname}: {e}")
+                
+    print(f"Loaded {len(constituencies)} constituencies and existing real winners.")
     
     # Clean output directories to ensure no stale/duplicate files
     for d in [raw_2025_dir, raw_2020_dir]:
@@ -88,7 +117,7 @@ def generate_realistic_data():
     random.shuffle(parties_2025_pool)
     
     # Pools of active parties
-    all_parties = ["RJD", "BJP", "JD(U)", "INC", "LJP", "CPI(ML)L", "AIMIM", "HAM", "VIP", "IND"]
+    all_parties = ["RJD", "BJP", "JD(U)", "INC", "LJP(RV)", "LJP", "CPI(ML)(L)", "AIMIM", "HAM(S)", "VIP", "IND", "RLM", "CPI(M)", "CPI", "BSP", "IIP"]
     
     # Used to guarantee unique winner names across the state for each year
     used_winners_2020 = set()
@@ -130,6 +159,11 @@ def generate_realistic_data():
                 turnout_pct = round(random.uniform(55.5, 67.5), 2)
                 winner_party = parties_2025_pool[idx]
                 
+            # Overwrite with real winner details if available
+            has_real_winner = (ac_no in real_winners[year])
+            if has_real_winner:
+                winner_party = real_winners[year][ac_no]['winner_party']
+                
             total_polled = int(electors * (turnout_pct / 100.0))
             
             # Index card summary
@@ -145,9 +179,13 @@ def generate_realistic_data():
             candidates = []
             
             # 1. Winner
-            winner_gender = (random.random() < 0.15) # 15% female candidates
             used_set = used_winners_2020 if year == 2020 else used_winners_2025
-            winner_name = generate_unique_name(winner_gender, used_set)
+            if has_real_winner:
+                winner_name = real_winners[year][ac_no]['winner_name']
+                used_set.add(winner_name)
+            else:
+                winner_gender = (random.random() < 0.15) # 15% female candidates
+                winner_name = generate_unique_name(winner_gender, used_set)
             
             # Winner vote share (33% to 52%)
             winner_share = random.uniform(34.0, 52.0)
