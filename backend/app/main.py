@@ -560,3 +560,21 @@ def get_spatial():
         "features": features
     }
     return _cached_spatial_geojson
+
+@app.get("/api/debug")
+def get_debug():
+    import os
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    spatial_dir = os.path.join(base_dir, "data", "raw", "spatial")
+    exists = os.path.exists(spatial_dir)
+    files = os.listdir(spatial_dir) if exists else []
+    return {
+        "__file__": __file__,
+        "abspath": os.path.abspath(__file__),
+        "getcwd": os.getcwd(),
+        "base_dir": base_dir,
+        "spatial_dir": spatial_dir,
+        "exists": exists,
+        "files_count": len(files),
+        "files_sample": files[:5] if files else []
+    }
