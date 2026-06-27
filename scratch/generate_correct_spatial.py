@@ -16,23 +16,23 @@ if not SUPABASE_URL or not SUPABASE_KEY:
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
-# Define accurate district centroids in Bihar (Latitude, Longitude)
+# Define district centroids shifted slightly inward from borders to avoid spillover
 district_centroids = {
     'Patna': (25.61, 85.14),
-    'Gaya': (24.79, 85.00),
+    'Gaya': (24.85, 85.00),         # Shifted north from 24.79 (Jharkhand border)
     'Bhagalpur': (25.25, 87.01),
     'Muzaffarpur': (26.12, 85.38),
     'Darbhanga': (26.15, 85.90),
-    'West Champaran': (27.15, 84.50),
-    'East Champaran': (26.65, 84.91),
-    'Saran': (25.85, 84.85),
-    'Siwan': (26.22, 84.36),
-    'Gopalganj': (26.47, 84.44),
+    'West Champaran': (26.85, 84.55), # Shifted south/east from 27.15 (Nepal/UP border)
+    'East Champaran': (26.55, 84.93), # Shifted south/east from 26.65 (Nepal border)
+    'Saran': (25.85, 84.90),         # Shifted east from 84.85 (UP border)
+    'Siwan': (26.22, 84.44),         # Shifted east from 84.36 (UP border)
+    'Gopalganj': (26.47, 84.50),     # Shifted east from 84.44 (UP border)
     'Vaishali': (25.75, 85.22),
     'Samastipur': (25.86, 85.78),
-    'Sitamarhi': (26.60, 85.48),
-    'Sheohar': (26.51, 85.29),
-    'Madhubani': (26.35, 86.08),
+    'Sitamarhi': (26.50, 85.48),     # Shifted south from 26.60 (Nepal border)
+    'Sheohar': (26.45, 85.29),       # Shifted south from 26.51 (Nepal border)
+    'Madhubani': (26.25, 86.08),     # Shifted south from 26.35 (Nepal border)
     'Begusarai': (25.42, 86.13),
     'Khagaria': (25.50, 86.48),
     'Munger': (25.37, 86.47),
@@ -40,25 +40,31 @@ district_centroids = {
     'Sheikhpura': (25.14, 85.86),
     'Nalanda': (25.20, 85.51),
     'Bhojpur': (25.56, 84.67),
-    'Buxar': (25.56, 83.98),
-    'Rohtas': (24.95, 84.01),
-    'Kaimur': (25.05, 83.62),
+    'Buxar': (25.56, 84.10),         # Shifted east from 83.98 (UP border)
+    'Rohtas': (24.95, 84.15),         # Shifted east from 84.01 (UP/Jharkhand border)
+    'Kaimur': (25.05, 83.75),         # Shifted east from 83.62 (UP border)
     'Jehanabad': (25.21, 84.99),
     'Arwal': (25.25, 84.67),
-    'Nawada': (24.89, 85.54),
-    'Aurangabad': (24.75, 84.37),
-    'Jamui': (24.92, 86.22),
-    'Banka': (24.88, 86.92),
+    'Nawada': (24.95, 85.54),         # Shifted north from 24.89 (Jharkhand border)
+    'Aurangabad': (24.80, 84.45),     # Shifted north/east from 24.75 (Jharkhand border)
+    'Jamui': (25.00, 86.22),         # Shifted north from 24.92 (Jharkhand border)
+    'Banka': (24.95, 86.92),         # Shifted north from 24.88 (Jharkhand border)
     'Saharsa': (25.88, 86.60),
-    'Supaul': (26.12, 86.60),
+    'Supaul': (26.05, 86.60),         # Shifted south from 26.12 (Nepal border)
     'Madhepura': (25.92, 86.79),
     'Purnia': (25.78, 87.47),
-    'Araria': (26.15, 87.43),
-    'Kishanganj': (26.27, 87.95),
+    'Araria': (26.10, 87.43),         # Shifted south from 26.15 (Nepal border)
+    'Kishanganj': (26.20, 87.90),     # Shifted south/west from 26.27 (Nepal/WB border)
     'Katihar': (25.54, 87.57)
 }
 
-def generate_hexagon(center_lon, center_lat, size=0.03):
+# Approx safe boundaries for Bihar to prevent crossover
+BIHAR_MIN_LAT = 24.3
+BIHAR_MAX_LAT = 27.4
+BIHAR_MIN_LON = 83.4
+BIHAR_MAX_LON = 88.1
+
+def generate_hexagon(center_lon, center_lat, size=0.012):
     """
     Generates coordinates of a hexagon centered at center_lon, center_lat.
     """
@@ -67,9 +73,14 @@ def generate_hexagon(center_lon, center_lat, size=0.03):
     for i in range(7):
         angle = math.radians(60 * i)
         lon = center_lon + size * math.cos(angle)
-        # Latitudes shrink slightly in degree width relative to longitude,
-        # but 0.03 is small enough that a simple circle/hexagon is fine.
         lat = center_lat + size * math.sin(angle)
+        
+        # Validation checks
+        if not (BIHAR_MIN_LAT <= lat <= BIHAR_MAX_LAT):
+            raise ValueError(f"Latitude {lat:.4f} is outside safe Bihar bounds ({BIHAR_MIN_LAT} to {BIHAR_MAX_LAT})")
+        if not (BIHAR_MIN_LON <= lon <= BIHAR_MAX_LON):
+            raise ValueError(f"Longitude {lon:.4f} is outside safe Bihar bounds ({BIHAR_MIN_LON} to {BIHAR_MAX_LON})")
+            
         coords.append([round(lon, 6), round(lat, 6)])
     return [coords]
 
@@ -107,18 +118,13 @@ def main():
         n = len(consts)
         
         # Distribute constituencies of the district in a circle around the centroid
-        # to ensure they don't overlap.
         for i, c in enumerate(consts):
             ac_no = c['ac_no']
             ac_name = c['ac_name']
             
-            # Radial distance and angle
-            # For 1 constituency, offset is 0.
-            # Otherwise distribute evenly.
+            # Using much tighter spread (radius 0.025 to 0.045) to prevent border crossover
             if n > 1:
-                # Add slight random variations or use structured ring layout
-                # Radius between 0.05 and 0.12 depending on district size (approximated)
-                radius = 0.06 + 0.02 * (i % 3)
+                radius = 0.025 + 0.01 * (i % 3)
                 angle = (2 * math.pi * i) / n
                 offset_lon = radius * math.cos(angle)
                 offset_lat = radius * math.sin(angle)
@@ -128,11 +134,14 @@ def main():
             c_lon = dist_lon + offset_lon
             c_lat = dist_lat + offset_lat
             
-            # Generate regular hexagon coordinates
-            # Size = 0.02 to make them fit nicely next to each other
-            hexagon_coords = generate_hexagon(c_lon, c_lat, size=0.02)
+            # Hexagon size shrunk to 0.012 to fit tightly and prevent overlap
+            try:
+                hexagon_coords = generate_hexagon(c_lon, c_lat, size=0.012)
+            except ValueError as e:
+                print(f"Error generating coordinates for AC{ac_no} {ac_name} in district {dist}: {e}")
+                raise e
             
-            # Format filename, e.g. AC001_valmiki_nagar_spatial.geojson
+            # Format filename
             slug = ac_name.lower().replace(' ', '_').replace('-', '_').replace("'", "")
             filename = f"AC{ac_no:03d}_{slug}_spatial.geojson"
             filepath = os.path.join(spatial_dir, filename)
