@@ -513,22 +513,16 @@ def get_spatial():
     
     supabase = get_supabase_client()
     try:
-        res_feats = supabase.table('constituency_features').select('ac_no, cluster_id').execute()
+        res_feats = supabase.table('constituency_features').select('*').execute()
         res_personas = supabase.table('cluster_personas').select('cluster_id, persona_name').execute()
+        res_results = supabase.table('election_results_2025').select('ac_no, winner_name, winner_party, margin, voter_turnout_pct').execute()
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Database fetch error: {e}")
         
     persona_map = {int(p['cluster_id']): p['persona_name'] for p in res_personas.data if p.get('cluster_id') is not None}
-    cluster_map = {}
-    for f in res_feats.data:
-        ac_no = f.get('ac_no')
-        cid = f.get('cluster_id')
-        if ac_no is not None:
-            cluster_map[int(ac_no)] = {
-                'cluster_id': int(cid) if cid is not None else None,
-                'persona_name': persona_map.get(int(cid)) if cid is not None else 'Unassigned'
-            }
-            
+    feats_map = {int(f['ac_no']): f for f in res_feats.data if f.get('ac_no') is not None}
+    results_map = {int(r['ac_no']): r for r in res_results.data if r.get('ac_no') is not None}
+    
     base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     spatial_dir = os.path.join(base_dir, "data", "raw", "spatial")
     features = []
@@ -540,17 +534,41 @@ def get_spatial():
                 try:
                     with open(filepath, "r", encoding="utf-8") as f:
                         feature = json.load(f)
-                        # Inject cluster data
+                        # Inject cluster and metrics data
                         props = feature.get("properties", {})
                         ac_no = props.get("ac_no")
                         if ac_no is not None:
                             ac_no = int(ac_no)
-                            if ac_no in cluster_map:
-                                props["cluster_id"] = cluster_map[ac_no]["cluster_id"]
-                                props["persona_name"] = cluster_map[ac_no]["persona_name"]
+                            
+                            # Results data
+                            if ac_no in results_map:
+                                r = results_map[ac_no]
+                                props["winner_name"] = r.get("winner_name")
+                                props["winner_party"] = r.get("winner_party")
+                                props["margin"] = r.get("margin")
+                                props["voter_turnout_pct"] = r.get("voter_turnout_pct")
+                            else:
+                                props["winner_name"] = "N/A"
+                                props["winner_party"] = "N/A"
+                                props["margin"] = None
+                                props["voter_turnout_pct"] = None
+                                
+                            # Features data
+                            if ac_no in feats_map:
+                                ft = feats_map[ac_no]
+                                cid = ft.get("cluster_id")
+                                props["cluster_id"] = int(cid) if cid is not None else None
+                                props["persona_name"] = persona_map.get(int(cid)) if cid is not None else 'Unassigned'
+                                props["competitiveness_score"] = ft.get("competitiveness_score")
+                                props["turnout_delta"] = ft.get("turnout_delta")
+                                props["scheme_penetration_score"] = ft.get("scheme_penetration_score")
                             else:
                                 props["cluster_id"] = None
                                 props["persona_name"] = "Unassigned"
+                                props["competitiveness_score"] = None
+                                props["turnout_delta"] = None
+                                props["scheme_penetration_score"] = None
+                                
                         features.append(feature)
                 except Exception as e:
                     print(f"Error loading spatial file {filename}: {e}")

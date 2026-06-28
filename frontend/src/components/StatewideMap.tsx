@@ -76,23 +76,68 @@ export const StatewideMap: React.FC<StatewideMapProps> = ({
             const cid = feature?.properties?.cluster_id;
             return {
               fillColor: getClusterColor(cid),
-              weight: 1.2,
-              opacity: 0.9,
-              color: '#1a1d29', // Dark polygon boundaries
-              fillOpacity: 0.55,
+              weight: 1.5,
+              opacity: 0.8,
+              color: '#08090d', // Dark border color
+              fillOpacity: 0.65, // More vibrant fill
             };
           },
           onEachFeature: (feature, layer) => {
             const props = feature.properties;
+            const marginText = props.margin ? `${Number(props.margin).toLocaleString()} votes` : 'N/A';
+            const turnoutText = props.voter_turnout_pct ? `${Number(props.voter_turnout_pct).toFixed(1)}%` : 'N/A';
+            const deltaSign = props.turnout_delta && props.turnout_delta >= 0 ? '+' : '';
+            const deltaText = props.turnout_delta !== null && props.turnout_delta !== undefined 
+              ? ` (${deltaSign}${Number(props.turnout_delta).toFixed(1)}%)` 
+              : '';
+            const competitivenessText = props.competitiveness_score ? `${Number(props.competitiveness_score).toFixed(1)}%` : 'N/A';
+            const welfareText = props.scheme_penetration_score ? `${(Number(props.scheme_penetration_score) * 10).toFixed(1)}/10` : 'N/A';
 
             // Bind glowing dark glassmorphic tooltip
             layer.bindTooltip(
               `<div class="map-ac-tooltip">
-                <div class="tooltip-ac-id">AC #${props.ac_no}</div>
-                <div class="tooltip-ac-name">${props.ac_name}</div>
-                <div class="tooltip-ac-district">${props.district} District</div>
-                <div class="tooltip-ac-persona" style="color: ${getClusterColor(props.cluster_id)}">
-                  Segment: ${props.persona_name || 'Unassigned'}
+                <div class="tooltip-header">
+                  <div class="tooltip-ac-id">AC #${props.ac_no}</div>
+                  <div class="tooltip-ac-name">${props.ac_name}</div>
+                  <div class="tooltip-ac-district">${props.district} District</div>
+                </div>
+                
+                <div class="tooltip-divider"></div>
+                
+                <div class="tooltip-section">
+                  <div class="tooltip-row">
+                    <span class="tooltip-label">Segment:</span>
+                    <span class="tooltip-value" style="color: ${getClusterColor(props.cluster_id)}; font-weight: 700;">
+                      ${props.persona_name || 'Unassigned'}
+                    </span>
+                  </div>
+                  <div class="tooltip-row">
+                    <span class="tooltip-label">Winner (2025):</span>
+                    <span class="tooltip-value highlight-value">
+                      ${props.winner_name || 'N/A'} <span class="party-badge">${props.winner_party || 'N/A'}</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="tooltip-divider"></div>
+
+                <div class="tooltip-grid">
+                  <div class="tooltip-grid-item">
+                    <div class="grid-label">Victory Margin</div>
+                    <div class="grid-value">${marginText}</div>
+                  </div>
+                  <div class="tooltip-grid-item">
+                    <div class="grid-label">Turnout</div>
+                    <div class="grid-value">${turnoutText}${deltaText}</div>
+                  </div>
+                  <div class="tooltip-grid-item">
+                    <div class="grid-label">Competitiveness</div>
+                    <div class="grid-value">${competitivenessText}</div>
+                  </div>
+                  <div class="tooltip-grid-item">
+                    <div class="grid-label">Welfare Score</div>
+                    <div class="grid-value">${welfareText}</div>
+                  </div>
                 </div>
               </div>`,
               { sticky: true, direction: 'auto', className: 'leaflet-glass-tooltip' }
@@ -105,7 +150,7 @@ export const StatewideMap: React.FC<StatewideMapProps> = ({
                 poly.setStyle({
                   weight: 2.5,
                   color: '#ffffff', // Glow highlight boundary
-                  fillOpacity: 0.8,
+                  fillOpacity: 0.85,
                 });
                 poly.bringToFront();
               },
@@ -312,29 +357,90 @@ export const StatewideMap: React.FC<StatewideMapProps> = ({
         .map-ac-tooltip {
           display: flex;
           flex-direction: column;
-          gap: 0.15rem;
+          gap: 0.25rem;
+          min-width: 250px;
+        }
+        .tooltip-header {
+          display: flex;
+          flex-direction: column;
+          gap: 0.1rem;
         }
         .tooltip-ac-id {
           font-family: var(--font-heading);
-          font-size: 0.65rem;
+          font-size: 0.7rem;
           font-weight: 700;
-          color: var(--color-accent);
+          color: #a855f7;
           text-transform: uppercase;
+          letter-spacing: 0.05em;
         }
         .tooltip-ac-name {
-          font-size: 1.05rem;
+          font-size: 1.15rem;
           font-weight: 700;
           color: #fff;
           font-family: var(--font-heading);
+          margin-bottom: 0.05rem;
         }
         .tooltip-ac-district {
           font-size: 0.75rem;
-          color: var(--text-secondary);
+          color: #94a3b8;
         }
-        .tooltip-ac-persona {
-          font-size: 0.75rem;
+        .tooltip-divider {
+          height: 1px;
+          background: rgba(255, 255, 255, 0.08);
+          margin: 0.4rem 0;
+        }
+        .tooltip-row {
+          display: flex;
+          justify-content: space-between;
+          font-size: 0.8rem;
+          gap: 1rem;
+          margin-bottom: 0.25rem;
+        }
+        .tooltip-label {
+          color: #94a3b8;
+        }
+        .tooltip-value {
+          color: #fff;
+          text-align: right;
+        }
+        .highlight-value {
+          color: #38bdf8;
           font-weight: 600;
+        }
+        .party-badge {
+          background: rgba(99, 102, 241, 0.2);
+          color: #a5b4fc;
+          padding: 1px 5px;
+          border-radius: 4px;
+          font-size: 0.7rem;
+          font-weight: 700;
+          margin-left: 0.25rem;
+          border: 1px solid rgba(165, 180, 252, 0.15);
+        }
+        .tooltip-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 0.5rem;
           margin-top: 0.25rem;
+        }
+        .tooltip-grid-item {
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          padding: 0.35rem 0.5rem;
+          border-radius: 6px;
+        }
+        .grid-label {
+          font-size: 0.55rem;
+          color: #64748b;
+          text-transform: uppercase;
+          font-weight: 700;
+          letter-spacing: 0.02em;
+          margin-bottom: 0.1rem;
+        }
+        .grid-value {
+          font-size: 0.8rem;
+          font-weight: 600;
+          color: #f1f5f9;
         }
       `}</style>
     </div>
