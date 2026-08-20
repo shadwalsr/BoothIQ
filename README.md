@@ -6,6 +6,23 @@ It provides spatial visualizations, predictive modeling, and robust data managem
 
 ---
 
+## 🎯 What It Does
+
+BoothIQ empowers campaigns by bridging the gap between raw data and actionable strategy:
+- **Spatial Intelligence**: Provides immersive 2D maps and 3D holographic projections of constituencies to visualize metrics like voter turnout and margins.
+- **Voter Segmentation & Targeting**: Uses machine learning to cluster constituencies and identify key demographic trends.
+- **Performance Tracking**: Analyzes anti-incumbency, competitiveness, and historical election results to pinpoint battleground areas.
+- **Reporting**: Generates on-the-fly PDF reports for field agents and strategists detailing actionable constituency insights.
+
+## ⚙️ How It Works
+
+1. **Data Ingestion**: Raw demographic data, historical election results, and geographic boundaries are ingested, cleaned, and merged into a unified dataset.
+2. **Feature Engineering**: Advanced metrics such as 'Competitiveness Score', 'Scheme Penetration Score', and 'Anti-Incumbency Magnitude' are calculated using Python data science libraries.
+3. **API Layer**: A high-performance FastAPI backend serves this engineered data through RESTful endpoints.
+4. **Interactive Visualization**: The React frontend queries the backend to render dynamic maps. Users can toggle between traditional 2D choropleth maps and 3D isometric projections to visually explore multi-dimensional data like winning margins layered over voter turnout.
+
+---
+
 ## 🏛 Architecture Overview
 
 BoothIQ follows a modern, decoupled client-server architecture:
